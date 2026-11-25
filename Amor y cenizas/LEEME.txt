@@ -1,0 +1,7 @@
+Amor y cenizas — paquete web
+
+index.html: portada con imagen y menú desplegable lateral.
+indice.html: índice completo existente.
+Se añade navegación desplegable a prólogo, capítulos y epílogo sin modificar sus textos narrativos.
+
+Todos los archivos deben permanecer juntos. La portada usa portada-amor-y-cenizas.png.
