@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cicatrices y sangre — Capítulo 2</title>
+<style>
+:root{--bg:#fbf5f0;--paper:#fffaf6;--ink:#453b3a;--accent:#a86775;--border:#eadbd5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.85 Georgia,serif}
+header,main,footer{max-width:780px;margin:auto;padding:24px}header{text-align:center;padding-top:40px}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);color:var(--accent);font-weight:normal}
+main{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:clamp(22px,5vw,54px);box-shadow:0 10px 30px #00000008}
+p{margin:0 0 1.2em}footer{font:14px/1.5 system-ui,sans-serif;color:#817270;text-align:center}
+.reader-nav{display:flex;justify-content:space-between;gap:16px;margin:36px 0 10px;padding-top:24px;border-top:1px solid var(--border)}
+.nav-button{display:inline-block;padding:12px 22px;border:1px solid var(--border);border-radius:12px;background:var(--paper);color:var(--accent);text-decoration:none;font:600 15px/1.4 system-ui,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#211e20;--paper:#2c2729;--ink:#eee3de;--accent:#d99aa7;--border:#514247}}
+@media(max-width:480px){.reader-nav{gap:10px}.nav-button{padding:10px 14px}}
+@media print{body{background:white;color:black}main{box-shadow:none;border:none}}
+</style>
+<style>
+.story-index-toggle{position:fixed;top:14px;left:14px;z-index:120;background:#2a2023;color:#f7eee9;border:1px solid #b77b87;border-radius:8px;padding:10px 14px;font:14px system-ui;cursor:pointer;box-shadow:0 4px 16px #0002}
+.story-index-panel{position:fixed;top:0;left:0;bottom:0;width:min(330px,88vw);overflow:auto;background:#251b1e;color:#f7eee9;z-index:130;padding:22px;transform:translateX(-110%);transition:transform .22s;border-right:1px solid #b77b87;font:15px/1.5 system-ui}
+.story-index-panel.open{transform:translateX(0)}.story-index-panel a{display:block;color:inherit;text-decoration:none;padding:7px 10px;border:1px solid #ffffff20;border-radius:6px;margin:5px 0}
+.story-index-panel a:hover{border-color:#b77b87;background:#b77b8720}.story-index-panel button{background:transparent;color:inherit;border:1px solid #ffffff55;padding:7px 10px;float:right;cursor:pointer}
+.story-index-overlay{display:none;position:fixed;inset:0;background:#0008;z-index:125}.story-index-overlay.show{display:block}.story-index-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reader-nav{display:flex;justify-content:space-between;gap:14px;margin:40px 0 12px;padding-top:22px;border-top:1px solid #d8c9c1}
+.reader-nav a{display:inline-block;padding:12px 20px;border:1px solid #c48691;border-radius:12px;background:#fffaf6;color:#a86775;text-decoration:none;font:600 15px/1.4 system-ui}
+.reader-nav a:hover{transform:translateY(-2px);background:#f5ece5}
+@media(max-width:480px){.reader-nav a{padding:10px 13px}}
+</style></head>
+<body><button class="story-index-toggle" onclick="storyOpen()">☰ Índice</button><div id="storyOverlay" class="story-index-overlay" onclick="storyClose()"></div><aside id="storyPanel" class="story-index-panel"><button onclick="storyClose()">Cerrar ✕</button><h2>Cicatrices y sangre</h2><a href="prologo.html">Prólogo</a><h3>Capítulos</h3><div class="story-index-grid"><a href="capitulo-1.html">1</a><a href="capitulo-2.html">2</a><a href="capitulo-3.html">3</a><a href="capitulo-4.html">4</a><a href="capitulo-5.html">5</a><a href="capitulo-6.html">6</a><a href="capitulo-7.html">7</a><a href="capitulo-8.html">8</a><a href="capitulo-9.html">9</a><a href="capitulo-10.html">10</a><a href="capitulo-11.html">11</a><a href="capitulo-12.html">12</a><a href="capitulo-13.html">13</a><a href="capitulo-14.html">14</a><a href="capitulo-15.html">15</a><a href="capitulo-16.html">16</a><a href="capitulo-17.html">17</a><a href="capitulo-18.html">18</a><a href="capitulo-19.html">19</a><a href="capitulo-20.html">20</a><a href="capitulo-21.html">21</a><a href="capitulo-22.html">22</a><a href="capitulo-23.html">23</a><a href="capitulo-24.html">24</a><a href="capitulo-25.html">25</a><a href="capitulo-26.html">26</a><a href="capitulo-27.html">27</a><a href="capitulo-28.html">28</a><a href="capitulo-29.html">29</a><a href="capitulo-30.html">30</a><a href="capitulo-31.html">31</a><a href="capitulo-32.html">32</a><a href="capitulo-33.html">33</a><a href="capitulo-34.html">34</a><a href="capitulo-35.html">35</a><a href="capitulo-36.html">36</a><a href="capitulo-37.html">37</a><a href="capitulo-38.html">38</a><a href="capitulo-39.html">39</a><a href="capitulo-40.html">40</a><a href="capitulo-41.html">41</a><a href="capitulo-42.html">42</a><a href="capitulo-43.html">43</a><a href="capitulo-44.html">44</a><a href="capitulo-45.html">45</a><a href="capitulo-46.html">46</a><a href="capitulo-47.html">47</a><a href="capitulo-48.html">48</a><a href="capitulo-49.html">49</a><a href="capitulo-50.html">50</a><a href="capitulo-51.html">51</a><a href="capitulo-52.html">52</a><a href="capitulo-53.html">53</a><a href="capitulo-54.html">54</a><a href="capitulo-55.html">55</a><a href="capitulo-56.html">56</a><a href="capitulo-57.html">57</a><a href="capitulo-58.html">58</a></div><h3>Final</h3><a href="epilogo.html">Epílogo</a><a href="indice.html">Índice completo</a></aside><script>function storyOpen(){document.getElementById("storyPanel").classList.add("open");document.getElementById("storyOverlay").classList.add("show")}function storyClose(){document.getElementById("storyPanel").classList.remove("open");document.getElementById("storyOverlay").classList.remove("show")}</script>
+<header><p style="color:#7d9185;font:14px system-ui,sans-serif;letter-spacing:.2em">CICATRICES Y SANGRE</p><h1>Capítulo 2 — El apellido que no aparece</h1></header>
+<main>
+<p>La oficina de registros ocupaba la planta baja de un edificio antiguo, de esos que parecían haber sobrevivido a demasiadas reformas y a demasiados gobiernos. El pasillo olía a papel, café recalentado y humedad. Emilia llegó diez minutos antes de la hora acordada y, aun así, tuvo la sensación de que llevaba toda la mañana esperando.</p>
+
+<p>Giulia caminaba a su lado con una carpeta bajo el brazo.</p>
+<p>—Antes de entrar, quiero que tengas claras dos cosas —dijo.</p>
+<p>—Qué optimista. ¿Hay una tercera?</p>
+<p>—No vamos a sacar conclusiones por una anotación. Y si nos entregan información incompleta, pediremos que quede constancia por escrito.</p>
+<p>Emilia soltó el aire por la nariz.</p>
+<p>—¿Y si se niegan?</p>
+<p>—Entonces averiguaremos por qué se niegan. Pero primero, paciencia.</p>
+<p>—Tú y tu paciencia.</p>
+<p>—Alguien en esta relación de amistad tiene que ser sensato.</p>
+<p>Emilia sonrió débilmente. La sonrisa desapareció cuando una mujer de cabello gris, gafas finas y una identificación colgada del cuello abrió la puerta de una sala pequeña.</p>
+<p>—¿Señora Emilia...? Por aquí, por favor.</p>
+
+<p>La sala tenía una mesa, tres sillas y un ordenador que parecía más viejo que algunos de los expedientes almacenados en el edificio. La funcionaria se presentó como la señora Rivas. No parecía nerviosa, pero consultaba sus notas con una frecuencia que Emilia empezó a encontrar molesta.</p>
+<p>—La solicitud que presentó se refería a una copia certificada de su inscripción de nacimiento y documentación asociada —explicó Rivas—. Durante la revisión, nuestro equipo detectó una referencia cruzada con un expediente previo.</p>
+<p>—¿Qué clase de referencia?</p>
+<p>—Una anotación de revisión. El registro original está correctamente asentado en el sistema actual. Sin embargo, parte de la documentación histórica no fue digitalizada.</p>
+<p>Giulia abrió su carpeta.</p>
+<p>—¿Qué documentación falta?</p>
+<p>La mujer miró la pregunta, como si estuviera acostumbrada a que la formularan, pero no a que alguien insistiera.</p>
+<p>—No puedo afirmar que falte. El expediente antiguo tiene una hoja de control que señala que debía verificarse una información antes de una renovación posterior. No consta en el sistema el resultado de esa verificación.</p>
+<p>Emilia se inclinó hacia delante.</p>
+<p>—¿Qué información?</p>
+<p>Rivas giró el monitor ligeramente. Había varias líneas, códigos y fechas. Una de ellas estaba marcada en una copia impresa.</p>
+<p>—Esta es la anotación.</p>
+<p><em>Verificar antes de renovar.</em></p>
+<p>Emilia la reconoció de inmediato. La frase no era una interpretación ni una reconstrucción. Era exactamente la misma.</p>
+<p>—¿Renovar qué?</p>
+<p>—No lo sabemos —respondió Rivas con honestidad incómoda—. En este contexto, podría referirse a la revisión de un documento, una inscripción, una autorización o cualquier trámite relacionado. La nota no contiene más detalle.</p>
+<p>Giulia señaló una fecha.</p>
+<p>—¿Y esta referencia?</p>
+<p>—Es el número del expediente previo.</p>
+<p>—¿Podemos consultarlo?</p>
+<p>Rivas juntó las manos.</p>
+<p>—No de inmediato. Está archivado fuera de nuestra sede. Tendríamos que solicitarlo.</p>
+<p>—Solicítelo —dijo Emilia.</p>
+<p>La funcionaria levantó los ojos.</p>
+<p>—Puede tardar.</p>
+<p>—No importa.</p>
+<p>—Y, si contiene datos de terceros, la consulta podría estar limitada.</p>
+<p>Giulia intervino con calma.</p>
+<p>—En ese caso, agradeceríamos una resolución detallada indicando qué parte puede consultarse y qué parte se restringe, junto con la base de esa limitación.</p>
+<p>Rivas asintió. Por primera vez, pareció aliviada de tener una interlocutora que conociera el procedimiento.</p>
+<p>—Eso podemos tramitarlo.</p>
+
+<p>Emilia salió de la oficina con una copia de la anotación, el número de referencia y una sensación que no sabía cómo nombrar.</p>
+<p>No había descubierto nada extraordinario. Nadie había insinuado que su identidad fuera falsa. Nadie había pronunciado palabras como adopción, fraude o secuestro.</p>
+<p>Y, sin embargo, el expediente no estaba completo.</p>
+<p>Su propia historia documental tenía una habitación cerrada.</p>
+
+<p>—¿Qué piensas? —preguntó Giulia mientras cruzaban la calle.</p>
+<p>—Que quiero saber qué significa.</p>
+<p>—Eso es razonable.</p>
+<p>—Y que me molesta que alguien escribiera una nota así y nadie se molestara en explicar qué debía verificarse.</p>
+<p>—Eso también es razonable.</p>
+<p>Emilia se detuvo frente a una cafetería.</p>
+<p>—¿Te apetece café?</p>
+<p>—Te apetece café a ti.</p>
+<p>—Qué observadora.</p>
+<p>Giulia la acompañó dentro.</p>
+
+<p>Se sentaron junto a la ventana. Emilia dejó los documentos entre ambas, sin abrirlos otra vez.</p>
+<p>—¿Crees que mis padres saben algo?</p>
+<p>Giulia no respondió enseguida.</p>
+<p>—No lo sé.</p>
+<p>—Podría preguntárselo.</p>
+<p>—Podrías.</p>
+<p>—Pero si pregunto, sabrán que estoy investigando.</p>
+<p>—Emilia, son tus documentos. Tienes derecho a querer entenderlos.</p>
+<p>—No quiero que esto se convierta en una pelea.</p>
+<p>—Entonces no lo conviertas en una acusación. Haz una pregunta.</p>
+<p>Emilia miró el café que acababan de servirle.</p>
+<p>—¿Y si me mienten?</p>
+<p>Giulia le sostuvo la mirada.</p>
+<p>—No puedes controlar cómo responderán. Solo puedes decidir qué hacer con lo que descubras.</p>
+
+<p>***</p>
+
+<p>En casa, su madre contestó al teléfono después del segundo tono.</p>
+<p>—Emilia, cariño. ¿Todo bien?</p>
+<p>La normalidad de aquella voz le produjo una punzada inesperada. Era la voz que había escuchado cuando tenía fiebre, cuando se rompió un diente, cuando suspendió un examen y cuando se marchó de casa por primera vez. Una voz que conocía demasiado bien como para sospechar de ella sin sentirse cruel.</p>
+<p>—Sí. Quería preguntarte una cosa sobre mis documentos de nacimiento.</p>
+<p>Hubo una pausa pequeña. Tan pequeña que podría haber sido una interferencia.</p>
+<p>—¿Tus documentos?</p>
+<p>—Estoy intentando conseguir una copia completa. En el registro aparece una anotación antigua. «Verificar antes de renovar». ¿Te suena?</p>
+<p>El silencio esta vez fue más largo.</p>
+<p>—¿Dónde has encontrado eso?</p>
+<p>Emilia se incorporó en el sofá.</p>
+<p>—En el expediente. Mamá, ¿te suena o no?</p>
+<p>—No recuerdo.</p>
+<p>—¿No recuerdas la frase?</p>
+<p>—Emilia, hace muchos años de todo eso. Los trámites eran un desastre. Seguramente sería alguna cosa administrativa.</p>
+<p>—Eso me han dicho.</p>
+<p>—Entonces no te preocupes.</p>
+<p>Emilia apretó el teléfono.</p>
+<p>—No estoy preocupada. Estoy intentando entender.</p>
+<p>—¿Por qué ahora?</p>
+<p>La pregunta salió demasiado rápido.</p>
+<p>Emilia se quedó quieta.</p>
+<p>—Porque quiero tener mis documentos completos.</p>
+<p>—Claro. Claro que sí.</p>
+<p>Su madre cambió de tono. Le preguntó por el niño, por el trabajo, por si había comido. Emilia respondió, pero ya no escuchaba de la misma manera.</p>
+<p>Antes de despedirse, volvió a intentarlo.</p>
+<p>—Si recuerdas algo, me lo dices, ¿vale?</p>
+<p>—Por supuesto, cariño.</p>
+<p>La llamada terminó.</p>
+
+<p>Emilia permaneció mirando la pantalla. No podía asegurar que su madre hubiera reaccionado de manera extraña. Una pausa no era una prueba. Una pregunta tampoco.</p>
+<p>Pero había preguntado <em>por qué ahora</em>.</p>
+<p>No qué anotación.</p>
+<p>No qué expediente.</p>
+<p>Por qué ahora.</p>
+
+<p>***</p>
+
+<p>Al otro lado de la ciudad, un hombre dejó un sobre sobre el escritorio de una habitación sin ventanas.</p>
+<p>—La solicitud ha llegado al archivo central —informó.</p>
+<p>El destinatario no abrió el sobre inmediatamente. Terminó de leer un documento que tenía delante, firmó en la última página y lo apartó.</p>
+<p>—¿Quién la ha solicitado?</p>
+<p>—Emilia.</p>
+<p>La mano que sostenía la pluma se detuvo.</p>
+<p>—¿Personalmente?</p>
+<p>—Sí. Ha acudido con una abogada.</p>
+<p>El hombre abrió el sobre. Dentro había una copia de la petición y el número de expediente.</p>
+<p>Lo leyó una vez.</p>
+<p>Después, otra.</p>
+<p>—¿Qué ha visto?</p>
+<p>—La anotación. Nada más, por lo que sabemos.</p>
+<p>—¿Y la hoja?</p>
+<p>—Ha solicitado el expediente anterior. Está en el depósito.</p>
+<p>El hombre cerró el sobre.</p>
+<p>—No se lo envíen todavía.</p>
+<p>—¿Quiere que se retrase?</p>
+<p>—Quiero que se localice primero el original. No una copia parcial. El original.</p>
+<p>El empleado vaciló.</p>
+<p>—Eso podría llamar la atención.</p>
+<p>—Más atención llamaría que desapareciera ahora.</p>
+<p>El hombre se levantó y se acercó a la ventana cubierta por una persiana. No la abrió.</p>
+<p>—Y no contacten con ella.</p>
+<p>—Entendido.</p>
+<p>—Ni una llamada. Ni una visita. Ni un mensaje.</p>
+<p>El empleado salió.</p>
+<p>El hombre permaneció solo, con el expediente sobre la mesa. En la esquina de la copia, una fecha antigua había sido subrayada a mano. Debajo, un nombre aparecía parcialmente oculto por una marca de tinta.</p>
+<p>Lo cubrió con otra hoja.</p>
+<p>Algunas cosas podían esperar.</p>
+<p>Pero no para siempre.</p>
+
+<p>***</p>
+
+<p>Emilia estaba terminando de recoger los juguetes cuando sonó el teléfono. Era Lorenzo.</p>
+<p>—Necesito que me confirmes algo —dijo él sin saludar.</p>
+<p>—¿Marco ha aceptado la segunda invitación?</p>
+<p>—¡No! Y eso no es lo que necesito.</p>
+<p>—Entonces me decepcionas.</p>
+<p>—Alessandra está a punto de organizar una intervención.</p>
+<p>Emilia soltó una carcajada.</p>
+<p>—¿Una intervención romántica?</p>
+<p>—Una intervención para que Marco deje de comportarse como si el afecto fuera una enfermedad contagiosa.</p>
+<p>—No creo que Marco necesite una intervención.</p>
+<p>—Eso dices porque no has visto la cara que puso cuando le preguntaron si tenía algún interés en alguien.</p>
+<p>—¿Y qué dijo?</p>
+<p>Lorenzo hizo una pausa teatral.</p>
+<p>—«No es asunto vuestro».</p>
+<p>Emilia se rio.</p>
+<p>—Eso sí es una declaración.</p>
+<p>—Exactamente. En fin, te llamaba para saber si mañana te apetece cenar con nosotros. Giulia también viene. Y prometemos no hablar de expedientes, misterios ni hombres desaparecidos durante, al menos, veinte minutos.</p>
+<p>Emilia miró los papeles que había dejado sobre la mesa.</p>
+<p>—Veinte minutos es ambicioso.</p>
+<p>—Somos optimistas.</p>
+<p>—Vale. Mañana.</p>
+<p>—Perfecto. Y dile al pequeño que Lorenzo le debe una carrera de coches.</p>
+<p>—Te va a ganar.</p>
+<p>—Lo sé. Estoy preparando mi dignidad para el desastre.</p>
+
+<p>Después de colgar, Emilia guardó la copia del expediente en una carpeta. No iba a seguir leyendo aquella anotación hasta convertirla en algo que todavía no era.</p>
+<p>Había decidido pedir el documento completo.</p>
+<p>Esperaría.</p>
+<p>Y, cuando llegara, lo leería.</p>
+<p>Sin miedo a hacer preguntas.</p>
+<p>Sin asumir respuestas.</p>
+
+<p>Pero, esa misma noche, mientras apagaba la luz del despacho, su teléfono recibió una notificación de un número que no tenía guardado.</p>
+<p>El mensaje era breve.</p>
+<p><em>Deja de buscar en registros que no te pertenecen.</em></p>
+<p>Emilia lo leyó dos veces.</p>
+<p>Después, hizo una captura de pantalla y se la envió a Giulia.</p>
+<p>No contestó.</p>
+<p>No borró el mensaje.</p>
+<p>Y, por primera vez, la posibilidad de que aquella anotación fuera algo más que un error administrativo dejó de parecerle exagerada.</p>
+
+<nav class="reader-nav"><a href="capitulo-1.html">← Capítulo 1</a><a href="capitulo-3.html">Capítulo 3 →</a></nav>
+</main>
+<footer>Cicatrices y sangre</footer>
+</body></html>
