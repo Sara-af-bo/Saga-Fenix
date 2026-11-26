@@ -1,0 +1,95 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 57 — Sin pedir permiso al pasado</title><style>body{font-family:Georgia,'Times New Roman',serif;line-height:1.85;max-width:820px;margin:40px auto;padding:0 22px;background:#faf8f5;color:#262321}h1{text-align:center;font-size:2em;margin-bottom:.25em}h2{text-align:center;font-weight:normal;font-style:italic;color:#71665f;margin-top:0}p{text-indent:1.5em;margin:0 0 1em}.nav{text-align:center;margin-bottom:2em;font-family:Arial,sans-serif;font-size:.9em}</style><style>
+.story-index-toggle{position:fixed;top:14px;right:14px;left:auto;z-index:120;background:#2a2023;color:#f7eee9;border:1px solid #b77b87;border-radius:8px;padding:10px 14px;font:14px system-ui;cursor:pointer;box-shadow:0 4px 16px #0002}
+.story-index-panel{position:fixed;top:0;right:0;left:auto;bottom:0;width:min(330px,88vw);overflow:auto;background:#251b1e;color:#f7eee9;z-index:130;padding:22px;transform:translateX(110%);transition:transform .22s;border-left:1px solid #b77b87;font:15px/1.5 system-ui}
+.story-index-panel.open{transform:translateX(0)}.story-index-panel a{display:block;color:inherit;text-decoration:none;padding:7px 10px;border:1px solid #ffffff20;border-radius:6px;margin:5px 0}
+.story-index-panel a:hover{border-color:#b77b87;background:#b77b8720}.story-index-panel button{background:transparent;color:inherit;border:1px solid #ffffff55;padding:7px 10px;float:right;cursor:pointer}
+.story-index-overlay{display:none;position:fixed;inset:0;background:#0008;z-index:125}.story-index-overlay.show{display:block}.story-index-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reader-nav{display:flex;justify-content:space-between;gap:14px;margin:40px 0 12px;padding-top:22px;border-top:1px solid #d8c9c1}
+.reader-nav a{display:inline-block;padding:12px 20px;border:1px solid #c48691;border-radius:12px;background:#fffaf6;color:#a86775;text-decoration:none;font:600 15px/1.4 system-ui}
+.reader-nav a:hover{transform:translateY(-2px);background:#f5ece5}
+@media(max-width:480px){.reader-nav a{padding:10px 13px}}
+</style><style>
+.chapter-heading{text-align:center;margin:0 auto 2.5rem;padding:2.5rem 1rem 1rem;max-width:900px}
+.chapter-heading .book-label{font:normal 13px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.20em;text-transform:uppercase;color:#9b5d67;margin-bottom:1.65rem}
+.chapter-heading .chapter-number{font:normal 16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#9b5d67;margin-bottom:1.45rem}
+.chapter-heading .chapter-title{font:normal clamp(2rem,5vw,2.65rem)/1.2 Georgia,'Times New Roman',serif;color:#754b50;text-align:center;margin:0}
+</style><style>
+:root{--bg:#fbf7f1;--paper:#fffdf9;--ink:#403b38;--muted:#81766e;--rose:#b87983;--line:#eadfd6}
+*{box-sizing:border-box}
+body{margin:0!important;background:var(--bg)!important;color:var(--ink)!important;font:18px/1.9 Georgia,serif!important;max-width:none!important;padding:0!important}
+.book-header{text-align:center;padding:45px 18px 25px!important;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5)!important;margin:0!important;max-width:none!important}
+.book-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.book-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.book-header h1{font-size:clamp(1.7rem,5vw,2.7rem)!important;font-weight:500!important;font-style:normal!important;color:#6e4c52!important;margin:12px 0!important;text-align:center!important}
+main{max-width:790px!important;margin:30px auto!important;padding:0 18px 55px!important}
+.story-content{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(25px,5vw,60px);box-shadow:0 12px 35px #6650440b}
+.story-content p{margin:0 0 1.25em!important;text-indent:1.5em}
+.story-content p:first-child:first-letter{font-size:1.5em;color:var(--rose)}
+.reader-nav,.nav,.controls{display:flex!important;justify-content:space-between!important;gap:12px!important;margin:22px 0!important;flex-wrap:wrap!important}
+.reader-nav a,.nav a,.controls a{display:inline-block!important;border:1px solid #d9c6c3!important;background:#fffaf6!important;color:#754e57!important;border-radius:25px!important;padding:11px 18px!important;text-decoration:none!important;font:14px sans-serif!important}
+.reader-nav a:last-child,.nav a:last-child,.controls a:last-child{background:#8e5f68!important;color:white!important;border-color:#8e5f68!important}
+footer{text-align:center;color:var(--muted);font:13px sans-serif;padding:20px}
+@media(max-width:600px){body{font-size:16px!important}.story-content{padding:25px 20px}}
+</style></head><body><main><div class="story-content"><button class="story-index-toggle" onclick="storyOpen()">☰ Índice</button><div id="storyOverlay" class="story-index-overlay" onclick="storyClose()"></div><aside id="storyPanel" class="story-index-panel"><button onclick="storyClose()">Cerrar ✕</button><a href="prologo.html">Prólogo</a><h3>Capítulos</h3><div class="story-index-grid"><a href="capitulo-1.html">1</a><a href="capitulo-2.html">2</a><a href="capitulo-3.html">3</a><a href="capitulo-4.html">4</a><a href="capitulo-5.html">5</a><a href="capitulo-6.html">6</a><a href="capitulo-7.html">7</a><a href="capitulo-8.html">8</a><a href="capitulo-9.html">9</a><a href="capitulo-10.html">10</a><a href="capitulo-11.html">11</a><a href="capitulo-12.html">12</a><a href="capitulo-13.html">13</a><a href="capitulo-14.html">14</a><a href="capitulo-15.html">15</a><a href="capitulo-16.html">16</a><a href="capitulo-17.html">17</a><a href="capitulo-18.html">18</a><a href="capitulo-19.html">19</a><a href="capitulo-20.html">20</a><a href="capitulo-21.html">21</a><a href="capitulo-22.html">22</a><a href="capitulo-23.html">23</a><a href="capitulo-24.html">24</a><a href="capitulo-25.html">25</a><a href="capitulo-26.html">26</a><a href="capitulo-27.html">27</a><a href="capitulo-28.html">28</a><a href="capitulo-29.html">29</a><a href="capitulo-30.html">30</a><a href="capitulo-31.html">31</a><a href="capitulo-32.html">32</a><a href="capitulo-33.html">33</a><a href="capitulo-34.html">34</a><a href="capitulo-35.html">35</a><a href="capitulo-36.html">36</a><a href="capitulo-37.html">37</a><a href="capitulo-38.html">38</a><a href="capitulo-39.html">39</a><a href="capitulo-40.html">40</a><a href="capitulo-41.html">41</a><a href="capitulo-42.html">42</a><a href="capitulo-43.html">43</a><a href="capitulo-44.html">44</a><a href="capitulo-45.html">45</a><a href="capitulo-46.html">46</a><a href="capitulo-47.html">47</a><a href="capitulo-48.html">48</a><a href="capitulo-49.html">49</a><a href="capitulo-50.html">50</a><a href="capitulo-51.html">51</a><a href="capitulo-52.html">52</a><a href="capitulo-53.html">53</a><a href="capitulo-54.html">54</a><a href="capitulo-55.html">55</a><a href="capitulo-56.html">56</a><a href="capitulo-57.html">57</a><a href="capitulo-58.html">58</a></div><h3>Final</h3><a href="epilogo.html">Epílogo</a><a href="indice.html">Índice completo</a></aside><script>function storyOpen(){document.getElementById("storyPanel").classList.add("open");document.getElementById("storyOverlay").classList.add("show")}function storyClose(){document.getElementById("storyPanel").classList.remove("open");document.getElementById("storyOverlay").classList.remove("show")}</script><div class="chapter-heading"><div class="book-label">Cicatrices y sangre · Libro 2</div><div class="chapter-number">Capítulo 57</div></div>
+<p>Durante cuatro días, Emilia no abrió la carpeta de la investigación.</p>
+<p>La dejó en el estante, junto a los libros que todavía no había terminado y una caja de fotografías. No había decidido abandonar la búsqueda. Simplemente había comprendido que podía dejar de mirar los documentos sin que el mundo se desmoronara.</p>
+<p>El jueves, Nicolás le envió un mensaje preguntando si le apetecía acompañarlo a una actividad sencilla que había propuesto su equipo: una salida breve a una librería cercana, con tiempo para descansar y volver si la fatiga aparecía.</p>
+<p>Emilia aceptó. Le dijo que tenía una condición: si él se cansaba, no iba a discutirlo.</p>
+<p>—No pienso discutirlo —respondió Nicolás—. Ya me has ganado esa discusión antes de empezar.</p>
+<p>La librería era pequeña y estaba llena de estanterías estrechas. Nicolás avanzaba despacio, deteniéndose a leer títulos. Emilia le mostró una novela que había leído años atrás y que, según ella, tenía un final injustamente cruel.</p>
+<p>—¿Me la recomiendas?</p>
+<p>—Te recomiendo que no confíes en mí si quieres un final feliz.</p>
+<p>Él se rio.</p>
+<p>Al final, Nicolás escogió un libro de relatos. Emilia compró uno que llevaba meses mirando. Salieron sin prisa y se sentaron en una cafetería cercana. La conversación se desplazó de los libros a la música, de la música a los viajes, de los viajes a los lugares que cada uno quería conocer.</p>
+<p>—¿Hay algún sitio al que te gustaría volver? —preguntó Nicolás.</p>
+<p>Emilia pensó.</p>
+<p>—Hay muchos. Pero creo que ahora también hay lugares a los que me gustaría ir por primera vez.</p>
+<p>Él sonrió.</p>
+<p>—Podríamos hacer una lista.</p>
+<p>—Podríamos.</p>
+<p>No fijaron fechas ni destinos. La lista era una idea, no una promesa que tuviera que cumplirse. Emilia le tomó la mano bajo la mesa y Nicolás le acarició los dedos.</p>
+<p>Cuando se despidieron, se besaron. Emilia notó que había dejado de medir cada beso con el recuerdo de los anteriores. No estaba comparando. Estaba presente.</p>
+<p>En casa de los Bellini, Vittoria había preparado una tarde para ordenar fotografías, pero Emilia pidió que no lo hicieran como una tarea. Quería mirar las imágenes cuando le apeteciera y detenerse si algo le resultaba demasiado.</p>
+<p>Alessandro estuvo de acuerdo. Marco sacó una caja, la dejó sobre la mesa y no insistió.</p>
+<p>Entre las fotografías apareció una imagen de Vittoria sosteniendo un pequeño ramo, otra de Marco en una terraza y una más en la que Alessandro llevaba un jersey enorme y una expresión de absoluta indignación.</p>
+<p>—¿Qué te pasaba aquí? —preguntó Emilia.</p>
+<p>—No lo recuerdo —contestó Alessandro—. Pero probablemente alguien me había obligado a hacer algo.</p>
+<p>Vittoria se rio.</p>
+<p>Emilia eligió dos fotografías para escanear. Una de ellas tenía una fecha escrita al dorso. La otra no. No intentó relacionarlas con los documentos de inmediato. Las guardó en una carpeta digital titulada «Familia», sin subcategorías ni notas de investigación.</p>
+<p>Marco le preguntó si quería llevarse alguna original.</p>
+<p>—No. Prefiero que se queden aquí. Ya tengo las copias.</p>
+<p>—Como quieras —dijo él.</p>
+<p>Emilia se sintió cómoda con aquella respuesta. No había un examen de pertenencia. No había un gesto que tuviera que demostrar.</p>
+<p>Al día siguiente, recibió la confirmación de que la solicitud de copia certificada estaba en trámite. El anexo no había sido localizado en su totalidad, pero las hojas consultadas podían certificarse. La oficina también había registrado la petición de revisión de custodia.</p>
+<p>Emilia archivó el mensaje. No llamó a los Bellini ni a Nicolás. No porque no fuera importante, sino porque había aprendido a no necesitar que cada avance tuviera espectadores.</p>
+<p>Su hijo, entretanto, había terminado el robot. Lo presentó como si estuviera inaugurando una exposición.</p>
+<p>—Tiene modo normal, modo emergencia y modo absurdo —explicó.</p>
+<p>—¿Qué hace el modo absurdo?</p>
+<p>—No se puede explicar. Es absurdo.</p>
+<p>Emilia le felicitó por el trabajo y le preguntó si quería guardar las piezas sobrantes. Él dijo que sí y comenzó a recoger. Más tarde, mientras cenaban, le preguntó si ella estaba contenta.</p>
+<p>Emilia dejó el vaso sobre la mesa.</p>
+<p>—Creo que sí. No todos los días. Pero últimamente sí, en algunas cosas.</p>
+<p>—Eso está bien.</p>
+<p>—Sí. Está bien.</p>
+<p>El niño volvió a su comida. No hubo más preguntas.</p>
+<p>Nicolás tuvo un día difícil el sábado. La fatiga se prolongó y tuvo que cancelar una actividad que había planificado. Se frustró, pero esta vez no intentó compensarlo haciendo más. Descansó, siguió las indicaciones de su equipo y, al final de la tarde, escribió a Emilia para decirle que no podría verla.</p>
+<p>Ella respondió que no pasaba nada y que podían buscar otro día.</p>
+<p>Él se disculpó una vez. Emilia le pidió que no lo hiciera de nuevo.</p>
+<p>—No me debes una cita por estar recuperándote —le escribió.</p>
+<p>Nicolás leyó el mensaje y dejó el teléfono. No era una frase que solucionara sus limitaciones, pero sí le quitaba una obligación que había empezado a imponerse.</p>
+<p>Dos días después, se encontraron en el patio del centro. Nicolás estaba mejor. Emilia llevó el libro que había comprado y se lo mostró. Él le enseñó el suyo.</p>
+<p>—Podemos intercambiarlos —propuso ella.</p>
+<p>—¿Y si no me gusta el tuyo?</p>
+<p>—Me lo devuelves y admites que tengo razón.</p>
+<p>—Una negociación muy equilibrada.</p>
+<p>Se intercambiaron los libros. Emilia se sentó a su lado, y Nicolás le dio un beso. Luego otro, algo más largo. Cuando se apartaron, él sonrió.</p>
+<p>—Me gusta besarte.</p>
+<p>—Eso espero. Sería bastante incómodo si no.</p>
+<p>—No me refería a eso.</p>
+<p>Emilia se rio, le acarició la mejilla y volvió a besarlo.</p>
+<p>—A mí también me gusta.</p>
+<p>No hablaron de recuperar recuerdos. No hablaron de cómo sería su relación dentro de seis meses. Compartieron el silencio, el libro y la tarde. A Emilia le pareció que aquello también era una forma de avanzar.</p>
+<p>La investigación seguía abierta, pero ya no ocupaba todas las habitaciones de su vida. Había aprendido a guardar las preguntas sin permitir que se convirtieran en la única manera de mirar el mundo.</p>
+<p>El pasado no había terminado de hablar.</p>
+<p>Pero Emilia ya no esperaba a que lo hiciera para vivir.</p>
+</div></main><nav class="reader-nav"><a href="capitulo-56.html">← Capítulo 56</a><a href="capitulo-58.html">Capítulo 58 →</a></nav></body></html>

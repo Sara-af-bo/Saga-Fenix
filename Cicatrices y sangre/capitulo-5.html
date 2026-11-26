@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cicatrices y sangre — Capítulo 5</title>
+<style>
+:root{--bg:#fbf5f0;--paper:#fffaf6;--ink:#453b3a;--accent:#a86775;--border:#eadbd5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.85 Georgia,serif}
+header,main,footer{max-width:780px;margin:auto;padding:24px}header{text-align:center;padding-top:40px}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);color:var(--accent);font-weight:normal}
+main{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:clamp(22px,5vw,54px);box-shadow:0 10px 30px #00000008}
+p{margin:0 0 1.2em}footer{font:14px/1.5 system-ui,sans-serif;color:#817270;text-align:center}
+.reader-nav{display:flex;justify-content:space-between;gap:16px;margin:36px 0 10px;padding-top:24px;border-top:1px solid var(--border)}
+.nav-button{display:inline-block;padding:12px 22px;border:1px solid var(--border);border-radius:12px;background:var(--paper);color:var(--accent);text-decoration:none;font:600 15px/1.4 system-ui,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#211e20;--paper:#2c2729;--ink:#eee3de;--accent:#d99aa7;--border:#514247}}
+@media(max-width:480px){.reader-nav{gap:10px}.nav-button{padding:10px 14px}}
+@media print{body{background:white;color:black}main{box-shadow:none;border:none}}
+</style><style>
+.story-index-toggle{position:fixed;top:14px;right:14px;left:auto;z-index:120;background:#2a2023;color:#f7eee9;border:1px solid #b77b87;border-radius:8px;padding:10px 14px;font:14px system-ui;cursor:pointer;box-shadow:0 4px 16px #0002}
+.story-index-panel{position:fixed;top:0;right:0;left:auto;bottom:0;width:min(330px,88vw);overflow:auto;background:#251b1e;color:#f7eee9;z-index:130;padding:22px;transform:translateX(110%);transition:transform .22s;border-left:1px solid #b77b87;font:15px/1.5 system-ui}
+.story-index-panel.open{transform:translateX(0)}.story-index-panel a{display:block;color:inherit;text-decoration:none;padding:7px 10px;border:1px solid #ffffff20;border-radius:6px;margin:5px 0}
+.story-index-panel a:hover{border-color:#b77b87;background:#b77b8720}.story-index-panel button{background:transparent;color:inherit;border:1px solid #ffffff55;padding:7px 10px;float:right;cursor:pointer}
+.story-index-overlay{display:none;position:fixed;inset:0;background:#0008;z-index:125}.story-index-overlay.show{display:block}.story-index-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reader-nav{display:flex;justify-content:space-between;gap:14px;margin:40px 0 12px;padding-top:22px;border-top:1px solid #d8c9c1}
+.reader-nav a{display:inline-block;padding:12px 20px;border:1px solid #c48691;border-radius:12px;background:#fffaf6;color:#a86775;text-decoration:none;font:600 15px/1.4 system-ui}
+.reader-nav a:hover{transform:translateY(-2px);background:#f5ece5}
+@media(max-width:480px){.reader-nav a{padding:10px 13px}}
+</style><style>
+.chapter-heading{text-align:center;margin:0 auto 2.5rem;padding:2.5rem 1rem 1rem;max-width:900px}
+.chapter-heading .book-label{font:normal 13px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.20em;text-transform:uppercase;color:#9b5d67;margin-bottom:1.65rem}
+.chapter-heading .chapter-number{font:normal 16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#9b5d67;margin-bottom:1.45rem}
+.chapter-heading .chapter-title{font:normal clamp(2rem,5vw,2.65rem)/1.2 Georgia,'Times New Roman',serif;color:#754b50;text-align:center;margin:0}
+</style><style>
+:root{--bg:#fbf7f1;--paper:#fffdf9;--ink:#403b38;--muted:#81766e;--rose:#b87983;--line:#eadfd6}
+*{box-sizing:border-box}
+body{margin:0!important;background:var(--bg)!important;color:var(--ink)!important;font:18px/1.9 Georgia,serif!important;max-width:none!important;padding:0!important}
+.book-header{text-align:center;padding:45px 18px 25px!important;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5)!important;margin:0!important;max-width:none!important}
+.book-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.book-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.book-header h1{font-size:clamp(1.7rem,5vw,2.7rem)!important;font-weight:500!important;font-style:normal!important;color:#6e4c52!important;margin:12px 0!important;text-align:center!important}
+main{max-width:790px!important;margin:30px auto!important;padding:0 18px 55px!important}
+.story-content{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(25px,5vw,60px);box-shadow:0 12px 35px #6650440b}
+.story-content p{margin:0 0 1.25em!important;text-indent:1.5em}
+.story-content p:first-child:first-letter{font-size:1.5em;color:var(--rose)}
+.reader-nav,.nav,.controls{display:flex!important;justify-content:space-between!important;gap:12px!important;margin:22px 0!important;flex-wrap:wrap!important}
+.reader-nav a,.nav a,.controls a{display:inline-block!important;border:1px solid #d9c6c3!important;background:#fffaf6!important;color:#754e57!important;border-radius:25px!important;padding:11px 18px!important;text-decoration:none!important;font:14px sans-serif!important}
+.reader-nav a:last-child,.nav a:last-child,.controls a:last-child{background:#8e5f68!important;color:white!important;border-color:#8e5f68!important}
+footer{text-align:center;color:var(--muted);font:13px sans-serif;padding:20px}
+@media(max-width:600px){body{font-size:16px!important}.story-content{padding:25px 20px}}
+</style></head><body><button class="story-index-toggle" onclick="storyOpen()">☰ Índice</button><div id="storyOverlay" class="story-index-overlay" onclick="storyClose()"></div><aside id="storyPanel" class="story-index-panel"><button onclick="storyClose()">Cerrar ✕</button><a href="prologo.html">Prólogo</a><h3>Capítulos</h3><div class="story-index-grid"><a href="capitulo-1.html">1</a><a href="capitulo-2.html">2</a><a href="capitulo-3.html">3</a><a href="capitulo-4.html">4</a><a href="capitulo-5.html">5</a><a href="capitulo-6.html">6</a><a href="capitulo-7.html">7</a><a href="capitulo-8.html">8</a><a href="capitulo-9.html">9</a><a href="capitulo-10.html">10</a><a href="capitulo-11.html">11</a><a href="capitulo-12.html">12</a><a href="capitulo-13.html">13</a><a href="capitulo-14.html">14</a><a href="capitulo-15.html">15</a><a href="capitulo-16.html">16</a><a href="capitulo-17.html">17</a><a href="capitulo-18.html">18</a><a href="capitulo-19.html">19</a><a href="capitulo-20.html">20</a><a href="capitulo-21.html">21</a><a href="capitulo-22.html">22</a><a href="capitulo-23.html">23</a><a href="capitulo-24.html">24</a><a href="capitulo-25.html">25</a><a href="capitulo-26.html">26</a><a href="capitulo-27.html">27</a><a href="capitulo-28.html">28</a><a href="capitulo-29.html">29</a><a href="capitulo-30.html">30</a><a href="capitulo-31.html">31</a><a href="capitulo-32.html">32</a><a href="capitulo-33.html">33</a><a href="capitulo-34.html">34</a><a href="capitulo-35.html">35</a><a href="capitulo-36.html">36</a><a href="capitulo-37.html">37</a><a href="capitulo-38.html">38</a><a href="capitulo-39.html">39</a><a href="capitulo-40.html">40</a><a href="capitulo-41.html">41</a><a href="capitulo-42.html">42</a><a href="capitulo-43.html">43</a><a href="capitulo-44.html">44</a><a href="capitulo-45.html">45</a><a href="capitulo-46.html">46</a><a href="capitulo-47.html">47</a><a href="capitulo-48.html">48</a><a href="capitulo-49.html">49</a><a href="capitulo-50.html">50</a><a href="capitulo-51.html">51</a><a href="capitulo-52.html">52</a><a href="capitulo-53.html">53</a><a href="capitulo-54.html">54</a><a href="capitulo-55.html">55</a><a href="capitulo-56.html">56</a><a href="capitulo-57.html">57</a><a href="capitulo-58.html">58</a></div><h3>Final</h3><a href="epilogo.html">Epílogo</a><a href="indice.html">Índice completo</a></aside><script>function storyOpen(){document.getElementById("storyPanel").classList.add("open");document.getElementById("storyOverlay").classList.add("show")}function storyClose(){document.getElementById("storyPanel").classList.remove("open");document.getElementById("storyOverlay").classList.remove("show")}</script>
+<header><div class="chapter-heading"><div class="book-label">Cicatrices y sangre · Libro 2</div><div class="chapter-number">Capítulo 5</div><h1 class="chapter-title">El hombre que no acepta un no</h1></div></header>
+<main>
+<p>La sala de reuniones del último piso llevaba treinta minutos esperando a que alguien se atreviera a contradecir a Alessandro.</p>
+<p>El hombre no necesitaba levantar la voz. Ni siquiera necesitaba mirar a los demás durante demasiado tiempo. Había aprendido, desde mucho antes de ocupar la silla que ahora presidía la mesa, que la gente suele revelar más cuando teme llenar el silencio.</p>
+<p>—No vamos a comprarlo —dijo, pasando una página del informe.</p>
+<p>Uno de los directivos se aclaró la garganta.</p>
+<p>—La oferta es considerable. La adquisición nos permitiría controlar el acceso al puerto y consolidar la distribución en la zona norte.</p>
+<p>—También nos obligaría a depender de un socio que lleva tres meses filtrando información a nuestros competidores.</p>
+<p>—No hay pruebas de eso.</p>
+<p>Alessandro levantó los ojos.</p>
+<p>—Entonces deja de hablar como si las hubiera.</p>
+<p>El directivo se recostó en su silla.</p>
+<p>Alessandro cerró el informe.</p>
+<p>—La operación se suspende. Revisaremos las cuentas, los contratos y los movimientos de los últimos seis meses. Nadie firma nada en mi nombre hasta que termine la auditoría.</p>
+<p>—Eso puede interpretarse como una falta de confianza.</p>
+<p>—Que lo interpreten como quieran.</p>
+<p>La reunión continuó otros veinte minutos. Cuando terminó, la mayoría salió con la sensación de haber sido reprendido sin que Alessandro hubiera dicho una sola palabra ofensiva.</p>
+<p>Su hermana, Vittoria, permaneció sentada.</p>
+<p>—Tienes un talento especial para hacer que la gente se arrepienta de respirar.</p>
+<p>—Y tú para quedarte cuando todos se marchan.</p>
+<p>—Porque alguien tiene que decirte cuándo estás siendo insoportable.
+
+Alessandro le dedicó una mirada seca, pero le acercó la silla con el pie para que se sentara. Vittoria sonrió, como si aquel gesto pequeño confirmara lo que ambos sabían: podían discutir durante horas y, aun así, ninguno dejaría al otro solo.</p>
+<p>Alessandro recogió los documentos.</p>
+<p>—¿Qué necesitas?</p>
+<p>—Que almuerces. Que duermas. Y que dejes de creer que puedes solucionar cualquier problema encerrándote en un despacho.</p>
+<p>—¿Has venido a darme consejos o a discutir la auditoría?</p>
+<p>—Ambas cosas. La auditoría la llevaré yo.</p>
+<p>—Ya está asignada.</p>
+<p>—A un equipo que responde a ti. Quiero un equipo independiente.</p>
+<p>Alessandro la observó.</p>
+<p>—¿Crees que hay alguien dentro?</p>
+<p>Vittoria no respondió de inmediato.</p>
+<p>—Creo que llevamos demasiado tiempo fingiendo que todo lo que ocurre es una coincidencia. Los contratos alterados, las llamadas que llegan a personas que no deberían conocer nuestras decisiones, los archivos que se mueven sin autorización. No digo que sea una conspiración. Digo que quiero revisar las cosas antes de que alguien nos obligue a hacerlo.</p>
+<p>Alessandro asintió una sola vez.</p>
+<p>—Hazlo. Pero no uses el nombre de la familia para asustar a nadie. Quiero hechos.</p>
+<p>—Siempre quieres hechos.</p>
+<p>—Es lo único que no puede cambiar según quién cuente la historia.</p>
+
+<p>***</p>
+
+<p>En la planta inferior, Matteo esperaba junto a un ascensor con una bolsa de comida y una paciencia que ya se había agotado.</p>
+<p>—¿Has comido? —preguntó cuando Alessandro apareció.</p>
+<p>—No.</p>
+<p>—¿Sorprendente? No. ¿Saludable? Tampoco.</p>
+<p>—Matteo.</p>
+<p>—Al menos fingiré que me escuchas. La abuela ha llamado tres veces. Quiere que vayamos el domingo. Y Luca ha suspendido otra asignatura.</p>
+<p>Alessandro se detuvo.</p>
+<p>—¿Otra?</p>
+<p>—Matemáticas. Dice que el profesor le tiene manía.</p>
+<p>—¿Y tú qué dices?</p>
+<p>—Que el profesor probablemente tiene un trabajo y Luca probablemente tiene que estudiar.</p>
+<p>Alessandro soltó una breve risa.</p>
+<p>—Hablaré con él.</p>
+<p>—No. Hablaré yo. Tú lo conviertes en una reunión de accionistas cada vez que le preguntas por el colegio.
+
+—Y luego se queja de que no le cuento nada —añadió Matteo.
+
+Alessandro le dio un empujón amistoso en el hombro.
+
+—Gracias por ocuparte.
+
+—Sí, sí. Ya sé. Soy el hermano favorito.
+
+—No te emociones.</p>
+<p>—Tiene que aprender a responsabilizarse.</p>
+<p>—Tiene dieciséis años. También tiene que aprender a ser un adolescente sin pensar que toda conversación es una amenaza de despido.</p>
+<p>—¿Y el otro?</p>
+<p>—Niccolò está bien. Ha pedido dinero para un viaje escolar y, milagrosamente, ha presentado todos los papeles antes de que se lo pidieran. Estoy empezando a sospechar que lo han cambiado por otro niño.</p>
+<p>Alessandro tomó la bolsa.</p>
+<p>—Gracias.</p>
+<p>—No me agradezcas la comida. Agradece que no te la haya lanzado.</p>
+
+<p>***</p>
+
+<p>La mujer del abrigo marfil llegó a la residencia familiar poco después de las cuatro.
+
+Desde que su marido había decidido retirarse, la casa había recuperado algunas costumbres que durante años parecieron imposibles. Él había entregado el mando a Alessandro sin disputas ni resentimientos: quería pasar el tiempo viajando, lejos de las reuniones interminables, y concentrar sus días en seguir las pistas que pudieran conducir a la hija que habían perdido. No estaba desaparecido de la vida de los suyos; llamaba, enviaba fotografías desde los lugares que visitaba y, cuando podía, regresaba unos días. La familia respetaba aquella decisión, aunque todos sabían que la búsqueda seguía siendo el centro de sus viajes. No había avisado. En circunstancias normales, eso habría provocado que el personal preguntara si deseaba que prepararan una habitación o si tenía una cita. Esta vez, nadie preguntó nada.</p>
+<p>Vittoria la encontró en el salón pequeño, junto a una ventana abierta.</p>
+<p>—Mamá.</p>
+<p>La mujer se volvió.</p>
+<p>—¿Alessandro está?</p>
+<p>—En su despacho. ¿Qué ha ocurrido?</p>
+<p>—Nada.</p>
+<p>Vittoria no aceptó la respuesta.</p>
+<p>—Llevas esa cara desde hace semanas.</p>
+<p>—Estoy cansada.</p>
+<p>—Estás asustada.</p>
+<p>La mujer dejó el bolso sobre una silla.</p>
+<p>—No empieces.</p>
+<p>—No estoy empezando. Estoy preguntando.</p>
+<p>—Y yo te estoy diciendo que no pasa nada.</p>
+<p>Vittoria la miró con atención.</p>
+<p>—¿Has vuelto a ir?</p>
+<p>El silencio fue suficiente.</p>
+<p>—Mamá.</p>
+<p>—No la he seguido.</p>
+<p>—¿A quién?</p>
+<p>La mujer se llevó una mano a la frente.</p>
+<p>—No puedo hablar de esto aquí.</p>
+<p>Vittoria dio un paso hacia ella.</p>
+<p>—¿De qué estás hablando?</p>
+<p>—De algo que debió quedarse enterrado.</p>
+<p>—¿Qué?</p>
+<p>La mujer la miró, y por primera vez Vittoria vio en su madre una fragilidad que no recordaba. No era la fragilidad de la enfermedad ni del agotamiento. Era el miedo de alguien que lleva años sosteniendo una puerta cerrada y acaba de escuchar cómo el cerrojo se mueve desde el otro lado.</p>
+<p>—No hagas preguntas, Vittoria. Por favor.
+
+Vittoria suavizó la expresión. Se acercó y tomó las manos de su madre.
+
+—No quiero hacerte daño, mamá. Solo quiero que no tengas que cargar con esto sola.
+
+Su madre apretó sus dedos, agradecida, aunque no respondió.</p>
+<p>—Eso no funciona conmigo.</p>
+<p>—Lo sé.</p>
+<p>—Entonces dime.</p>
+<p>La mujer negó despacio.</p>
+<p>—Todavía no.</p>
+
+<p>***</p>
+
+<p>Alessandro entró en el salón cuando la conversación había terminado. Su madre estaba sentada y Vittoria permanecía junto a la ventana, demasiado quieta.</p>
+<p>—¿Qué ocurre?</p>
+<p>—Nada —respondió su madre.</p>
+<p>—Eso es lo que dice todo el mundo cuando ocurre algo.</p>
+<p>Vittoria se cruzó de brazos.</p>
+<p>—Ha vuelto a salir.</p>
+<p>Alessandro miró a su madre.</p>
+<p>—¿Adónde?</p>
+<p>—No es asunto vuestro.</p>
+<p>—Mamá, si alguien te está siguiendo, es asunto nuestro.
+
+—No necesito que os metáis en problemas por mí.
+
+—No es una carga —dijo Alessandro, más bajo—. Eres nuestra madre.</p>
+<p>—Nadie me sigue.</p>
+<p>—Entonces explícame qué pasa.</p>
+<p>La mujer se levantó.</p>
+<p>—No voy a explicarlo hoy.</p>
+<p>Alessandro no la retuvo.</p>
+<p>La observó subir las escaleras y, cuando desapareció, volvió a mirar a Vittoria.</p>
+<p>—¿Qué sabes?</p>
+<p>—Que está ocultando algo. Y que no es la primera vez.</p>
+<p>—¿Desde cuándo?</p>
+<p>—No lo sé. Pero esta vez está peor.</p>
+<p>Alessandro se quedó pensativo.</p>
+<p>—No quiero que la presionemos.
+
+Vittoria le rozó el brazo.
+
+—Lo sé. Es mamá.
+
+Alessandro asintió y, durante un instante, dejó que su hermana apoyara la cabeza en su hombro. Después le besó la frente antes de que ella se apartara.
+
+—No vamos a dejar que le ocurra nada.</p>
+<p>—Ni yo. Pero tampoco quiero que nos enteremos de algo por terceros.</p>
+<p>—Hablaré con ella cuando esté preparada.</p>
+<p>Vittoria soltó una risa sin humor.</p>
+<p>—Qué bonito. Un hombre que espera a que su madre esté preparada. ¿Lo has aprendido en algún curso de liderazgo?</p>
+<p>—Vittoria.</p>
+<p>—Vale, vale. Me voy a ocupar de la auditoría.</p>
+
+<p>***</p>
+
+<p>En el despacho, Matteo dejó una segunda carpeta sobre la mesa.</p>
+<p>—Esto ha llegado de los archivos externos. No es parte de la auditoría.</p>
+<p>Alessandro abrió la carpeta. Contenía una lista de solicitudes recientes, algunas rutinarias, otras pendientes. En una hoja, un nombre aparecía en el encabezado de una petición de consulta.</p>
+<p>Emilia.</p>
+<p>Alessandro no conocía a la mujer. No tenía motivo para conocerla. El documento no decía más que eso: una consulta, una solicitud de documentación histórica y un expediente cuya localización había sido confirmada.</p>
+<p>—¿Quién autorizó que esto llegara aquí? —preguntó.</p>
+<p>—La oficina de archivo. La solicitud ha provocado una revisión interna.</p>
+<p>Alessandro leyó la nota adjunta. No había información suficiente para saber quién era Emilia, por qué buscaba esos documentos ni qué relación podía tener con los asuntos de la familia. Solo un nombre y una referencia.</p>
+<p>—¿Qué quieren que haga?</p>
+<p>Matteo se encogió de hombros.</p>
+<p>—No lo sé. ¿Quieres que averigüe por qué se ha escalado?</p>
+<p>Alessandro cerró la carpeta.</p>
+<p>—Sí. De manera discreta. No quiero que nadie contacte con ella. Primero averigua por qué esta solicitud ha llegado a nuestro despacho.</p>
+<p>—Entendido.</p>
+<p>Matteo salió.</p>
+<p>Alessandro volvió a mirar el nombre en la portada. Emilia.</p>
+<p>Era un nombre. Una solicitud. Un asunto que, en cualquier otro día, habría delegado sin pensar.</p>
+<p>Pero el expediente había llegado a su mesa por una ruta que no le gustaba.</p>
+<p>Y últimamente, demasiadas cosas le desagradaban sin que pudiera explicar por qué.</p>
+
+<p>***</p>
+
+<p>Emilia, por su parte, no tenía idea de que su nombre acababa de cruzar un escritorio en el que nunca había estado.</p>
+<p>Estaba en el suelo de su salón, ayudando a su hijo a construir una torre de piezas que se derrumbaba cada vez que él colocaba la última.</p>
+<p>—¡No vale! —protestó el niño.</p>
+<p>—Vale, vale. Esta vez ponemos la pieza despacio.</p>
+<p>—Tú no sabes.</p>
+<p>—Eso es una falta de respeto a una arquitecta de torres.</p>
+<p>El niño se rio y volvió a empezar.</p>
+<p>Emilia le sostuvo la base. La torre creció, se inclinó y, por primera vez, no cayó.</p>
+<p>—¡Lo conseguimos!</p>
+<p>Ella lo abrazó, riéndose.</p>
+<p>Durante unos minutos, todo fue sencillo. Una torre de piezas, una tarde cualquiera, una vida que todavía podía sostenerse en pequeñas cosas.</p>
+<p>Y quizá por eso, cuando el teléfono vibró sobre la mesa, Emilia decidió no mirarlo hasta que terminaron de jugar.</p>
+
+<nav class="reader-nav"><a href="capitulo-4.html">← Capítulo 4</a><a href="capitulo-6.html">Capítulo 6 →</a></nav>
+</main><footer>Cicatrices y sangre</footer></body></html>
