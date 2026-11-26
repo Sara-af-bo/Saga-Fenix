@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 65 — El día que nos elegimos</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 65</div><h1>El día que nos elegimos</h1></header><main><div class="subtitle">El día que nos elegimos</div>
+<p>Emilia despertó antes de que sonara la alarma.</p>
+<p>Durante unos segundos permaneció inmóvil, mirando el techo, con esa sensación extraña de estar a punto de vivir algo que había imaginado tantas veces que ya no sabía distinguir los recuerdos de los sueños. Luego giró la cabeza y encontró a Luca dormido junto a ella, atravesado en la cama como si el espacio entero le perteneciera.</p>
+<p>Sonrió.</p>
+<p>Hoy.</p>
+<p>Hoy se casaría con Nicolás.</p>
+<p>La habitación no tardó en llenarse de movimiento. Su madre apareció con café, su padre con una bolsa que contenía algo que nadie había pedido y Luca, al despertarse, declaró que había llegado el día más importante de la historia, aunque no estaba seguro de si era más importante que su cumpleaños.</p>
+<p>—No puedes comparar las dos cosas —le dijo Emilia.</p>
+<p>—Pues hoy hay tarta. Eso lo hace importante.</p>
+<p>La risa de Emilia se mezcló con la de su madre.</p>
+<p>Las horas siguientes pasaron entre maquillaje, peinado, conversaciones, fotografías y nervios. Su madre estuvo a su lado sin intentar dirigir cada detalle. De vez en cuando le ajustaba un mechón, le preguntaba si necesitaba agua o le recordaba que respirara. Su padre entró una vez, se quedó mirándola en silencio y tuvo que volver a salir porque, según él, había olvidado algo. Emilia supo perfectamente que no había olvidado nada.</p>
+<p>Cuando finalmente se puso el vestido, se quedó quieta frente al espejo.</p>
+<p>No era solamente la mujer que había sobrevivido a tantos momentos difíciles. No era solamente la hija que había tenido que aprender a ordenar emociones contradictorias, ni la madre que había sentido el mundo desmoronarse cuando Luca desapareció. Era Emilia. Y estaba a punto de comenzar una nueva etapa sin renunciar a ninguna de las anteriores.</p>
+<p>Su madre se colocó detrás de ella.</p>
+<p>—Estás preciosa.</p>
+<p>Emilia tragó saliva.</p>
+<p>—Mamá...</p>
+<p>—No voy a llorar todavía —prometió, aunque sus ojos ya brillaban.</p>
+<p>Se abrazaron con cuidado de no estropear el vestido.</p>
+<p>En el jardín, Nicolás llevaba varios minutos intentando convencerse de que estaba tranquilo.</p>
+<p>Gabriel le había preguntado tres veces si necesitaba algo. Él había respondido que no las tres veces. Su padre, si hubiera estado allí, probablemente habría hecho algún comentario. Luca, que había aparecido brevemente para comprobar que todo estuviera en orden, le había asegurado que Emilia llegaría «muy guapa, pero que no se pusiera raro».</p>
+<p>—¿Qué significa ponerse raro? —preguntó Nicolás.</p>
+<p>—Llorar mucho, supongo.</p>
+<p>Nicolás soltó una carcajada nerviosa.</p>
+<p>La ceremonia se había preparado en un jardín rodeado de árboles y flores claras. Las sillas estaban dispuestas frente a un arco sencillo. No había nada ostentoso, nada que compitiera con lo que realmente importaba. Las familias ocupaban sus lugares. Los padres biológicos de Emilia estaban allí, juntos, emocionados, contemplando la ocasión con una mezcla de orgullo y una cierta incredulidad por todo lo que habían llegado a compartir.</p>
+<p>Cuando la música comenzó, Nicolás levantó la cabeza.</p>
+<p>Y la vio.</p>
+<p>Emilia caminaba acompañada por su padre. Su madre la esperaba cerca del altar, y Luca, encargado de llevar una pequeña cesta, avanzaba con una solemnidad que le duró exactamente hasta que una flor se le quedó enganchada en la manga.</p>
+<p>Emilia no pudo evitar reírse.</p>
+<p>Nicolás tampoco.</p>
+<p>Pero cuando ella llegó hasta él, la risa se desvaneció y quedó algo más profundo. Nicolás le tomó las manos. Se las llevó a los labios, besando primero una y luego la otra.</p>
+<p>—Hola —susurró Emilia.</p>
+<p>—Hola, preciosa.</p>
+<p>—Estás temblando.</p>
+<p>—No lo digas delante de los testigos.</p>
+<p>Ella sonrió y apretó sus dedos.</p>
+<p>La ceremonia comenzó. Las palabras del oficiante fueron sencillas, cálidas, y hablaron de la elección, de la confianza y del compromiso que no consiste en prometer que nunca habrá dificultades, sino en no convertir las dificultades en excusas para dejar de cuidar al otro.</p>
+<p>Cuando llegó el momento de los votos, Nicolás respiró profundamente.</p>
+<p>—Emilia —comenzó—. He tenido días en los que no sabía quién era, días en los que me costaba reconocer mi propia historia. Y, aun en medio de todo eso, contigo aprendí que el amor no es una respuesta que aparece una vez y se queda intacta. Es algo que se vuelve a elegir. Que se cuida. Que a veces necesita paciencia, otras veces valor y muchas veces simplemente necesita que nos sentemos juntos y no huyamos de lo que sentimos.</p>
+<p>Le acarició los dedos.</p>
+<p>—No quiero ser el hombre que te prometa que nunca te hará daño, porque somos humanos y cometeremos errores. Quiero ser el hombre que se responsabilice de ellos. Quiero escucharte, hacerte reír, sostenerte cuando lo necesites y dejar que me sostengas también. Quiero compartir contigo cada versión de nuestra vida. Te amo, Emilia. Y hoy, delante de las personas que queremos, vuelvo a elegirte.</p>
+<p>Emilia tenía lágrimas en las mejillas. Se las secó con una sonrisa antes de hablar.</p>
+<p>—Nicolás, hubo momentos en los que pensé que nuestra historia estaba hecha únicamente de cosas que habíamos perdido. Que quizá amar tanto también significaba vivir con miedo a que algo nos lo arrebatara. Pero ya no quiero que el miedo sea quien decida por nosotros. Quiero que nuestra historia tenga espacio para la tranquilidad, para los errores, para las segundas oportunidades y para las tonterías que nos hacen reír.</p>
+<p>Miró a Luca, que estaba escuchando con una seriedad inesperada.</p>
+<p>—Quiero que nuestro hijo crezca viendo que el amor no se mide por cuánto sufrimos, sino por cómo nos tratamos. Y quiero que tú y yo tengamos una vida que no sea solamente sobrevivir. Quiero vivirla contigo. Te amo. Y también te elijo.</p>
+<p>Hubo un silencio breve, emocionado.</p>
+<p>Intercambiaron los anillos. Nicolás deslizó el suyo en el dedo de Emilia, con cuidado, como si aquel gesto tuviera una importancia que ninguna palabra podía alcanzar. Ella hizo lo mismo.</p>
+<p>—Por fin —murmuró Luca, lo bastante alto para que varias personas lo escucharan.</p>
+<p>La risa estalló suavemente entre los invitados.</p>
+<p>Cuando el oficiante los declaró marido y mujer, Nicolás no esperó demasiado. Tomó el rostro de Emilia y la besó.</p>
+<p>Ella le rodeó el cuello, y el beso fue largo, lleno de todas aquellas cosas que habían dicho y de las que no habían conseguido decir. Cuando se separaron, él apoyó la frente en la suya.</p>
+<p>—Mi esposa.</p>
+<p>—Mi marido.</p>
+<p>—Te amo.</p>
+<p>—Y yo a ti.</p>
+<p>Luca se metió entre ambos, exigiendo su abrazo. Nicolás lo levantó y Emilia los rodeó, formando un pequeño círculo que provocó más aplausos que cualquier otra parte de la ceremonia.</p>
+<p>Después vinieron las fotografías. El padre de Emilia la abrazó con fuerza, felicitó a Nicolás y, con una seriedad que no duró mucho, le dijo que esperaba que cuidara de su hija. Nicolás le respondió que lo haría, pero también que Emilia sabía cuidarse sola y que no quería quitarle esa libertad.</p>
+<p>El hombre asintió. Aquella respuesta le gustó más de lo que esperaba.</p>
+<p>La madre de Emilia abrazó a ambos y luego se llevó a Luca para que pudiera comer algo antes de que el niño decidiera que la celebración era demasiado larga. En las fotografías familiares, los cuatro adultos aparecieron juntos con Luca en medio, una imagen que Emilia habría considerado imposible años atrás.</p>
+<p>Durante el banquete, Nicolás no dejó de buscar la mano de Emilia bajo la mesa. Cada vez que ella lo miraba, él parecía tener una sonrisa nueva. Bailaron. Se rieron. Luca se quedó dormido en un sofá, agotado por su papel de protagonista secundario, mientras los abuelos se turnaban para vigilarlo.</p>
+<p>Más tarde, cuando la música se volvió más lenta y el jardín se iluminó con pequeñas luces, Nicolás llevó a Emilia a un rincón apartado.</p>
+<p>—Tengo una pregunta.</p>
+<p>—¿Otra? Ya hemos firmado, intercambiado anillos y escuchado un discurso.</p>
+<p>—¿Te arrepientes?</p>
+<p>Emilia lo miró, fingiendo pensarlo.</p>
+<p>—De haber elegido el vestido, quizá. Era difícil respirar.</p>
+<p>Él soltó una carcajada.</p>
+<p>—Emilia.</p>
+<p>Ella le tomó la cara.</p>
+<p>—No. No me arrepiento. Ni un segundo.</p>
+<p>Nicolás la besó otra vez. Esta vez no había invitados mirando, ni música que siguiera el ritmo, ni un niño esperando que alguien le cortara la tarta. Solo ellos, un momento de calma y la certeza de que el día no necesitaba ser perfecto para ser inolvidable.</p>
+<p>—¿Sabes qué quiero? —preguntó Emilia.</p>
+<p>—Dime.</p>
+<p>—Que cuando dentro de veinte años nos pregunten qué hicimos hoy, no recordemos solamente la ceremonia. Quiero recordar que nos reímos. Que Luca se quedó dormido. Que mi madre lloró. Que mi padre fingió no hacerlo. Que tú me pisaste el vestido una vez.</p>
+<p>—Fue una vez.</p>
+<p>—Dos.</p>
+<p>—Una y media.</p>
+<p>Emilia se rio y lo besó.</p>
+<p>—Quiero recordar que fuimos felices.</p>
+<p>—Entonces lo recordaremos.</p>
+<p>Al final de la noche, antes de marcharse, Emilia se volvió para contemplar el jardín. Su madre estaba abrazada a su padre. Luca dormía en brazos de Nicolás. Las luces, las flores y las sillas vacías guardaban el eco de una celebración que no había pretendido borrar el pasado.</p>
+<p>Habían llegado hasta allí con cicatrices, con recuerdos difíciles y con una familia que había aprendido a reconstruirse sin fingir que todo había sido sencillo.</p>
+<p>Emilia se acercó a Nicolás y apoyó la cabeza en su hombro.</p>
+<p>—Vámonos a casa, marido.</p>
+<p>Él le besó el cabello.</p>
+<p>—A casa, esposa.</p>
+<p>Y se fueron juntos, llevando a Luca entre los brazos y una vida entera por delante.</p>
+</main><nav class="chapter-navigation"><a href="capitulo-64.html">← Capítulo 64</a><a class="next" href="epilogo.html">Epílogo →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 65</footer></body></html>

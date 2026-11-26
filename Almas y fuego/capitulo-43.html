@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 43 — La fotografía</title>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+main{max-width:850px;margin:48px auto;padding:36px 28px}
+h1{text-align:center;font-weight:normal;font-size:2rem;margin-bottom:2.4rem}
+p{margin:0 0 1.25em;text-align:justify}
+@media(max-width:600px){main{margin:12px auto;padding:24px 20px}h1{font-size:1.6rem}}
+</style>
+
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 43</div><h1>La fotografía</h1></header><main>
+
+<p>Gabriel no pronunció el nombre de Adrián Ferrer otra vez hasta que la policía se marchó. Habían solicitado información sobre sus vínculos con las sociedades intermediarias, las antiguas negociaciones y el código V-17. Por el momento, el nombre era una pista, no una respuesta.</p>
+<p>—Hay algo que no os he contado —dijo.</p>
+<p>Marco se apoyó en el respaldo de la silla.</p>
+<p>—Espero que sea algo que no nos haga perder más tiempo.</p>
+<p>Gabriel aceptó el reproche sin defenderse.</p>
+<p>—Hace años, Ferrer apareció en una reunión a la que no estaba invitado formalmente. Se presentó como asesor de uno de los socios de Salvat. No negociaba directamente, pero parecía conocer cada cifra y cada condición. Nicolás lo rechazó desde el principio.</p>
+<p>Nicolás frunció el ceño.</p>
+<p>—¿Por qué?</p>
+<p>—No lo recuerdo con exactitud. Pero la propuesta incluía una serie de garantías que no tenían sentido. Rutas, contactos y nombres de personas que no debían estar en el contrato. Tú dijiste que no firmarías algo que pudiera poner a otros en peligro.</p>
+<p>—¿A otros?</p>
+<p>Gabriel miró a Emilia, pero no apartó el tema.</p>
+<p>—No sé si te referías a empleados, socios o a tu familia. No voy a inventar lo que no recuerdo.</p>
+<p>Emilia agradeció aquella honestidad. Las explicaciones incompletas eran dolorosas, pero las falsas certezas podían resultar aún peores.</p>
+<p>—¿Ferrer sabía quiénes éramos? —preguntó.</p>
+<p>—Creo que sí. Pero no puedo demostrar que tuviera interés en vosotros entonces.</p>
+<p>Esteban abrió una carpeta y deslizó una fotografía impresa sobre la mesa. La imagen había sido recuperada de un archivo antiguo: una reunión informal, varios hombres frente a un coche y, al fondo, una figura con un reloj negro. La calidad era mediocre. No obstante, Gabriel señaló al hombre.</p>
+<p>—Ese es Ferrer.</p>
+<p>Marco tomó la fotografía.</p>
+<p>—¿Y Salvat?</p>
+<p>—A su izquierda.</p>
+<p>—¿Quién hizo la foto?</p>
+<p>—No lo sé.</p>
+<p>La policía había pedido que no manipularan más los archivos ni intentaran recuperar material por su cuenta. Gabriel les entregó la procedencia de la imagen y los datos que conocía. La fotografía sería examinada junto con el resto de pruebas.</p>
+<p>En el lugar donde Luca estaba retenido, Irene encontró una oportunidad que no había planeado. El visitante había dejado su abrigo sobre una silla y había salido a hablar con Salvat. El guardia del pasillo se había alejado unos minutos, lo suficiente para que ella pudiera acercarse a una ventana estrecha que daba a un patio interior.</p>
+<p>No podía abrirla. Pero desde allí veía un cartel de mantenimiento y, debajo, una caja metálica con un número de teléfono de emergencia. No era una salida. Tampoco una ruta. Era simplemente una referencia que podía ser útil si alguien llegaba a registrar el edificio.</p>
+<p>Volvió con Luca antes de que la puerta se abriera.</p>
+<p>—¿Podemos irnos? —preguntó él, en voz muy baja.</p>
+<p>Irene se arrodilló.</p>
+<p>—Estoy intentando que podamos.</p>
+<p>—¿Mi mamá sabe dónde estoy?</p>
+<p>—Sabe que te está buscando.</p>
+<p>El niño se quedó mirando sus manos.</p>
+<p>—No quiero que se enfade.</p>
+<p>—No está enfadada contigo, Luca. Nunca.</p>
+<p>Él empezó a llorar sin hacer ruido. Irene lo abrazó, consciente de que cada gesto podía ser observado, pero incapaz de dejarlo solo en aquel momento.</p>
+<p>Al otro lado de la ciudad, Emilia se había negado a comer. Nicolás dejó un plato delante de ella y se sentó sin insistir.</p>
+<p>—No puedo —dijo Emilia.</p>
+<p>—Lo sé.</p>
+<p>—No quiero que me digas que tengo que ser fuerte.</p>
+<p>—No iba a hacerlo.</p>
+<p>Ella lo miró. Tenía los ojos cansados, la barba descuidada y una tensión en los hombros que no había desaparecido desde el primer día.</p>
+<p>—Tengo miedo de que vuelva y no nos reconozca. De que no quiera hablar. De que…</p>
+<p>La frase se quebró.</p>
+<p>—De que le hayan hecho creer que lo abandonamos.</p>
+<p>Nicolás le tomó las manos.</p>
+<p>—Cuando vuelva, le explicaremos. Todas las veces que haga falta. No vamos a dejar que se quede con esa idea.</p>
+<p>Emilia apoyó la cabeza en su hombro.</p>
+<p>—Tiene que volver.</p>
+<p>—Sí.</p>
+<p>Esta vez no añadió nada más.</p>
+<p>La actualización policial llegó cerca de la medianoche. El nombre Adrián Ferrer aparecía en registros comerciales antiguos y en una relación indirecta con dos intermediarias. Había cambiado de actividad varias veces y mantenía vínculos documentados con personas que habían trabajado para Salvat. No era suficiente para localizar el lugar donde retenían a Luca, pero sí para solicitar una revisión más amplia de sus movimientos.</p>
+<p>—No es una coincidencia aislada —dijo Marco.</p>
+<p>—Todavía no podemos afirmarlo —respondió el agente por teléfono—. Necesitamos corroborar la relación y preservar los registros. Estamos avanzando, pero no quiero que nadie intente contactar con Ferrer.</p>
+<p>Gabriel cerró la carpeta.</p>
+<p>—No lo haré.</p>
+<p>Cuando todos se marcharon, Nicolás permaneció en el salón. Sobre la mesa estaba la fotografía. La observó durante unos minutos y, de pronto, un detalle le provocó una sensación desagradable: una mano apoyada sobre el capó, un anillo oscuro y la posición de un hombre que parecía estar hablando con él.</p>
+<p>El recuerdo no llegó como una escena completa. Fue apenas un sonido, una frase incompleta, la sensación de haber estado enfadado.</p>
+<p>«Si vuelves a acercarte a ella, se termina».</p>
+<p>Nicolás apartó la fotografía. No sabía quién había hablado, ni a quién, ni cuándo. El fragmento desapareció tan rápido como había aparecido.</p>
+<p>Se llevó una mano a la frente. Emilia, que había regresado a la habitación, lo encontró así.</p>
+<p>—¿Qué pasa?</p>
+<p>—He recordado algo. O creo que lo he recordado.</p>
+<p>Le contó la frase, sin adornarla ni intentar reconstruir el resto.</p>
+<p>Emilia se quedó en silencio.</p>
+<p>—No sabemos si tiene que ver con Ferrer —dijo finalmente.</p>
+<p>—No.</p>
+<p>—Entonces no lo fuerces.</p>
+<p>Él asintió, aunque la inquietud no desapareció.</p>
+<p>En una habitación distinta, Adrián Ferrer recibió un informe breve. La familia había identificado su nombre. La policía había comenzado a revisar sus registros.</p>
+<p>Ferrer dejó el papel sobre la mesa y miró el reloj negro. La raya en la esfera apenas se veía bajo la luz.</p>
+<p>—Se están acercando —dijo su interlocutor.</p>
+<p>—No tanto como creen.</p>
+<p>—¿Y el niño?</p>
+<p>Ferrer levantó la mirada.</p>
+<p>—Que nadie lo toque.</p>
+<p>—Salvat está perdiendo el control.</p>
+<p>—Salvat nunca tuvo el control.</p>
+<p>Por primera vez, su expresión se endureció.</p>
+<p>—Y si Irene vuelve a enviar algo, quiero saberlo antes de que llegue a la familia.</p>
+<p>La orden fue recibida sin preguntas. Ferrer se quedó solo y abrió un cajón. Dentro había otra fotografía, mucho más antigua, en la que aparecía Nicolás.</p>
+<p>No la rompió. Tampoco la guardó.</p>
+<p>Simplemente la dejó sobre la mesa, junto al reloj, y apagó la luz.</p>
+</main><p>La fotografía removió recuerdos y preguntas. Emilia se acercó a Nicolás y le sostuvo la cara entre las manos.</p><p>—No eres las cosas que otros hicieron contigo.</p><p>Él cerró los ojos un instante y la abrazó. No respondió con una frase, sino con un beso que le agradeció la confianza.</p><nav class="chapter-navigation"><a href="capitulo-42.html">← Capítulo 42</a><a class="next" href="capitulo-44.html">Capítulo 44 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 43</footer></body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Capítulo 25 — Antes de la tormenta</title><style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 25</div><h1>Antes de la tormenta</h1></header><main>
+<h2>Antes de la tormenta</h2>
+<p>El dibujo del niño llevaba varios días colocado en la puerta del frigorífico. Emilia había añadido un imán con forma de estrella para que no se cayera y Nicolás, cada vez que pasaba por la cocina, se detenía a mirar aquella casa imaginaria. Tres figuras, un árbol enorme y una ventana que ocupaba casi toda la fachada. No era una imagen del pasado. Era una posibilidad.</p>
+<p>La semana había sido extrañamente tranquila. Marco no había recibido nuevas noticias de Gabriel, Conti parecía haber dejado de preguntar por Nicolás y los mensajes anónimos habían desaparecido. La ausencia de señales no significaba que todo estuviera resuelto, pero les permitió respirar.</p>
+<p>Emilia aprovechó la calma para organizar una tarde fuera. No quiso que fuera una celebración ni una excusa para hablar de lo que había ocurrido. Solo quería salir, comer algo, pasear y regresar a casa sin que nadie les llamara por asuntos familiares.</p>
+<p>—¿Podemos ir a la librería? —preguntó el niño, después de escuchar las opciones.</p>
+<p>—¿Y luego al parque? —añadió Nicolás.</p>
+<p>—Y luego al parque.</p>
+<p>La tarde fue sencilla. El pequeño escogió un libro que tardó casi diez minutos en decidir, Nicolás fingió no entender por qué necesitaban una bolsa para llevarlo y Emilia terminó comprando otro para ella. Después caminaron sin prisa, deteniéndose en una cafetería y en una plaza donde el niño insistió en subir a todos los columpios.</p>
+<p>En un momento, Nicolás se quedó mirando a Emilia mientras ella le limpiaba una mancha de chocolate al pequeño.</p>
+<p>—¿Qué? —preguntó ella, al notar su mirada.</p>
+<p>—Nada.</p>
+<p>—Nicolás.</p>
+<p>—Me gusta esto. No sé si recuerdo haber tenido algo así. Pero me gusta.</p>
+<p>Emilia sonrió.</p>
+<p>—No hace falta que lo recuerdes para que sea tuyo.</p>
+<p>Él le tomó la mano. La respuesta parecía sencilla, pero llevaba días intentando entender precisamente eso: que no todo lo que había perdido debía convertirse en una búsqueda desesperada. Algunas cosas podía vivirlas desde cero.</p>
+<p>Por la noche, cuando el niño se quedó dormido, Nicolás y Emilia permanecieron en la terraza. La temperatura era agradable y desde la calle llegaban sonidos distantes que no interrumpían la conversación.</p>
+<p>—Marco cree que Gabriel volverá a aparecer —dijo Nicolás.</p>
+<p>—¿Y tú?</p>
+<p>—Creo que sabe algo. No sé si sobre Conti, sobre aquella negociación o sobre mí. Pero no vino por casualidad.</p>
+<p>Emilia apoyó los brazos en la barandilla.</p>
+<p>—¿Qué te preocupa más?</p>
+<p>—Que todos parezcan saber dónde están las piezas menos yo. Y que, cuando encuentre la última, no me guste lo que hay.</p>
+<p>—No tienes que resolverlo esta noche.</p>
+<p>—Lo sé. Solo quería decírtelo.</p>
+<p>Ella se volvió hacia él.</p>
+<p>—Gracias por hacerlo.</p>
+<p>Nicolás la abrazó, y durante un rato se quedaron así. Después él le besó la frente, la mejilla y finalmente los labios, con una calma que no buscaba demostrar nada.</p>
+<p>—Te amo —murmuró.</p>
+<p>Emilia cerró los ojos.</p>
+<p>—Yo también.</p>
+<p>Al día siguiente, Marco recibió una llamada de un número que no tenía guardado. El hombre al otro lado no se presentó. Solo preguntó si Nicolás estaba con él y si habían encontrado el documento original de la negociación.</p>
+<p>Marco no respondió a ninguna de las dos preguntas.</p>
+<p>—¿Quién eres?</p>
+<p>—Alguien que sabe que están buscando en el lugar equivocado.</p>
+<p>—Si tienes información, identifícate.</p>
+<p>—No por teléfono.</p>
+<p>La llamada terminó.</p>
+<p>Marco permaneció con el móvil en la mano. No podía saber si se trataba de Gabriel, de alguien relacionado con Conti o de un tercero que había estado esperando la oportunidad. Pero la referencia al documento original significaba que alguien conocía la investigación.</p>
+<p>Envió un mensaje a Nicolás y pidió que se reunieran esa tarde. No mencionó la llamada en el texto. Quería hablar con él cara a cara, con Emilia presente y sin que el niño escuchara.</p>
+<p>En un edificio discreto, Rafael Conti recibió la confirmación de que la llamada se había realizado.</p>
+<p>—¿Ha contestado? —preguntó.</p>
+<p>—No. Ha exigido un nombre.</p>
+<p>Conti se sirvió un vaso de agua.</p>
+<p>—Bien. Que siga exigiendo respuestas.</p>
+<p>—¿Y el documento?</p>
+<p>Conti dejó el vaso sobre la mesa.</p>
+<p>—Si lo encuentran, no podremos seguir retrasándolo.</p>
+<p>—¿Entonces deberíamos adelantarnos?</p>
+<p>Conti lo miró con una expresión que no admitía insistencias.</p>
+<p>—No. Todavía no. Hay que saber quién está moviendo las cosas y qué pretende. Esta vez, no cometeremos el error de actuar sin conocer el terreno.</p>
+<p>Pero cuando se quedó solo, Conti abrió un cajón y sacó una fotografía antigua. No la contempló mucho tiempo. La dejó boca abajo, cerró el cajón y apagó la luz.</p>
+</main><p>Antes de dormir, Emilia se acercó a Nicolás y le acomodó la camisa, un gesto doméstico que había empezado a repetir sin pensar. Él le atrapó la mano y besó su palma.</p><p>—¿Qué?</p><p>—Nada. Me gusta que estés aquí.</p><p>Emilia se inclinó para besarlo y apagó la luz sin que ninguno necesitara añadir nada.</p><nav class="chapter-navigation"><a href="capitulo-24.html">← Capítulo 24</a><a class="next" href="capitulo-26.html">Capítulo 26 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 25</footer></body></html>

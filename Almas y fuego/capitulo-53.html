@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 53 — El miedo a volver</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 53</div><h1>El miedo a volver</h1></header><main><div class="subtitle">El miedo a volver</div>
+<p>La primera noche en casa no fue la que Emilia había imaginado.</p>
+<p>Había pensado que, al cruzar la puerta con Luca, el alivio se impondría a todo lo demás. Que el niño correría hacia su habitación, tocaría sus juguetes, reclamaría la cena que llevaba días prometiendo y, quizá, al final, se dormiría entre ellos como tantas veces antes.</p>
+<p>Pero Luca se quedó en el umbral.</p>
+<p>Miró el salón, las escaleras, el pasillo que conducía a su habitación. Llevaba una mochila pequeña y la mano de Emilia entre los dedos. Nicolás dejó las llaves sobre la mesa sin hacer ruido.</p>
+<p>—¿Quieres que encendamos todas las luces? —preguntó.</p>
+<p>Luca asintió.</p>
+<p>Las encendieron. Una por una. La cocina, el salón, el pasillo, la lámpara de su habitación. Después, el niño pidió que la puerta de entrada permaneciera cerrada con llave, y Nicolás le mostró, sin dramatismo, cómo lo estaba.</p>
+<p>—Está cerrada. Y si necesitas comprobarlo, me lo dices.</p>
+<p>Emilia había aprendido durante las explicaciones médicas que no debía ridiculizar ni minimizar sus miedos. Así que no le dijo que allí no podía pasar nada. No podía garantizarlo con palabras. Le dijo que estaban en casa, que él podía pedir ayuda y que no tenía que demostrar que era valiente.</p>
+<p>La habitación de Luca estaba exactamente como la había dejado. Sin embargo, él no quiso dormir en ella.</p>
+<p>—¿Puedo estar con vosotros?</p>
+<p>—Claro —respondió Nicolás, antes de que Emilia pudiera hablar.</p>
+<p>Prepararon la habitación principal. Luca eligió el lado de la cama, colocó su peluche junto a la almohada y pidió que la puerta quedara entreabierta. Cuando Emilia se acostó, el niño se acomodó en medio. Nicolás apagó la lámpara, pero la dejó a mano.</p>
+<p>—¿Mañana vais a estar aquí? —preguntó Luca en la oscuridad.</p>
+<p>—Mañana, pasado y todos los días que necesites —respondió Emilia.</p>
+<p>—¿Y la abuela?</p>
+<p>—También.</p>
+<p>—¿Y el abuelo?</p>
+<p>—También.</p>
+<p>Luca pareció satisfecho. No tardó mucho en dormirse, aunque cada vez que se movía, Emilia sentía el impulso de despertarlo para comprobar que estaba bien. Se obligó a quedarse quieta.</p>
+<p>Cuando por fin el niño respiró profundamente, Nicolás giró la cabeza hacia ella.</p>
+<p>—No sé cómo vamos a hacerlo.</p>
+<p>—Un día cada vez.</p>
+<p>Él le rozó la mano.</p>
+<p>—Tengo miedo de que se le quede esto para siempre.</p>
+<p>—Puede que algunas cosas le cuesten durante mucho tiempo. Pero no está solo.</p>
+<p>El teléfono de Emilia vibró. Era su madre. No preguntaba si podían ir: les enviaba un mensaje para saber qué necesitaban al día siguiente, ofreciendo llevar comida, acompañar a Luca a una actividad tranquila si él quería y encargarse de una compra.</p>
+<p>Emilia escribió que podían venir por la tarde.</p>
+<p>La mañana siguiente no fue mejor ni peor. Luca se negó a desayunar solo, insistió en que Nicolás lo acompañara al baño y se sobresaltó cuando alguien llamó a la puerta. Pero también pidió tortitas, eligió una película y, a mitad de ella, se rio de una escena absurda.</p>
+<p>Emilia no se perdió aquella risa. No la señaló, no le pidió que la repitiera. Simplemente se rio con él.</p>
+<p>Sus padres llegaron por la tarde. Su madre traía una bolsa de ropa cómoda que había comprado sin exagerar, y su padre llevaba una caja de herramientas porque Nicolás había comentado semanas atrás que una bisagra de la cocina necesitaba arreglo.</p>
+<p>—No es una visita de inspección —dijo su madre al entrar—. Si Luca quiere que nos quedemos, nos quedamos. Si quiere que nos vayamos, también.</p>
+<p>El niño se acercó a ella con cautela. Después de unos minutos, le enseñó un dibujo que había hecho en el centro médico. No era el dibujo escondido que había ayudado a los investigadores. Era una casa, cuatro figuras y un árbol que ocupaba casi toda la página.</p>
+<p>—Este es el abuelo —explicó—. Es grande porque arregla cosas.</p>
+<p>Su abuelo se agachó para verlo.</p>
+<p>—Espero que también sepa arreglar dibujos. Ese árbol está mucho mejor que los que hago yo.</p>
+<p>Luca sonrió y le dio un lápiz.</p>
+<p>Durante la tarde, los adultos hablaron cuando el niño estaba ocupado. El inspector había confirmado que la investigación continuaría, y Gabriel les había informado de que varias líneas estaban siendo contrastadas. Ferrer no era el final de la cadena. Había documentación que todavía debía analizarse y personas cuya participación no estaba clara.</p>
+<p>—No quiero que vuelva a convertirse en una guerra dentro de esta casa —dijo Emilia.</p>
+<p>Su padre asintió.</p>
+<p>—Entonces la investigación se queda fuera. Aquí venimos a estar con vosotros.</p>
+<p>—Pero si descubres algo que pueda ayudar, lo entregas.</p>
+<p>—Eso haré.</p>
+<p>Nicolás observó a ambos. Había pasado mucho tiempo desconfiando de cualquiera que se acercara a Emilia por motivos que no podía comprender. No pretendía borrar aquella cautela, pero tampoco ignoraba lo que habían hecho durante las últimas semanas.</p>
+<p>—Gracias —dijo finalmente.</p>
+<p>El padre de Emilia le sostuvo la mirada.</p>
+<p>—No tienes que agradecernos que estemos con nuestra hija y nuestro nieto.</p>
+<p>La frase no fue grandiosa. Precisamente por eso Nicolás la creyó.</p>
+<p>Al anochecer, Luca pidió que su abuela le leyera un cuento. Su abuelo se quedó en el salón con Nicolás, ayudándolo a ajustar la bisagra. Emilia escuchaba las voces desde el pasillo y, por primera vez, la casa no le parecía una estructura que debían proteger de todo. Era una casa en la que podían aprender a vivir de nuevo.</p>
+<p>Cuando Luca terminó el cuento, pidió un beso a su abuela y otro a su madre. Nicolás se acercó para arroparlo.</p>
+<p>—¿Mañana puedo dormir en mi habitación? —preguntó el niño.</p>
+<p>—Cuando tú quieras —respondió Emilia.</p>
+<p>—Pero la puerta abierta.</p>
+<p>—La puerta abierta.</p>
+<p>Más tarde, cuando los abuelos se marcharon, Emilia encontró a Nicolás sentado en el suelo del pasillo, junto a la habitación de Luca. No estaba haciendo nada. Solo permanecía allí, con la espalda apoyada en la pared.</p>
+<p>—¿Qué haces?</p>
+<p>—Escuchando.</p>
+<p>Ella se sentó a su lado.</p>
+<p>—Está dormido.</p>
+<p>—Lo sé.</p>
+<p>Emilia le apoyó la cabeza en el hombro.</p>
+<p>—Nosotros también tenemos que dormir.</p>
+<p>—En un rato.</p>
+<p>Se quedaron juntos, sin discutirlo. No era una vigilancia que pudieran mantener para siempre. Era una manera de aceptar que aquella noche todavía les costaba cerrar los ojos.</p>
+<p>Y que, poco a poco, también ellos aprenderían a hacerlo.</p></main><p>Los padres de Emilia comprendieron que la recuperación de Luca no tendría un calendario que pudiera imponerse. Se ofrecieron a estar disponibles, a llevarlo a pasear si él quería y a mantener la casa tranquila. Emilia se emocionó al ver que no convertían su ayuda en presión. Nicolás le tomó la mano y le dijo que podían aprender el ritmo del niño juntos.</p><nav class="chapter-navigation"><a href="capitulo-52.html">← Capítulo 52</a><a class="next" href="capitulo-54.html">Capítulo 54 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 53</footer></body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 8 — Lo que no se dice | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em}@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 8</div><h1>Lo que no se dice</h1></header>
+<h2>Lo que no se dice</h2>
+<p>La mañana había empezado demasiado tranquila, y Emilia desconfiaba un poco de aquellas mañanas. No porque esperara que algo malo sucediera, sino porque la calma le dejaba espacio para pensar en asuntos que, durante los días más ocupados, conseguía mantener a raya.</p>
+<p>Estaba sentada en el jardín con una taza de café cuando Nicolás salió con el teléfono en la mano.</p>
+<p>—Marco me ha escrito.</p>
+<p>Emilia levantó la vista.</p>
+<p>—¿A ti?</p>
+<p>—Sí. Me ha preguntado si estaría dispuesto a acompañarlo la próxima semana a una reunión. Algo relacionado con unos contactos de la familia. Ha dejado claro que no espera que me involucre en nada.</p>
+<p>Ella dejó la taza sobre la mesa.</p>
+<p>—¿Y quieres ir?</p>
+<p>—No lo sé. —Nicolás se sentó—. Me interesa entender algunas cosas. Pero no quiero fingir que conozco un mundo del que apenas tengo recuerdos.</p>
+<p>—No tienes que fingir.</p>
+<p>—Ya lo sé. Aun así, me cuesta pensar que quizá haya decisiones que antes tomaba sin dudar y que ahora no sabría ni por dónde empezar.</p>
+<p>Emilia se quedó observándolo. Había una diferencia entre recuperar la memoria y recuperar la seguridad, y Nicolás empezaba a descubrir que no necesariamente llegaban al mismo tiempo.</p>
+<p>—Puedes ir y escuchar —dijo ella—. No significa que tengas que decidir nada. Ni que debas volver a ser quien eras antes.</p>
+<p>—¿Y si esa persona era mejor en ciertas cosas?</p>
+<p>—Entonces aprenderás. Y si era peor en otras, no tienes por qué repetirlas.</p>
+<p>Él sonrió levemente, como si la respuesta le hubiera quitado un peso que no sabía cómo explicar.</p>
+<p>En el interior de la casa, el niño buscaba algo que había perdido y protestaba con una energía que no encajaba con la quietud del jardín. Emilia se levantó para ayudarlo, pero Nicolás la detuvo suavemente.</p>
+<p>—Voy yo.</p>
+<p>Lo encontró debajo de un sofá, con una caja abierta y varias piezas esparcidas por el suelo. El niño estaba a punto de rendirse.</p>
+<p>—No está —insistió.</p>
+<p>—¿Qué estamos buscando?</p>
+<p>—Una pieza. Sin ella no puedo terminar.</p>
+<p>Ambos revisaron la caja, el suelo y los rincones. Nicolás le pidió que recordara cuándo la había visto por última vez, y el niño, después de pensar, señaló una estantería. Allí estaba, escondida detrás de un libro.</p>
+<p>—¡Lo sabía!</p>
+<p>—Lo sospechabas —corrigió Nicolás.</p>
+<p>—Lo sabía.</p>
+<p>Nicolás no insistió. Le ayudó a guardar todo y, al hacerlo, encontró una fotografía que había quedado entre las piezas. En ella aparecía Emilia, más joven, sonriendo junto a un hombre que Nicolás no reconoció. La imagen no le provocó un recuerdo, pero sí una inquietud breve. No quiso preguntarle al niño quién era. Guardó la fotografía donde la había encontrado y siguió con la tarea.</p>
+<p>Por la tarde, Emilia revisó unos mensajes que Marco había enviado acerca de los asuntos familiares que seguían pendientes. Había información que todavía debía aclararse, pero esta vez no se encontró con respuestas evasivas. Marco había adjuntado documentos y explicado, sin rodeos, qué estaba resuelto y qué no.</p>
+<p>Emilia leyó todo con atención. No estaba dispuesta a aceptar que la transparencia se convirtiera en una promesa temporal, pero reconoció el esfuerzo. Respondió con algunas preguntas concretas y dejó el teléfono a un lado cuando terminó.</p>
+<p>Al anochecer, Nicolás volvió a hablar de la reunión.</p>
+<p>—Creo que iré —dijo—. Si Marco está dispuesto a explicarme, quiero escucharlo. No para ocupar ningún lugar que no me corresponda. Solo para entender.</p>
+<p>—Me parece bien.</p>
+<p>—¿Te preocupa?</p>
+<p>Emilia pensó antes de responder.</p>
+<p>—Me preocupa que te sientas obligado a demostrar algo. Pero no me preocupa que quieras conocer una parte de tu vida.</p>
+<p>Nicolás se acercó y le besó la frente.</p>
+<p>—No quiero que esto nos aleje.</p>
+<p>—No lo hará, si hablamos.</p>
+<p>Se quedaron en el salón mientras el niño terminaba una actividad en la mesa. Afuera, la noche había caído con lentitud. La casa estaba llena de pequeños sonidos, de pasos, de hojas que se movían y de conversaciones que no necesitaban ser importantes.</p>
+<p>Emilia pensó que tal vez la confianza no se reconstruía con grandes gestos. Tal vez era esto: saber que podía preguntar, que Nicolás podía dudar, que Marco podía ofrecer información sin exigir obediencia y que nadie tenía que resolver el pasado en una sola tarde.</p>
+<p>Por el momento, no había nada más que decir.</p>
+<p>En el pasillo, después de aquella conversación, Nicolás la alcanzó y le ofreció la mano. Emilia la tomó, pero tiró suavemente de él para que se acercara. El beso que le dio fue lento y cálido, sin prisa por terminar. Cuando se separaron, él le rozó la nariz con la suya.</p><p>—¿Eso también forma parte de lo que no se dice?</p><p>—No. Eso es bastante evidente.</p><p>La sonrisa de Nicolás la acompañó hasta la habitación, y Emilia se sorprendió pensando que, quizá, la felicidad podía ser algo tan sencillo como no tener que pedir permiso para acercarse a alguien que también quería acercarse a ella.</p><nav class="chapter-navigation"><a href="capitulo-7.html">← Capítulo 7</a><a class="next" href="capitulo-9.html">Capítulo 9 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 8</footer></body></html>

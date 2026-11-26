@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 4 — Lo que todavía debemos | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em}@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 4</div><h1>Lo que todavía debemos</h1></header>
+<h2>Lo que todavía debemos</h2>
+
+<p>El teléfono sonó cuando Emilia estaba terminando de ordenar los papeles que Vittoria le había dejado la noche anterior. No era una llamada que esperaba, y por eso tardó un momento en reconocer el número. Lo había guardado hacía meses, aunque nunca había tenido demasiadas razones para utilizarlo. Se quedó mirando la pantalla antes de contestar.</p>
+
+<p>—¿Sí?</p>
+
+<p>—Emilia. Soy Marco.</p>
+
+<p>La voz de su padre sonaba seria, pero no alarmada. Aquello, de alguna manera, la inquietó más. Emilia apartó una carpeta y se levantó de la silla.</p>
+
+<p>—¿Ha pasado algo?</p>
+
+<p>—No. Al menos, nada que no podamos resolver. Quería hablar contigo, pero prefería hacerlo sin que estuvieras rodeada de gente.</p>
+
+<p>Emilia miró hacia el pasillo. Desde la habitación contigua llegaban voces y el sonido de un juguete que su hijo estaba utilizando con una insistencia que probablemente terminaría irritando a alguien.</p>
+
+<p>—Ahora puedo hablar.</p>
+
+<p>—Es sobre algunas cosas que quedaron pendientes. Sé que hemos hablado de ellas, y sé que no tienes ninguna obligación de volver a removerlas. Pero hay información que deberías conocer. No quiero que te llegue por terceros ni que alguien la utilice más adelante para hacerte daño.</p>
+
+<p>Emilia cerró los ojos brevemente. Había imaginado muchas veces que, cuando las piezas de su historia familiar terminaran de encajar, sentiría una especie de alivio definitivo. Sin embargo, descubrir la verdad no siempre significaba que las consecuencias desaparecieran. Algunas respuestas abrían puertas que ella preferiría haber dejado cerradas.</p>
+
+<p>—¿Qué información?</p>
+
+<p>—No por teléfono. ¿Puedes venir mañana? Vittoria estará conmigo. Si prefieres, podemos ir nosotros.</p>
+
+<p>Emilia agradeció que no intentara imponerle una decisión. Aun así, el pensamiento de sentarse otra vez frente a documentos, explicaciones y recuerdos le provocó un cansancio anticipado.</p>
+
+<p>—Mañana —dijo después de unos segundos—. Voy yo.</p>
+
+<p>—De acuerdo. Y Emilia...</p>
+
+<p>—¿Sí?</p>
+
+<p>—No se trata de que tengas que hacer nada por nosotros. Queremos que conozcas lo que falta. Después decidirás.</p>
+
+<p>La llamada terminó poco después. Emilia dejó el móvil sobre la mesa y permaneció quieta, mirando la carpeta abierta. No sabía qué podía faltar exactamente. Había aprendido que las familias, incluso aquellas que decían querer protegerla, podían guardar información durante años convencidas de que el silencio era una forma de cuidado.</p>
+
+<p>Le molestaba esa idea. Le había costado demasiado recuperar el derecho a decidir qué hacer con su propia vida.</p>
+
+<p>—¿Mamá?</p>
+
+<p>La voz del niño la sacó de sus pensamientos. Emilia se giró y lo encontró en la puerta, con un dibujo doblado por la mitad.</p>
+
+<p>—¿Qué pasa, cariño?</p>
+
+<p>—¿Estás enfadada?</p>
+
+<p>Ella se agachó para quedar a su altura.</p>
+
+<p>—No. ¿Por qué?</p>
+
+<p>—Porque tienes cara de cuando estás pensando mucho.</p>
+
+<p>Emilia sonrió, aunque le sorprendió que hubiera aprendido a reconocerlo.</p>
+
+<p>—A veces pienso demasiado. No significa que esté enfadada.</p>
+
+<p>Él le entregó el dibujo. Había tres figuras, una más alta que las otras, y una casa que ocupaba casi toda la hoja. Los colores se salían de los contornos. Emilia reconoció su propio cabello por una línea oscura, y la figura que debía representar a Nicolás tenía una sonrisa enorme.</p>
+
+<p>—¿Quiénes somos?</p>
+
+<p>—Nosotros.</p>
+
+<p>—¿Y esta casa?</p>
+
+<p>—La que vamos a tener.</p>
+
+<p>Emilia le acarició el cabello.</p>
+
+<p>—Es preciosa.</p>
+
+<p>—Nicolás dice que hay que ponerle un árbol.</p>
+
+<p>—¿Ah, sí?</p>
+
+<p>—Uno grande. Para que tenga sombra.</p>
+
+<p>La sencillez de la respuesta le hizo sonreír de verdad. No preguntó qué significaba «la que vamos a tener». No quiso corregir la manera en que el niño estaba imaginando las cosas. A veces, el futuro podía empezar con un dibujo imperfecto y una conversación sobre árboles.</p>
+
+<p>—¿Quieres enseñárselo?</p>
+
+<p>El niño asintió y salió corriendo. Emilia lo siguió con la mirada antes de guardar el dibujo con cuidado. No en una carpeta cualquiera, sino en el cajón donde conservaba algunas cosas que no quería perder.</p>
+
+<p>Al día siguiente, llegó a casa de Marco poco después del mediodía. Vittoria la recibió en la entrada, y no hubo preguntas innecesarias ni abrazos que pretendieran borrar lo que había ocurrido. Le dio un beso en la mejilla y la condujo hasta el despacho, donde Marco esperaba con dos carpetas sobre la mesa.</p>
+
+<p>—Gracias por venir —dijo él.</p>
+
+<p>—Dijiste que había cosas que debía conocer.</p>
+
+<p>Marco asintió. No intentó empezar con una explicación larga. Abrió la carpeta y deslizó varios documentos hacia ella.</p>
+
+<p>—Esto es lo que hemos podido confirmar. No todo lo que se dijo en su momento era cierto. Algunas personas tomaron decisiones creyendo que estaban evitando un problema. Otras tenían motivos bastante menos nobles.</p>
+
+<p>Emilia revisó las primeras páginas. Había fechas, nombres, correspondencia y referencias a acuerdos que no conocía. No todo era nuevo, pero algunas piezas sí. Las miró con atención, deteniéndose en los nombres que reconocía y en aquellos que no significaban nada para ella.</p>
+
+<p>—¿Por qué no me lo contasteis antes?</p>
+
+<p>Vittoria se sentó frente a ella.</p>
+
+<p>—Porque no teníamos todas las respuestas. Y porque, cuando empezamos a encontrarlas, temíamos que conocerlas te obligara a enfrentarte a más cosas.</p>
+
+<p>—Eso no era decisión vuestra.</p>
+
+<p>—Lo sabemos —respondió Vittoria sin defenderse—. Y no voy a pedirte que lo entiendas.</p>
+
+<p>La honestidad de aquella respuesta la desarmó un poco. Emilia había preparado reproches, había imaginado excusas y había ensayado en su cabeza las frases que diría si alguien intentaba justificar el silencio. Pero Vittoria no estaba justificándose.</p>
+
+<p>Marco señaló una de las páginas.</p>
+
+<p>—Hay un asunto que sí necesitamos resolver. No tiene que ver con que vuelvas a involucrarte en nada. Se trata de dejar constancia de que ciertas decisiones no se tomarán en tu nombre y de que no existe ningún acuerdo que te obligue a mantener vínculos con personas que no deseas.</p>
+
+<p>Emilia leyó el documento entero. Después lo volvió a leer, más despacio.</p>
+
+<p>—Quiero que esto quede claro —dijo—. No voy a aceptar que alguien utilice mi apellido, mi relación con vosotros o cualquier otra cosa para decidir por mí. No quiero que me protejan ocultándome información. Y no quiero que me prometáis que nunca habrá problemas. Solo quiero saber cuando los haya.</p>
+
+<p>Marco sostuvo su mirada.</p>
+
+<p>—Eso es justo.</p>
+
+<p>—No. Es lo mínimo.</p>
+
+<p>Vittoria bajó la mirada un instante y asintió.</p>
+
+<p>—Tienes razón.</p>
+
+<p>La reunión no terminó con una reconciliación grandiosa ni con la sensación de que todo había quedado reparado. Revisaron documentos, aclararon nombres, corrigieron información y acordaron cómo proceder con algunos asuntos pendientes. Emilia hizo preguntas. Algunas respuestas le gustaron; otras no. Hubo momentos en los que tuvo que detenerse porque estaba cansada, y nadie insistió en que continuara.</p>
+
+<p>Cuando finalmente salió del despacho, llevaba consigo una copia de los documentos y la certeza de que todavía tendría que procesar algunas cosas. Pero también llevaba algo distinto: no había sido una conversación en la que otros decidieran qué debía sentir. Había podido preguntar, disentir y marcar límites.</p>
+
+<p>Vittoria la acompañó hasta el coche.</p>
+
+<p>—¿Quieres que vayamos a comer juntas otro día? Sin papeles.</p>
+
+<p>Emilia la miró. La propuesta era sencilla, y precisamente por eso no le resultó difícil responder.</p>
+
+<p>—Sí. Pero elige tú el sitio.</p>
+
+<p>Vittoria sonrió.</p>
+
+<p>—Hecho.</p>
+
+<p>Durante el camino de vuelta, Emilia no llamó a Nicolás inmediatamente. Necesitaba un rato para sí misma. Condujo despacio, puso música y dejó que las palabras de la reunión se asentaran. No había terminado de resolver su historia, pero ya no sentía que estuviera atrapada en ella.</p>
+
+<p>Al llegar, encontró a Nicolás en el salón, con el niño sentado en el suelo a su lado. Había piezas de un juego repartidas por todas partes, y los dos discutían sobre una regla que, a juzgar por sus expresiones, ninguno estaba dispuesto a aceptar.</p>
+
+<p>—Eso no se puede hacer —decía el pequeño.</p>
+
+<p>—¿Por qué?</p>
+
+<p>—Porque lo digo yo.</p>
+
+<p>—Esa no es una regla.</p>
+
+<p>—Sí es.</p>
+
+<p>Emilia dejó las llaves y se apoyó en el marco de la puerta.</p>
+
+<p>—¿Interrumpo una negociación internacional?</p>
+
+<p>Nicolás levantó la vista.</p>
+
+<p>—Tu hijo está intentando cambiar las reglas cada vez que pierde.</p>
+
+<p>—No pierdo —protestó el niño.</p>
+
+<p>—Entonces estamos ante un fenómeno extraordinario —respondió Emilia.</p>
+
+<p>El pequeño soltó una carcajada. Nicolás también.</p>
+
+<p>Emilia se acercó, dejó el bolso y se sentó junto a ellos. El niño le explicó, con una seriedad absoluta, la situación del juego. Nicolás añadió detalles que no ayudaban demasiado. Ella terminó tomando partido por una solución que ninguno de los dos había considerado y que, por alguna razón, fue aceptada.</p>
+
+<p>Cuando el niño se levantó para buscar otra pieza, Nicolás la miró.</p>
+
+<p>—¿Cómo ha ido?</p>
+
+<p>Emilia se tomó unos segundos.</p>
+
+<p>—Me han contado cosas que faltaban.</p>
+
+<p>—¿Malas?</p>
+
+<p>—Algunas incómodas. No sé si malas. —Se acomodó junto a él—. Pero he podido decir lo que quería decir.</p>
+
+<p>Nicolás asintió. No le pidió que se lo contara todo ni intentó ofrecer una solución.</p>
+
+<p>—¿Quieres hablar de ello?</p>
+
+<p>—Más tarde, quizá.</p>
+
+<p>—Vale.</p>
+
+<p>Ella lo miró con una gratitud que no necesitaba explicarse. Había pasado demasiado tiempo rodeada de personas que confundían el cuidado con la insistencia, que creían que querer a alguien significaba exigirle que compartiera cada pensamiento. Nicolás, en cambio, estaba aprendiendo a dejar espacio. Y Emilia estaba aprendiendo que no tenía que llenar todos los silencios.</p>
+
+<p>—Gracias —murmuró.</p>
+
+<p>—¿Por qué?</p>
+
+<p>—Por no preguntarme veinte cosas.</p>
+
+<p>Él sonrió.</p>
+
+<p>—Puedo preguntar mañana.</p>
+
+<p>Emilia le dio un pequeño golpe en el brazo.</p>
+
+<p>—No te aproveches.</p>
+
+<p>Nicolás le tomó la mano y la acercó a sus labios. El beso fue breve, sin dramatismo, y aun así hizo que Emilia se quedara mirándolo un instante más de lo necesario.</p>
+
+<p>Desde el pasillo, el niño apareció con una pieza en cada mano.</p>
+
+<p>—¡Ya está! ¡Ahora sí!</p>
+
+<p>Los dos se separaron lo justo para mirarlo.</p>
+
+<p>—¿Ahora sí qué? —preguntó Nicolás.</p>
+
+<p>—Ahora vamos a ganar.</p>
+
+<p>Emilia se echó a reír. Nicolás se levantó para seguirlo, y ella permaneció un momento en el sofá, escuchando sus voces.</p>
+
+<p>Los asuntos pendientes seguían existiendo. Las familias tenían historias que no podían borrarse, y algunas decisiones continuarían teniendo consecuencias. Pero aquel día Emilia había conseguido algo que no dependía de nadie más: había hablado por sí misma, había puesto límites y había regresado a casa sin sentir que debía esconder lo que le había removido.</p>
+
+<p>Se levantó y fue a reunirse con ellos.</p>
+
+<p>Porque la vida no se reconstruía únicamente en las grandes conversaciones ni en las decisiones que cambiaban el rumbo de una familia.</p>
+
+<p>También se reconstruía allí.</p>
+
+<p>En una tarde cualquiera.</p>
+
+<p>En un juego cuyas reglas nadie respetaba.</p>
+
+<p>En la posibilidad de volver a casa y encontrar a alguien esperándote.</p>
+<p>Al terminar la tarde, Emilia recibió una llamada de su madre desde el hotel. La conversación duró poco, pero bastó para que su padre apareciera detrás, reclamando hablar con ella y preguntándole si Nicolás la estaba tratando con respeto. Emilia aseguró que sí, y cuando colgó, encontró a Nicolás esperándola en el pasillo.</p><p>—¿Tu familia?</p><p>—Mi familia. A distancia son incluso más insistentes.</p><p>Él le ofreció el brazo, casi formalmente. Emilia lo aceptó, y caminaron juntos hasta el jardín. Allí, sin cámaras ni conversaciones ajenas, Nicolás le besó la sien. Ella se apoyó contra él un instante, sintiendo que aquel gesto no le exigía nada a cambio.</p><nav class="chapter-navigation"><a href="capitulo-3.html">← Capítulo 3</a><a class="next" href="capitulo-5.html">Capítulo 5 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 4</footer></body></html>

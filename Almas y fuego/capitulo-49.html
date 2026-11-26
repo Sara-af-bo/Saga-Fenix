@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Capítulo 49 — Los que se quedan</title>
+<style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:0 auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 49</div><h1>Los que se quedan</h1></header><main>
+<div class="subtitle">Los que se quedan</div>
+
+<p>La casa había cambiado con la llegada de los padres de Emilia.</p>
+
+<p>No se trataba de una transformación grande. Seguía habiendo teléfonos sobre la mesa, carpetas que nadie quería mirar demasiado, conversaciones que se interrumpían cuando sonaba una notificación y una tensión que parecía haberse instalado en las paredes. Pero ahora también había una olla en la cocina, una manta doblada en el sofá y la voz de su madre preguntando si alguien quería café.</p>
+
+<p>Emilia no sabía cuánto necesitaba aquel ruido normal hasta que lo volvió a escuchar.</p>
+
+<p>Su padre estaba en el despacho con Gabriel, revisando la información que había entregado a la policía. No estaban buscando una forma de saltarse las instrucciones ni de entrar en el complejo. Gabriel había insistido en que cualquier nueva información se canalizara a través del inspector. La experiencia le había enseñado que, en una investigación de ese tipo, una llamada impulsiva podía arruinar semanas de trabajo.</p>
+
+<p>—No me gusta estar sin hacer nada —dijo el padre de Emilia.</p>
+
+<p>—No está haciendo nada —respondió Gabriel—. Está ayudando a que la información llegue a quien puede verificarla.</p>
+
+<p>El hombre se quedó mirando el papel.</p>
+
+<p>—Cuando ella era pequeña, cada vez que tenía miedo, venía a buscarme. Pensaba que podía arreglarlo todo. No siempre podía, pero al menos estaba ahí. Ahora la veo y no sé qué decirle.</p>
+
+<p>Gabriel cerró la carpeta.</p>
+
+<p>—No necesita que arregle todo. Necesita que esté.</p>
+
+<p>El padre de Emilia asintió lentamente. Aquello no era una idea nueva, pero escucharlo de alguien que no pertenecía a la familia le hizo comprender que había estado intentando encontrar una respuesta demasiado grande para una situación en la que, por el momento, solo podía ofrecer presencia.</p>
+
+<p>En la cocina, su madre preparaba una comida sencilla. Emilia se había ofrecido a ayudar, pero terminó sentada en una silla, con las manos alrededor de un vaso de agua.</p>
+
+<p>—No tienes que vigilarme —dijo.</p>
+
+<p>—No te vigilo. Estoy haciendo verduras.</p>
+
+<p>—Mamá.</p>
+
+<p>Su madre dejó el cuchillo sobre la tabla.</p>
+
+<p>—Está bien. Te estoy mirando un poco. ¿Y qué?</p>
+
+<p>Emilia soltó una pequeña sonrisa.</p>
+
+<p>—Nada. Solo… no estoy acostumbrada.</p>
+
+<p>—¿A que te cuide?</p>
+
+<p>—A que todo el mundo se preocupe por mí al mismo tiempo.</p>
+
+<p>Su madre se acercó y le apartó un mechón de la cara.</p>
+
+<p>—Pues tendrás que acostumbrarte. Eres nuestra hija. Y Luca es nuestro nieto. No hay nada que discutir.</p>
+
+<p>Emilia se quedó callada. Había momentos en los que todavía le resultaba difícil hablar de su familia biológica sin sentir que las palabras debían atravesar una historia demasiado complicada. No era una herida que desapareciera con el tiempo, ni una relación que pudiera resumirse en un descubrimiento. Había preguntas, recuerdos reconstruidos, decisiones de otras personas y vínculos que habían tenido que aprender a existir de nuevo.</p>
+
+<p>Pero aquella mujer frente a ella no estaba intentando reclamar un lugar ni borrar el pasado. Estaba allí, cortando verduras, insistiendo en que comiera y esperando que su hija pudiera respirar un poco.</p>
+
+<p>—¿Crees que Luca se acuerda de nosotros? —preguntó Emilia.</p>
+
+<p>—Claro que sí.</p>
+
+<p>—Me refiero a… si está asustado, si piensa que no vamos a encontrarlo.</p>
+
+<p>Su madre le tomó las manos.</p>
+
+<p>—No podemos saber qué piensa cada minuto. Pero cuando vuelva, vamos a recordarle todas las veces que haga falta que lo buscamos. Que no dejamos de buscarlo. Que nadie lo abandonó.</p>
+
+<p>Emilia inclinó la cabeza, y su madre la abrazó.</p>
+
+<p>Cuando Nicolás entró, se encontró a ambas en silencio. No interrumpió. Se quedó junto a la puerta hasta que Emilia levantó la mirada.</p>
+
+<p>—Ven —le dijo ella.</p>
+
+<p>Él se acercó.</p>
+
+<p>—Tu padre está con Gabriel. El inspector ha llamado. No hay una confirmación, pero la matrícula que entregó Salvat ha permitido identificar una empresa que operaba dentro del complejo. Están comprobando los registros.</p>
+
+<p>—¿Y el vehículo que salió?</p>
+
+<p>—No se ha confirmado que llevara a Luca. Lo siguen investigando.</p>
+
+<p>Nicolás se sentó, cansado.</p>
+
+<p>—Hay algo que no me cuadra. Si Ferrer no tiene el control, ¿por qué sigue dando órdenes? ¿Por qué no se ha ido?</p>
+
+<p>—Porque puede que tampoco pueda salir —respondió Emilia.</p>
+
+<p>La idea había estado rondando a Gabriel desde la mañana. Ferrer parecía ser una pieza de la operación, pero no necesariamente su dueño. Las comunicaciones, las decisiones aplazadas y la forma en que otros corregían sus movimientos apuntaban a una estructura que no se mostraba por completo.</p>
+
+<p>—No quiero que esto se alargue por perseguir a alguien que no importa —dijo Nicolás.</p>
+
+<p>—Importa si tiene a nuestro hijo —respondió Emilia—. Pero no vamos a perder de vista lo principal.</p>
+
+<p>Su madre dejó tres platos sobre la mesa.</p>
+
+<p>—Lo principal también es que comáis.</p>
+
+<p>Nicolás la miró con cierta sorpresa.</p>
+
+<p>—Gracias.</p>
+
+<p>—No me agradezcas una comida. Siéntate.</p>
+
+<p>La orden fue tan sencilla y tan inesperadamente firme que Emilia terminó riéndose. Nicolás también. Fue una risa breve, casi culpable, pero la mujer no les permitió disculparse.</p>
+
+<p>—No os voy a pedir que estéis felices. Pero no quiero que la casa se convierta en una sala de espera de hospital. Luca no es lo único que existe en esta familia, aunque ahora sea lo que más nos duele.</p>
+
+<p>El padre de Emilia apareció poco después, acompañado de Gabriel.</p>
+
+<p>—La policía ha confirmado que la empresa que investigan usó una dirección de facturación que coincide con una oficina de intermediación —dijo—. No sabemos si es una conexión real o una coincidencia. Ya se lo han enviado al inspector.</p>
+
+<p>—¿Y vosotros? —preguntó Emilia.</p>
+
+<p>—Nosotros nos quedamos aquí —respondió su padre—. No vamos a interferir.</p>
+
+<p>Gabriel se sentó.</p>
+
+<p>—Es la mejor decisión.</p>
+
+<p>La tarde pasó lentamente. No hubo una nueva llamada de Luca. No hubo un mensaje de Irene ni una confirmación de ubicación. La policía pidió que mantuvieran la disponibilidad, pero no dio más información.</p>
+
+<p>Al caer la noche, el padre de Emilia se acercó al salón, donde Nicolás estaba mirando una fotografía de Luca en el teléfono.</p>
+
+<p>—¿Puedo hablar contigo?</p>
+
+<p>Nicolás guardó el móvil.</p>
+
+<p>—Claro.</p>
+
+<p>Se sentaron frente a frente.</p>
+
+<p>—Sé que la relación entre nosotros no siempre ha sido sencilla —comenzó el hombre—. Y sé que hay cosas que no recuerdas como antes, cosas que quizá nunca vuelvan de la misma manera. No voy a pretender que todo se arregla con esta conversación.</p>
+
+<p>Nicolás escuchó sin interrumpir.</p>
+
+<p>—Pero eres el padre de mi nieto. Y eres la persona que Emilia ha elegido para compartir su vida. No necesito que me demuestres que eres capaz de hacer cualquier cosa. Necesito que no te pierdas en esta situación.</p>
+
+<p>—Estoy intentando mantenerme.</p>
+
+<p>—Lo veo. Y no estás solo en eso.</p>
+
+<p>El hombre extendió la mano. Nicolás la estrechó, pero el gesto terminó en un abrazo. No fue largo ni especialmente emotivo. Fue suficiente.</p>
+
+<p>Desde el pasillo, Emilia los vio y no se acercó. Se quedó un momento observando, con una sensación extraña de alivio y tristeza que no supo separar.</p>
+
+<p>Más tarde, cuando todos se preparaban para dormir, su madre dejó una nota sobre la mesilla de Emilia: <em>Si no puedes dormir, ven a mi habitación. No tienes que llamar.</em></p>
+
+<p>Emilia la leyó dos veces.</p>
+
+<p>Guardó el papel en el cajón, se metió en la cama y se acercó a Nicolás.</p>
+
+<p>—Se van a quedar —murmuró.</p>
+
+<p>—Lo sé.</p>
+
+<p>—No solo por Luca. Creo que… creo que quiero que se queden en nuestras vidas así. De verdad. No como algo que aparece cuando hay una crisis.</p>
+
+<p>Nicolás le acarició el cabello.</p>
+
+<p>—Entonces así será.</p>
+
+<p>—No quiero que después volvamos a distanciarnos.</p>
+
+<p>—No vamos a decidir el futuro esta noche. Pero podemos empezar por mañana.</p>
+
+<p>Emilia apoyó la frente contra su pecho.</p>
+
+<p>Al otro lado de la ciudad, una persona desconocida recibió una fotografía de la casa. No era una imagen reciente. Mostraba a Emilia, Nicolás, Luca y sus padres en una celebración familiar que había tenido lugar meses atrás.</p>
+
+<p>Debajo, un mensaje:</p>
+
+<p><em>Ahora están todos.</em></p>
+
+<p>La respuesta llegó después de unos minutos:</p>
+
+<p><em>Entonces habrá que tener cuidado con lo que se toca.</em></p>
+
+<p>El teléfono se apagó.</p>
+
+<p>Y la noche continuó, sin que la familia supiera que su unión acababa de convertirse también en una pieza que alguien, desde las sombras, había empezado a observar.</p>
+</main><p>En medio de aquella fotografía que alguien había obtenido, Emilia encontró un consuelo inesperado en la presencia de sus padres. Su madre le acarició la espalda y su padre le dijo que, cuando Luca volviera, habría una casa llena de gente dispuesta a escuchar sus historias, incluso las más repetidas. Emilia lloró y los abrazó a ambos.</p><nav class="chapter-navigation"><a href="capitulo-48.html">← Capítulo 48</a><a class="next" href="capitulo-50.html">Capítulo 50 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 49</footer></body></html>

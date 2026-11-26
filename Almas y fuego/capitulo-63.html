@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 63 — Antes de decir sí</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 63</div><h1>Antes de decir sí</h1></header><main><div class="subtitle">Antes de decir sí</div>
+<p>La fecha quedó escrita en el calendario un jueves por la noche.</p>
+<p>No hubo una gran discusión, ni una ceremonia improvisada, ni un anuncio que recorriera la familia entera. Emilia y Nicolás se sentaron en el sofá con el calendario abierto, Luca entre ambos, y eligieron el día que les parecía adecuado. Una fecha que les permitía organizarlo todo sin convertir los preparativos en una carrera.</p>
+<p>—¿Ese día? —preguntó Luca.</p>
+<p>—Ese día —confirmó Emilia.</p>
+<p>El niño miró el calendario, luego a sus padres.</p>
+<p>—Entonces ya está. Es oficial.</p>
+<p>Nicolás le tendió la mano como si estuvieran cerrando un trato. Luca la estrechó, satisfecho, y después se abrazó a Emilia.</p>
+<p>—Quiero que sea bonito.</p>
+<p>—Lo será —le prometió ella.</p>
+<p>La noticia se compartió con los abuelos al día siguiente. Su madre se emocionó, su padre pidió que le enviaran la fecha por escrito para no equivocarse y ambos insistieron en que no necesitaban encargarse de nada que Emilia no quisiera. Gabriel recibió la noticia con una sonrisa inesperadamente amplia.</p>
+<p>—Por fin —dijo—. Ya era hora de que organizarais algo que no tuviera un expediente encima.</p>
+<p>—No empieces —le advirtió Nicolás.</p>
+<p>—No he empezado. Estoy celebrando.</p>
+<p>La semana que siguió estuvo llena de pequeñas decisiones. Confirmaron el lugar, revisaron el número de invitados y hablaron de música. Emilia descubrió que Nicolás tenía opiniones firmes sobre las canciones, aunque fingía que todo le daba igual. Él descubrió que su futura esposa era capaz de cambiar tres veces de opinión sobre un detalle y defender cada elección con argumentos impecables.</p>
+<p>Una tarde, mientras revisaban la lista, Emilia se quedó mirando un nombre.</p>
+<p>—¿Crees que deberíamos invitarlo?</p>
+<p>Nicolás no respondió inmediatamente.</p>
+<p>—Si quieres que esté, lo invitamos. Si no, no.</p>
+<p>—No quiero que nadie venga por obligación.</p>
+<p>—Entonces no invitaremos a nadie por obligación.</p>
+<p>Emilia cerró la lista. A veces, la facilidad con la que Nicolás respetaba sus decisiones le parecía más íntima que cualquier declaración. Le tomó la mano y se la llevó a los labios.</p>
+<p>—Te amo.</p>
+<p>Él la miró.</p>
+<p>—Yo también te amo.</p>
+<p>—No, no. Hoy lo digo yo primero.</p>
+<p>—Está bien. Gana el punto.</p>
+<p>Ella se rio y se inclinó para besarlo. Nicolás le sostuvo la cara, y el beso se volvió más largo, hasta que Emilia acabó sentada a su lado, con las piernas sobre las suyas y los brazos alrededor de su cuello.</p>
+<p>—Estamos haciendo una lista —murmuró él, divertido.</p>
+<p>—La lista puede esperar.</p>
+<p>—¿Estás segura?</p>
+<p>Emilia respondió besándolo de nuevo.</p>
+<p>Más tarde, los padres de Emilia se acercaron para revisar el lugar con ellos. El jardín era pequeño, cuidado y tranquilo. No había nada ostentoso. Había árboles, una zona para las mesas y un espacio abierto donde podían celebrar la ceremonia. Su madre imaginó discretamente dónde colocar las flores. Su padre comprobó los accesos y la logística, pero preguntó antes de sugerir cambios.</p>
+<p>—¿Qué os parece? —preguntó al terminar.</p>
+<p>Emilia miró a Nicolás.</p>
+<p>—Me gusta.</p>
+<p>—A mí también —dijo él.</p>
+<p>Su madre se acercó a Emilia.</p>
+<p>—¿Puedo abrazarte?</p>
+<p>Emilia asintió. El abrazo duró más de lo esperado. No resolvía todo lo que había existido entre ellas, ni pretendía hacerlo. Pero fue sincero. Cuando se separaron, su madre le acarició el pelo.</p>
+<p>—Gracias por dejarnos estar.</p>
+<p>—Gracias por preguntar.</p>
+<p>Su padre, que había escuchado desde unos pasos más allá, se acercó también. Los tres quedaron abrazados un momento, mientras Nicolás observaba con una sonrisa discreta. Luca, que no toleraba que las reuniones familiares se quedaran sin él, se metió en medio.</p>
+<p>—¡Yo también!</p>
+<p>El abrazo terminó siendo un pequeño desastre de brazos y risas.</p>
+<p>Al volver a casa, Nicolás preparó algo de cenar. Emilia se sentó en la encimera, con cuidado, y lo observó.</p>
+<p>—¿Qué?</p>
+<p>—Nada.</p>
+<p>—Llevas cinco minutos mirándome.</p>
+<p>—Me gusta mirarte.</p>
+<p>Él dejó el cuchillo, se acercó y apoyó las manos a ambos lados de ella.</p>
+<p>—Eso podría acostumbrarme a escucharlo.</p>
+<p>—No te acostumbres demasiado.</p>
+<p>—Imposible.</p>
+<p>La besó. Emilia le acarició el pelo y, cuando él intentó volver a la cocina, lo retuvo un instante.</p>
+<p>—Uno más.</p>
+<p>—¿Uno?</p>
+<p>—No negocies.</p>
+<p>Nicolás le dio otro beso, y otro pequeño en la frente. Después volvió a cocinar, mientras Emilia le robaba ingredientes y se reía de sus protestas.</p>
+<p>Durante la cena, Luca propuso que los abuelos fueran los encargados de acompañarlo durante la ceremonia. Emilia y Nicolás aceptaron, aunque todavía no habían definido todos los detalles. El niño se emocionó tanto que empezó a explicar cómo caminaría, dónde se colocaría y qué haría si se le olvidaba algo.</p>
+<p>—No tienes que hacer nada perfecto —le dijo Nicolás.</p>
+<p>—Pero quiero hacerlo bien.</p>
+<p>Emilia le acarició la mejilla.</p>
+<p>—Lo harás bien porque eres tú. Y eso es suficiente.</p>
+<p>Después de acostarlo, Emilia y Nicolás terminaron en el balcón, con una manta compartida y dos tazas de té.</p>
+<p>—¿Nerviosa? —preguntó él.</p>
+<p>—Un poco.</p>
+<p>—¿Por la boda?</p>
+<p>—Por lo feliz que estoy. Parece absurdo, pero a veces me asusta.</p>
+<p>Nicolás dejó su taza y le tomó ambas manos.</p>
+<p>—No tienes que desconfiar de la felicidad para protegerte.</p>
+<p>Emilia respiró hondo.</p>
+<p>—Estoy intentando aprender eso.</p>
+<p>—Lo estás haciendo.</p>
+<p>Ella se acercó y lo besó. El aire era fresco, y Nicolás la envolvió en la manta, acercándola contra su pecho.</p>
+<p>—Quiero recordar esta noche —dijo Emilia.</p>
+<p>—Entonces no la llenemos de palabras.</p>
+<p>Se quedaron mirando las luces de la calle, compartiendo el silencio, los besos pequeños y la sensación de que por fin estaban llegando a un lugar que habían imaginado durante mucho tiempo.</p>
+<p>La boda ya tenía fecha. El jardín estaba reservado. Luca tenía una misión. Sus padres estaban presentes, no como invitados distantes, sino como parte de una familia que estaba aprendiendo a sostenerse.</p>
+<p>Y Emilia, por primera vez, no estaba contando los días hasta que algo pudiera salir mal.</p>
+<p>Estaba contando los días hasta decir sí.</p>
+</main><p>Cuando la fecha quedó confirmada, Emilia llamó a sus padres y hermanas. La reacción fue un caos de voces, felicitaciones y promesas de llegar con tiempo. Nicolás, sentado a su lado, terminó saludando a todos. Después, Emilia se apoyó contra él.</p><p>—Mi familia va a ser insoportable.</p><p>—Lo sé.</p><p>—Y tú los quieres.</p><p>—También lo sé.</p><p>Emilia le besó, riéndose, y él la abrazó hasta que el teléfono volvió a sonar.</p><nav class="chapter-navigation"><a href="capitulo-62.html">← Capítulo 62</a><a class="next" href="capitulo-64.html">Capítulo 64 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 63</footer></body></html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 3 — Las cosas que permanecen | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em} .dialogo{ text-indent:2em}
+@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 3</div><h1>Las cosas que permanecen</h1></header>
+<h2>Las cosas que permanecen</h2>
+
+<p>Emilia había descubierto que existían silencios de muchas clases. Algunos eran incómodos, de esos que obligaban a llenar el espacio con cualquier comentario absurdo antes de que alguien comenzara a sentirse demasiado consciente de la presencia del otro. Otros, en cambio, eran silencios que se construían con paciencia, que no exigían explicaciones ni respuestas inmediatas. El que compartía con Nicolás aquella mañana pertenecía, todavía, a una categoría intermedia.</p>
+
+<p>No sabía si debía acostumbrarse a él o si, en realidad, llevaba toda la vida intentando aprender a estar a su lado sin anticipar el momento en que algo volvería a separarlos.</p>
+
+<p>Nicolás estaba sentado junto a la ventana, con una taza de café que había dejado enfriarse entre las manos. Había insistido en preparárselo él mismo, aunque Emilia había terminado vigilando desde la cocina, dispuesta a intervenir si se le ocurría hacer alguna estupidez con la cafetera. No había hecho falta. Se había manejado con una concentración casi exagerada y, cuando le llevó la taza, había levantado las cejas como si acabara de superar una prueba importante.</p>
+
+<p>—No te rías —le había advertido.</p>
+
+<p>—No me estoy riendo.</p>
+
+<p>—Estás poniendo esa cara.</p>
+
+<p>—¿Qué cara?</p>
+
+<p>—La de alguien que está a punto de decir que soy un inútil.</p>
+
+<p>Emilia había soltado una carcajada, y él, después de fingir durante unos segundos que aquello lo ofendía profundamente, había terminado sonriendo también.</p>
+
+<p>Ahora, sin embargo, Nicolás miraba hacia el jardín. La taza descansaba sobre sus piernas y su expresión había cambiado. Emilia reconocía aquella mirada. No siempre significaba que estuviera triste; a veces era simplemente la manera en que intentaba ordenar los pensamientos que se le amontonaban desde que comenzó a recuperar pequeñas piezas de sí mismo.</p>
+
+<p>—¿En qué estás pensando? —preguntó ella, acercándose.</p>
+
+<p>Nicolás giró la cabeza.</p>
+
+<p>—En que no sé cuánto tiempo llevo aquí sentado.</p>
+
+<p>—Unos veinte minutos.</p>
+
+<p>—No. Me refiero a... —Se pasó una mano por el rostro, frustrado con sus propias palabras—. A cuánto tiempo llevo viviendo las cosas sin saber si las recuerdo o si me las han contado.</p>
+
+<p>Emilia se sentó frente a él. No intentó tocarlo enseguida.</p>
+
+<p>—No tienes que demostrar nada hoy.</p>
+
+<p>—Lo sé. Todos me lo dicen.</p>
+
+<p>—Porque es verdad.</p>
+
+<p>—Pero no es lo mismo, Emilia. —Nicolás bajó la mirada a la taza—. Hay cosas que debería saber. Detalles que parecen insignificantes para los demás y que, cuando me los cuentan, me hacen sentir como si estuviera escuchando la vida de un desconocido. Me hablan de lugares en los que estuve, de personas a las que conocí, de cosas que hice... y yo tengo que confiar en que sucedieron.</p>
+
+<p>Ella respiró despacio. Había aprendido que algunas respuestas, por bien intencionadas que fueran, podían convertirse en una forma de presión. No quería decirle que todo volvería, porque no podía prometerlo. Tampoco quería fingir que no comprendía lo que estaba intentando explicar.</p>
+
+<p>—Debe ser agotador.</p>
+
+<p>Nicolás levantó los ojos. Quizá esperaba una frase más optimista, una promesa o una insistencia en que no se preocupara. En cambio, Emilia se había limitado a reconocerlo.</p>
+
+<p>—Lo es —admitió.</p>
+
+<p>—Entonces descansa de ello. Aunque sea un rato.</p>
+
+<p>—¿Y si no vuelve?</p>
+
+<p>La pregunta quedó entre ambos. Emilia se acercó un poco más y esta vez le tomó la mano. No había una solución escondida en aquel gesto, ni una respuesta capaz de arreglar lo que la memoria había hecho con él. Solo estaba allí.</p>
+
+<p>—Si no vuelve todo —dijo finalmente—, encontraremos otra manera de vivir. No quiero que te pases los días castigándote por algo que no puedes controlar.</p>
+
+<p>Nicolás miró sus manos unidas.</p>
+
+<p>—Tú siempre haces que parezca más sencillo.</p>
+
+<p>—No es sencillo. Solo que no pienso dejar que esto nos quite también lo que tenemos ahora.</p>
+
+<p>Él no respondió de inmediato. Le acarició los nudillos con el pulgar, un movimiento pequeño, casi distraído, pero Emilia sintió que se le cerraba la garganta. Había extrañado tantas cosas que, a veces, los gestos más simples le resultaban difíciles de soportar. No porque fueran dolorosos, sino porque eran una prueba de que todavía podían existir.</p>
+
+<p>Un ruido en el pasillo interrumpió el momento. Los dos giraron la cabeza cuando el niño apareció, arrastrando algo que parecía una manta y con el cabello revuelto de quien acababa de despertarse o había decidido que peinarse era una actividad completamente innecesaria.</p>
+
+<p>—Mamá.</p>
+
+<p>—¿Qué pasa?</p>
+
+<p>El pequeño miró a Nicolás y después a Emilia, como si estuviera evaluando si podía plantear su petición sin que nadie se la rechazara.</p>
+
+<p>—¿Podemos desayunar fuera?</p>
+
+<p>Emilia miró por la ventana. El día estaba despejado, aunque todavía hacía algo de fresco.</p>
+
+<p>—¿Fuera dónde?</p>
+
+<p>—En el jardín. Con las cosas de la mesa grande.</p>
+
+<p>—¿Y quién va a llevar todo?</p>
+
+<p>El niño se encogió de hombros, muy seguro de que la respuesta no era un problema suyo.</p>
+
+<p>—Nicolás.</p>
+
+<p>Emilia arqueó una ceja. Nicolás, por su parte, tuvo la decencia de intentar no reírse.</p>
+
+<p>—Ah, ¿yo?</p>
+
+<p>—Sí. Tú puedes llevar las cosas.</p>
+
+<p>—Qué confianza.</p>
+
+<p>—Porque eres fuerte.</p>
+
+<p>Emilia se tapó la boca, aunque la sonrisa ya se le había escapado. Nicolás dejó la taza sobre la mesa y se inclinó hacia el niño.</p>
+
+<p>—De acuerdo. Pero tú me ayudas.</p>
+
+<p>—Vale.</p>
+
+<p>—Y no puedes llevar únicamente galletas.</p>
+
+<p>El pequeño se quedó quieto.</p>
+
+<p>—¿Por qué?</p>
+
+<p>—Porque también hay que comer algo que no sea una galleta.</p>
+
+<p>—Las galletas tienen comida.</p>
+
+<p>—No vamos a discutir sobre la composición de las galletas a las nueve de la mañana —intervino Emilia, levantándose—. Vamos. Antes de que vuestro debate se convierta en una conferencia.</p>
+
+<p>La mañana terminó llenándose de pequeñas tareas. Emilia sacó fruta, pan y algunas cosas más. Nicolás se ocupó de llevar las bandejas al jardín, con el niño siguiéndolo de cerca y ofreciéndose a transportar objetos que, en ocasiones, eran más grandes que él. No hubo grandes conversaciones ni escenas que pudieran cambiar la vida de nadie. Solo desayunaron, discutieron por una silla, se rieron cuando una servilleta salió volando con el viento y escucharon al pequeño contar una historia que parecía haber empezado por el final.</p>
+
+<p>Emilia observó a Nicolás mientras él intentaba seguir el relato. Había algo distinto en su manera de escuchar. A veces se quedaba demasiado atento, como si temiera perder una palabra; otras, sus preguntas eran tan espontáneas que el niño terminaba mirándolo con desconcierto. No estaba fingiendo ser un padre que sabía exactamente qué hacer. Estaba aprendiendo a estar presente, y quizá por eso Emilia sentía que aquel esfuerzo tenía un valor que no podía medir.</p>
+
+<p>Cuando el niño se levantó para buscar uno de sus juguetes, Nicolás permaneció en la mesa.</p>
+
+<p>—¿Crees que lo estoy haciendo bien? —preguntó en voz baja.</p>
+
+<p>Emilia dejó el plato a un lado.</p>
+
+<p>—¿Qué cosa?</p>
+
+<p>—Esto. Con él.</p>
+
+<p>La pregunta le dolió más de lo que esperaba. No por la inseguridad de Nicolás, sino porque sabía que no había una manera de contestarla que eliminara todas sus dudas.</p>
+
+<p>—Creo que estás intentando hacerlo bien —dijo—. Y eso importa.</p>
+
+<p>—No quiero que sienta que tiene que adaptarse a mí.</p>
+
+<p>—No lo siente así. Tiene curiosidad. Y tiene preguntas. Las hará cuando quiera.</p>
+
+<p>—¿Y si no quiere que esté aquí?</p>
+
+<p>Emilia lo miró con una ternura que no intentó ocultar.</p>
+
+<p>—Entonces tendrás que respetar lo que necesite. Pero no creo que sea eso lo que está pasando.</p>
+
+<p>Nicolás soltó el aire lentamente.</p>
+
+<p>—Ayer me preguntó si sabía jugar a los coches.</p>
+
+<p>—¿Y qué le dijiste?</p>
+
+<p>—Que probablemente sí.</p>
+
+<p>—¿Probablemente?</p>
+
+<p>—No sé si jugaba a los coches. No recuerdo.</p>
+
+<p>Emilia se echó a reír. Esta vez Nicolás también, aunque negó con la cabeza.</p>
+
+<p>—Me miró como si hubiera dicho la mayor estupidez del mundo.</p>
+
+<p>—Porque seguramente la dijiste.</p>
+
+<p>—Y luego me enseñó cómo hacerlo.</p>
+
+<p>—Entonces ya tienes profesor.</p>
+
+<p>Se quedaron mirándose unos segundos. Nicolás parecía querer decir algo más, pero la voz del niño volvió a reclamar su atención desde el otro lado del jardín. Se levantó y fue hacia él.</p>
+
+<p>Emilia lo siguió con la mirada, sintiendo una calma que no se atrevía a llamar felicidad por miedo a que el nombre pudiera tentar al destino. Sin embargo, aquella mañana no necesitaba pensar en lo que vendría después. No necesitaba adelantarse a las conversaciones pendientes, a los recuerdos que aún faltaban ni a los asuntos familiares que todavía podían complicar sus vidas.</p>
+
+<p>Por una vez, podía quedarse en el presente.</p>
+
+<p>Y el presente, aunque imperfecto, tenía a Nicolás riéndose de algo que su hijo acababa de decir.</p>
+
+<p>Tenía un jardín lleno de luz.</p>
+
+<p>Tenía una mesa desordenada.</p>
+
+<p>Tenía la posibilidad de que, con el tiempo, aquello dejara de sentirse como algo que debían proteger a cada segundo y se convirtiera simplemente en su vida.</p>
+
+<p>Emilia recogió los platos cuando terminaron. Desde el jardín, Nicolás la llamó para que fuera a ver una construcción que el pequeño había levantado con piezas de juguete. Ella dejó lo que estaba haciendo y se acercó.</p>
+
+<p>—Mira —anunció el niño—. Es una casa.</p>
+
+<p>La estructura era irregular, con una torre que se inclinaba peligrosamente hacia un lado y una puerta demasiado pequeña para cualquier figura que pretendiera entrar.</p>
+
+<p>—Es una casa muy bonita —dijo Emilia.</p>
+
+<p>—Nicolás la ha hecho conmigo.</p>
+
+<p>Ella miró a Nicolás.</p>
+
+<p>—¿Ah, sí?</p>
+
+<p>—Yo he hecho la torre —aclaró él—. La parte de abajo es obra de tu hijo.</p>
+
+<p>El niño corrigió inmediatamente:</p>
+
+<p>—Nuestra casa.</p>
+
+<p>Nicolás se quedó inmóvil un instante.</p>
+
+<p>No fue una reacción evidente. No se apartó ni dejó caer nada. Simplemente dejó de sonreír durante un segundo, como si aquellas dos palabras hubieran encontrado un lugar dentro de él que todavía no sabía nombrar.</p>
+
+<p>Emilia lo vio. También vio cómo Nicolás se agachaba junto al niño y acomodaba una pieza que estaba a punto de desprenderse.</p>
+
+<p>—Nuestra casa —repitió, con suavidad.</p>
+
+<p>Y siguieron jugando.</p>
+
+<p>Mucho después, cuando el pequeño se cansó y Emilia tuvo que convencerlo de que recogiera las piezas antes de ir a descansar, Nicolás permaneció junto a ella en el jardín. La tarde empezaba a avanzar. Las sombras se alargaban sobre el suelo y el ruido de la casa se había vuelto más tranquilo.</p>
+
+<p>—Ha dicho nuestra casa —murmuró él.</p>
+
+<p>Emilia no fingió no entender.</p>
+
+<p>—Sí.</p>
+
+<p>—No sé por qué me ha afectado tanto.</p>
+
+<p>—Porque quizá significa algo para ti.</p>
+
+<p>Nicolás asintió. Se quedó mirando la construcción, que seguía en pie pese a su torre torcida.</p>
+
+<p>—No quiero estropearlo.</p>
+
+<p>Emilia le tomó la mano.</p>
+
+<p>—No tienes que hacerlo perfecto.</p>
+
+<p>—¿Y si no sé cómo?</p>
+
+<p>—Aprenderás.</p>
+
+<p>Él la miró, y esta vez no había frustración en sus ojos. Había miedo, sí, pero también algo que comenzaba a parecerse a la confianza.</p>
+
+<p>—¿Y tú?</p>
+
+<p>—¿Yo qué?</p>
+
+<p>—¿Tú también vas a aprender a dejar de tener miedo?</p>
+
+<p>Emilia no respondió inmediatamente. La pregunta era demasiado honesta para esquivarla con una broma.</p>
+
+<p>—Lo estoy intentando —admitió.</p>
+
+<p>Nicolás se acercó y apoyó la frente contra la de ella. No fue un beso ni una promesa grandiosa. Fue un gesto breve, íntimo, en el que ninguno tuvo que fingir que todo estaba resuelto.</p>
+
+<p>—Entonces lo intentaremos los dos —susurró.</p>
+
+<p>Emilia cerró los ojos.</p>
+
+<p>Y por primera vez en mucho tiempo, la idea de intentarlo no le pareció una forma de exponerse a otra pérdida.</p>
+
+<p>Le pareció una posibilidad.</p>
+<p>Emilia también había empezado a descubrir detalles de Nicolás que no aparecían en las conversaciones de negocios: la manera en que apartaba las migas de la mesa antes de sentarse, cómo recordaba qué canciones Luca pedía repetir y la costumbre de buscarla con la mirada cuando entraba en una habitación. No siempre se acercaba. A veces bastaba con que sus ojos se encontraran y él le dedicara aquella expresión tranquila, como si comprobar que estaba allí le bastara.</p><p>Una tarde, al pasar junto a él, Nicolás le tomó la mano y besó sus nudillos sin interrumpir la conversación que mantenía. Emilia se quedó mirándolo, sorprendida.</p><p>—¿Qué ha sido eso?</p><p>—Un beso.</p><p>—Lo había identificado. Preguntaba por el motivo.</p><p>—Porque quería.</p><p>Y, por primera vez, ella no buscó una respuesta más complicada.</p><nav class="chapter-navigation"><a href="capitulo-2.html">← Capítulo 2</a><a class="next" href="capitulo-4.html">Capítulo 4 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 3</footer></body></html>

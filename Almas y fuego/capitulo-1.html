@@ -1,0 +1,310 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 1 — Un día cualquiera</title><style>body{font-family:Georgia,'Times New Roman',serif;line-height:1.85;max-width:820px;margin:40px auto;padding:0 22px;background:#faf8f5;color:#262321}h1{text-align:center;font-size:2em;margin-bottom:.25em}h2{text-align:center;font-weight:normal;font-style:italic;color:#71665f;margin-top:0}p{text-indent:1.5em;margin:0 0 1em}.nav{text-align:center;margin-bottom:2em;font-family:Arial,sans-serif;font-size:.9em;color:#71665f}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 1</div><h1>Un día cualquiera</h1></header><h2>Un día cualquiera</h2>
+<p>Durante mucho tiempo, la había confundido con la ausencia de problemas. Con una casa silenciosa, un teléfono que no vibrara a horas imposibles, una puerta que nadie golpeara para anunciar malas noticias. Había creído que, cuando todo lo que llevaba años persiguiéndola finalmente se resolviera, podría respirar sin pensar en ello.</p>
+<p>Pero la calma, ahora lo sabía, era otra cosa.</p>
+<p>Era despertarse antes de que sonara la alarma y quedarse unos minutos bajo las sábanas, sin sentir la necesidad de revisar mensajes. Era escuchar el ruido de la cafetera desde el pasillo y saber que el día no empezaba con una urgencia. Era encontrar un dibujo sobre la mesa, una taza mal colocada en el fregadero y una chaqueta que alguien había dejado sobre el respaldo de una silla porque, en aquella casa, nadie parecía tener demasiado interés en seguir las normas que ella había establecido.</p>
+<p>—¿Esto es tuyo? —preguntó, entrando en la cocina con la chaqueta en la mano.</p>
+<p>Su hijo, sentado frente a un cuenco de cereales, levantó la vista.</p>
+<p>—Depende.</p>
+<p>—¿Depende de qué?</p>
+<p>—De si vas a decir que la tengo que guardar.</p>
+<p>Emilia lo miró unos segundos. Después dejó la chaqueta sobre la silla.</p>
+<p>—Voy a decir que tienes que guardar la chaqueta.</p>
+<p>—Entonces no es mía.</p>
+<p>—Qué conveniente.</p>
+<p>El niño sonrió con esa satisfacción descarada que Emilia reconocía demasiado bien. No sabía en qué momento había aprendido a negociar cada pequeña responsabilidad como si estuviera sentado en una mesa de acuerdos, pero empezaba a sospechar que la culpa era de todos los adultos que le permitían salirse con la suya.</p>
+<p>—Termina de desayunar —le dijo, acercándose para apartarle un mechón de la frente—. Tenemos que salir dentro de media hora.</p>
+<p>—¿A dónde?</p>
+<p>—A hacer unas cosas.</p>
+<p>—Eso no es un sitio.</p>
+<p>—Y tú no eres un interrogatorio, pero aquí estamos.</p>
+<p>Él soltó una carcajada y volvió a los cereales.</p>
+<p>Emilia se sirvió café. El teléfono descansaba junto a la encimera, con varias notificaciones que todavía no había abierto. Una de la fundación, dos relacionadas con asuntos que Marco había insistido en que revisara y un mensaje de Vittoria que, por la vista previa, parecía contener una fotografía y una cantidad preocupante de signos de exclamación.</p>
+<p>Lo abrió.</p>
+<p>Era una imagen de una bandeja de pasteles. Debajo, Vittoria había escrito: «No acepto críticas. Esta vez sí han salido bien».</p>
+<p>Emilia amplió la fotografía. Uno de los pasteles tenía una forma que no terminaba de identificar.</p>
+<p>«¿Qué se supone que es el de la esquina?», respondió.</p>
+<p>La contestación llegó casi inmediatamente.</p>
+<p>«Una flor».</p>
+<p>Emilia se quedó mirando la imagen.</p>
+<p>«Vittoria, parece una patata».</p>
+<p>El teléfono comenzó a sonar. Emilia atendió mientras se apoyaba en la encimera.</p>
+<p>—No puedes decir eso —protestó Vittoria al otro lado—. He seguido la receta exactamente.</p>
+<p>—No he dicho que no hayas seguido la receta. He dicho que la flor parece una patata.</p>
+<p>—Es la decoración.</p>
+<p>—Es una decoración muy valiente.</p>
+<p>Vittoria resopló, aunque Emilia alcanzó a escuchar su risa.</p>
+<p>—Marco dice que están buenas.</p>
+<p>—Marco se comería una piedra si le pusieras azúcar.</p>
+<p>—Eso también es verdad. ¿Venís esta tarde?</p>
+<p>Emilia miró a su hijo, que acababa de levantarse para llevar el cuenco al fregadero y, con una precisión sospechosa, lo dejó a dos centímetros de donde debía estar.</p>
+<p>—No sé todavía. Tenemos algunas cosas que hacer.</p>
+<p>—No os estoy invitando a una reunión. Solo a merendar.</p>
+<p>—Lo sé.</p>
+<p>—Y no quiero que me digas que estás ocupada por no molestar.</p>
+<p>Emilia cerró los ojos un instante.</p>
+<p>—No estaba pensando eso.</p>
+<p>—Estabas pensando algo parecido.</p>
+<p>—Vittoria...</p>
+<p>—Emilia.</p>
+<p>Se quedaron en silencio, ambas conscientes de que aquella discusión no era nueva. Emilia había pasado demasiado tiempo aprendiendo a no ocupar espacio, a no pedir, a no aceptar cosas que no pudiera devolver. Vittoria, por su parte, tenía una paciencia sorprendente para algunas cosas y ninguna para otras.</p>
+<p>—Te aviso después —cedió Emilia.</p>
+<p>—Bien. Y dile al pequeño que he comprado algo para él.</p>
+<p>—¿Qué cosa?</p>
+<p>—Una sorpresa.</p>
+<p>—Eso no me ayuda.</p>
+<p>—No tiene que ayudarte. Tiene que sorprenderlo.</p>
+<p>Emilia se rio y colgó.</p>
+<p>Cuando se volvió, su hijo ya estaba intentando ponerse la chaqueta.</p>
+<p>—¿Vamos?</p>
+<p>—Todavía no. Y esa no es tu chaqueta.</p>
+<p>—Es parecida.</p>
+<p>—Es de tu padre.</p>
+<p>El niño se la quitó, miró la prenda y la dejó en el respaldo.</p>
+<p>—Pues debería guardarla.</p>
+<p>—Estoy de acuerdo.</p>
+<p>La frase le salió sin esfuerzo. Sin un nudo que la obligara a detenerse. Durante meses, algunas palabras habían sido difíciles de pronunciar. Padre. Familia. Futuro. Había momentos en los que incluso las conversaciones más sencillas se convertían en un lugar lleno de puertas que no sabía si abrir.</p>
+<p>Ahora seguía habiendo preguntas. Seguía habiendo heridas que no desaparecían porque alguien hubiera encontrado un documento o porque una conversación terminara bien. Pero Emilia ya no sentía que cada una de ellas tuviera que resolverse antes de poder vivir el día.</p>
+<p>Guardó el teléfono en el bolso, comprobó que llevaba las llaves y ayudó al niño con el cierre de la chaqueta.</p>
+<p>—¿Hoy vamos a ver a Marco?</p>
+<p>—Puede que sí.</p>
+<p>—¿Y a Vittoria?</p>
+<p>—También.</p>
+<p>—¿Y a Nicolás?</p>
+<p>Emilia se detuvo apenas un segundo. No fue un sobresalto. Solo una pausa pequeña, de esas que todavía aparecían cuando su hijo pronunciaba aquel nombre con naturalidad.</p>
+<p>—Hoy no tenemos planeado verlo —respondió—. Pero podemos hablar con él si quieres.</p>
+<p>El niño se encogió de hombros.</p>
+<p>—No. Solo preguntaba.</p>
+<p>Emilia le abrió la puerta.</p>
+<p>—Vamos, entonces.</p>
+<hr style="border:0;border-top:1px solid #cfc5bc;margin:2.2em 0">
+<p>La mañana transcurrió entre llamadas, documentos y una visita que Emilia habría preferido evitar, aunque no había sido especialmente desagradable. Había aprendido a distinguir las conversaciones que merecían su tiempo de aquellas que solo buscaban que cediera por cansancio. No siempre lo conseguía, pero al menos ya no confundía ser educada con estar obligada a aceptar.</p>
+<p>Al salir, se detuvo en una cafetería. Su hijo pidió algo que, según él, no era demasiado dulce, aunque la cantidad de chocolate que llevaba encima contradijera su argumento. Emilia se sentó frente a él, revisó dos mensajes y dejó el teléfono boca abajo.</p>
+<p>—¿Estás trabajando? —preguntó el niño.</p>
+<p>—Un poco.</p>
+<p>—Siempre dices un poco.</p>
+<p>—Porque nunca es tanto como parece.</p>
+<p>—Marco también dice eso.</p>
+<p>—Marco dice muchas cosas.</p>
+<p>—Y Vittoria dice que no le hagas caso.</p>
+<p>Emilia levantó una ceja.</p>
+<p>—¿Estáis teniendo conversaciones sobre mí?</p>
+<p>—No.</p>
+<p>La respuesta fue demasiado rápida.</p>
+<p>—Ajá.</p>
+<p>—Solo dijeron que tenías que descansar más.</p>
+<p>Emilia dejó la cucharilla sobre el plato.</p>
+<p>—¿Y tú qué piensas?</p>
+<p>El niño se tomó su tiempo. No parecía preocupado por contestar. Observó el chocolate, limpió una migaja de la mesa y finalmente dijo:</p>
+<p>—Que cuando estás con nosotros no estás trabajando tanto.</p>
+<p>Emilia sintió una ternura que no esperaba. Se inclinó para limpiar una mancha de chocolate de su mejilla.</p>
+<p>—Eso intento.</p>
+<p>—Ya lo sé.</p>
+<p>No añadió nada más. Y ella tampoco.</p>
+<p>En el camino de vuelta, recibió un mensaje de Marco. No era una advertencia ni una petición urgente. Le preguntaba si podía pasar por la casa aquella tarde, porque había llegado una documentación que quería entregarle personalmente y prefería explicarle algunos detalles antes de que la revisara.</p>
+<p>Emilia contestó que lo haría.</p>
+<p>Después, casi sin pensarlo, abrió la conversación de Nicolás.</p>
+<p>El último mensaje era de dos días atrás. Una fotografía de un libro que él había terminado y una broma sobre que Emilia probablemente habría discutido con el autor. Ella había respondido que el autor necesitaba una editora y que Nicolás no debía defenderlo solo porque había conseguido leerlo entero.</p>
+<p>Se quedó mirando la conversación.</p>
+<p>No necesitaba inventar una excusa para escribirle. Tampoco quería convertir cada contacto en una decisión trascendental. Habían llegado a un punto en el que podían hablar, verse, compartir cosas pequeñas y detenerse cuando cualquiera de los dos necesitaba hacerlo. No era una relación que tuviera que demostrarse a cada momento.</p>
+<p>Aun así, le apetecía verlo.</p>
+<p>Escribió: «¿Cómo va el día?».</p>
+<p>Guardó el teléfono antes de que pudiera reconsiderarlo.</p>
+<hr style="border:0;border-top:1px solid #cfc5bc;margin:2.2em 0">
+<p>Nicolás estaba aprendiendo a reconocer los días que no debía intentar ganar.</p>
+<p>No era una lección que le gustara. Había pasado buena parte de su vida acostumbrado a tomar decisiones, a solucionar problemas antes de que alguien pudiera plantearlos y a confiar en que la voluntad bastaba para conseguir casi cualquier cosa. La rehabilitación había desmontado esa idea con una paciencia cruel.</p>
+<p>Había avances. Algunos tan pequeños que, semanas atrás, habría despreciado por insuficientes. Había tareas que ahora podía completar sin detenerse. Había movimientos que ya no requerían toda su concentración. También había días en los que el cansancio llegaba sin aviso y convertía una mañana aparentemente buena en una sucesión de pausas.</p>
+<p>Ese día había terminado una sesión antes de lo previsto. No por una emergencia, sino porque su terapeuta había considerado que insistir no le aportaría nada. Nicolás había discutido durante cinco minutos. Después, había aceptado.</p>
+<p>Se encontraba en el jardín, con una botella de agua y el libro que Emilia había mencionado en su último mensaje, cuando el teléfono vibró.</p>
+<p>Leyó la pregunta y sonrió.</p>
+<p>«¿Cómo va el día?».</p>
+<p>Podría haber contestado que bien. Era una respuesta sencilla, suficiente y, en ocasiones, cierta. Pero Emilia había aprendido a detectar las respuestas que utilizaba para cerrar una conversación, y Nicolás no tenía ganas de que le preguntara dos veces.</p>
+<p>«Me han echado de terapia antes de que pudiera protestar más. Creo que mi terapeuta está desarrollando una estrategia para evitar mis argumentos».</p>
+<p>La respuesta de Emilia llegó poco después.</p>
+<p>«Probablemente ha descubierto que son insoportables».</p>
+<p>«Los argumentos son impecables».</p>
+<p>«Eso es lo que diría alguien insoportable».</p>
+<p>Nicolás soltó una risa. Dejó el teléfono sobre su pierna y miró el jardín. No recordaba todo. Había espacios en su historia que seguían vacíos, fechas que no conseguía situar y recuerdos que aparecían de manera fragmentaria, sin obedecer a ninguna lógica. A veces, una imagen le resultaba familiar sin que pudiera explicar por qué. Otras, sabía que algo había ocurrido porque se lo habían contado, pero no sentía que perteneciera a su propia memoria.</p>
+<p>Había dejado de perseguir cada fragmento.</p>
+<p>No significaba que no quisiera recuperar lo perdido. Lo quería. Había días en los que esa necesidad era tan intensa que le costaba pensar en otra cosa. Pero había comprendido que obligarse a recordar no era lo mismo que recuperar una memoria, y que podía construir vínculos sin tener que encontrar primero todas las piezas.</p>
+<p>Emilia le había enseñado, sin proponérselo, que el presente no debía convertirse en una sala de espera.</p>
+<p>El teléfono vibró de nuevo.</p>
+<p>«¿Te apetece que nos veamos esta semana?», escribió ella.</p>
+<p>Nicolás leyó el mensaje dos veces.</p>
+<p>«Sí. Me apetece».</p>
+<p>No añadió una explicación. Tampoco preguntó si era una cita, si había algo que debían hablar o si ella esperaba que hiciera determinada cosa. Habían aprendido a no ponerle peso innecesario a cada encuentro.</p>
+<p>Unos minutos después, Emilia le escribió que quizá pasarían por casa de Marco esa tarde y que, si él se encontraba bien, podían coincidir allí.</p>
+<p>Nicolás respondió que lo intentaría.</p>
+<p>Después guardó el teléfono y volvió al libro.</p>
+<p>Por primera vez en mucho tiempo, no sintió que el día estuviera incompleto por lo que aún no recordaba.</p>
+<hr style="border:0;border-top:1px solid #cfc5bc;margin:2.2em 0">
+<p>La casa de Marco tenía el mismo aspecto de siempre, aunque Emilia había comenzado a reparar en detalles que antes pasaban desapercibidos. Las personas que entraban y salían no eran simples empleados. Algunos llevaban años con la familia. Otros habían llegado después, pero todos parecían conocer una serie de reglas que nadie necesitaba explicar en voz alta.</p>
+<p>Las conversaciones se detenían cuando alguien desconocido se acercaba demasiado. Las llamadas se atendían en habitaciones separadas. Los vehículos no se dejaban sin revisar. Marco podía pasar de discutir el presupuesto de una fundación a recibir un informe sobre una situación que requería una decisión inmediata, y el cambio de tono era tan natural que Emilia había dejado de sorprenderse.</p>
+<p>No había romantizado aquella vida. Sabía que el poder de las familias tenía un precio y que la lealtad no siempre era una palabra bonita. Pero también había comprendido que, dentro de aquel mundo, las relaciones eran más complejas de lo que había imaginado. Había personas que protegían. Personas que obedecían. Personas que negociaban. Y personas a las que no convenía confundir con ninguna de las anteriores.</p>
+<p>Marco la recibió en el despacho, le entregó la documentación y explicó lo que necesitaba. Emilia escuchó, hizo algunas preguntas y señaló un detalle que él había pasado por alto.</p>
+<p>—Eso no coincide con la fecha del informe anterior.</p>
+<p>Marco revisó la página.</p>
+<p>—Tienes razón.</p>
+<p>—¿Se ha actualizado?</p>
+<p>—Voy a comprobarlo.</p>
+<p>—No quiero que lo dejemos para después.</p>
+<p>Marco la miró y sonrió ligeramente.</p>
+<p>—No lo dejaremos.</p>
+<p>La conversación duró más de lo previsto, pero no se convirtió en una discusión. Cuando terminaron, Emilia cerró la carpeta y la dejó sobre la mesa.</p>
+<p>—Gracias.</p>
+<p>—No tienes que agradecerme cada vez que te entrego algo.</p>
+<p>—No estaba agradeciendo la documentación.</p>
+<p>Marco comprendió. No insistió.</p>
+<p>En el salón, Vittoria había conseguido que la bandeja de pasteles desapareciera parcialmente. El niño se encontraba junto a ella, examinando una caja que parecía contener piezas de algún juego.</p>
+<p>—¡Llegáis tarde! —anunció Vittoria.</p>
+<p>—No habíamos quedado a una hora —respondió Emilia.</p>
+<p>—Eso no impide que lleguéis tarde.</p>
+<p>Marco apareció detrás de ellas.</p>
+<p>—No discutas. Lleva toda la tarde esperando que alguien critique sus pasteles.</p>
+<p>—¡Marco!</p>
+<p>—Estoy diciendo la verdad.</p>
+<p>El niño se rio y Vittoria le entregó la caja.</p>
+<p>—Esto es para ti.</p>
+<p>—¿Qué es?</p>
+<p>—Ábrelo.</p>
+<p>Emilia se sentó a su lado mientras él retiraba el papel. Dentro había un juego de construcción, con piezas que parecían destinadas a montar un pequeño mecanismo.</p>
+<p>—¡Es un robot!</p>
+<p>—No exactamente —dijo Vittoria—. Es una máquina. Pero puedes convertirla en lo que quieras.</p>
+<p>El niño comenzó a sacar las piezas.</p>
+<p>—Gracias.</p>
+<p>—De nada, cariño.</p>
+<p>Emilia observó la escena durante unos segundos. Había algo en la forma en que Vittoria se acercaba a su hijo, en cómo Marco se había apartado para dejarle espacio, que le recordaba que una familia no siempre se parecía a las fotografías que uno había imaginado. A veces era una conversación absurda, un regalo inesperado o una invitación que no exigía nada.</p>
+<p>El timbre sonó.</p>
+<p>Marco miró hacia el pasillo. Uno de los hombres de la casa se acercó y le habló en voz baja. Emilia no distinguió las palabras, pero sí vio cómo Marco cambiaba ligeramente la expresión.</p>
+<p>—¿Problemas? —preguntó Vittoria.</p>
+<p>—Nada que no pueda esperar —respondió Marco.</p>
+<p>El hombre se retiró.</p>
+<p>Marco volvió al salón, pero Emilia había reparado en la breve conversación. No preguntó. No porque no quisiera saber, sino porque había aprendido que no todas las cosas requerían una respuesta inmediata y que, si se trataba de algo que afectaba a su seguridad, Marco se lo diría.</p>
+<p>—¿Te quedas a cenar? —preguntó Vittoria.</p>
+<p>Emilia miró a su hijo, que ya había extendido las piezas sobre la alfombra.</p>
+<p>—Si no os importa.</p>
+<p>—Por favor.</p>
+<hr style="border:0;border-top:1px solid #cfc5bc;margin:2.2em 0">
+<p>Nicolás llegó un poco más tarde.</p>
+<p>Emilia lo vio desde el salón, cuando cruzó la entrada acompañado por uno de los hombres de Marco. Llevaba un abrigo oscuro y caminaba con cuidado, aunque sin la rigidez de semanas atrás. Se detuvo para saludar, intercambió unas palabras con Marco y después miró hacia ella.</p>
+<p>No hubo un momento cinematográfico. No se quedó paralizado ni pareció olvidar dónde estaba. Sonrió, y Emilia sintió que aquella sonrisa le hacía bien de una manera que todavía no había aprendido a explicar.</p>
+<p>—Hola —dijo él.</p>
+<p>—Hola.</p>
+<p>Nicolás se acercó. Le preguntó cómo había ido el día, y Emilia le respondió que había sobrevivido a una reunión, a una conversación sobre documentos y a una flor que parecía una patata.</p>
+<p>—No sé qué significa eso —dijo Nicolás.</p>
+<p>—Es mejor que no lo sepas.</p>
+<p>—Ahora tengo curiosidad.</p>
+<p>Vittoria, desde el otro lado del salón, protestó que nadie apreciaba su talento. Marco aseguró que él sí, pero que no estaba dispuesto a mentir sobre la forma de los pasteles.</p>
+<p>Nicolás se rio.</p>
+<p>Emilia le indicó una silla. Él se sentó y dejó el abrigo a un lado. El niño, ocupado con las piezas, levantó la vista cuando Nicolás habló sobre el mecanismo que estaba intentando construir.</p>
+<p>—¿Es complicado?</p>
+<p>—Un poco —respondió el pequeño—. Pero creo que esta pieza va aquí.</p>
+<p>Nicolás no se acercó de inmediato. Miró el dibujo de las instrucciones y señaló una parte.</p>
+<p>—¿Y si pruebas con esta?</p>
+<p>El niño comprobó la imagen.</p>
+<p>—No. Esta va al otro lado.</p>
+<p>—Entonces me has ganado.</p>
+<p>—Todavía no he terminado.</p>
+<p>—Eso es justo lo que diría alguien que está ganando.</p>
+<p>El niño sonrió y siguió montando.</p>
+<p>Emilia observó a ambos. No intentó convertir la escena en algo que no era. Nicolás no estaba ocupando un lugar que el niño no le hubiera ofrecido. No había una expectativa escondida detrás de cada conversación. Solo dos personas compartiendo un momento, y eso, precisamente, era lo que Emilia quería proteger.</p>
+<p>Durante la cena, hablaron de cosas pequeñas. Marco contó una anécdota de una reunión que había terminado de manera absurda. Vittoria defendió la decoración de sus pasteles. Nicolás explicó que había empezado a leer otro libro, y Emilia se burló de que no había terminado el anterior.</p>
+<p>—Lo terminé —dijo él.</p>
+<p>—¿Y entonces?</p>
+<p>—Entonces empecé otro.</p>
+<p>—Una conducta sospechosa.</p>
+<p>—No sabía que leer tenía un reglamento.</p>
+<p>—Lo tiene. Y estás incumpliendo varios artículos.</p>
+<p>Vittoria se llevó una mano al pecho, fingiendo indignación.</p>
+<p>—Por favor, que alguien me explique cómo se puede discutir por libros durante una cena.</p>
+<p>—Es una cuestión de principios —respondió Emilia.</p>
+<p>—Es una cuestión de que no os calláis —dijo Marco.</p>
+<p>Las risas se prolongaron unos minutos.</p>
+<p>Después, mientras Marco atendía una llamada y Vittoria ayudaba al niño a guardar las piezas, Emilia salió al jardín. Nicolás la siguió al cabo de un momento, pero se detuvo junto a la puerta para preguntarle si quería compañía.</p>
+<p>—Sí —respondió ella.</p>
+<p>Él se acercó y se apoyó en la barandilla, a su lado.</p>
+<p>El aire era frío. Desde allí se veía parte de la iluminación de la casa y, más lejos, los árboles que rodeaban la propiedad. Emilia se cruzó de brazos.</p>
+<p>—¿Cómo estás de verdad? —preguntó.</p>
+<p>Nicolás miró hacia el jardín antes de contestar.</p>
+<p>—Hoy, bien. Cansado, pero bien.</p>
+<p>—¿La sesión?</p>
+<p>—Me han hecho parar antes de lo que quería.</p>
+<p>—¿Y has parado?</p>
+<p>—Después de discutir.</p>
+<p>Emilia sonrió.</p>
+<p>—Me sorprende muchísimo.</p>
+<p>—No te burles.</p>
+<p>—No me estoy burlando. Estoy intentando imaginar a tu terapeuta.</p>
+<p>Nicolás soltó una risa breve. Después guardó silencio.</p>
+<p>—Hay días en los que me frustra —admitió—. No tanto lo que no puedo hacer. Creo que lo peor es no saber cuándo va a cambiar. Hay cosas que mejoran y otras que parecen quedarse igual. Y no sé si estoy avanzando lo suficiente.</p>
+<p>Emilia se volvió hacia él.</p>
+<p>—No tienes que medirlo todo como si estuvieras compitiendo.</p>
+<p>—Lo sé.</p>
+<p>—No parece que lo sepas.</p>
+<p>Nicolás bajó la mirada. No discutió.</p>
+<p>—Estoy intentando aprenderlo.</p>
+<p>Emilia le tomó la mano. No le dijo que todo iba a salir bien. No le prometió que recuperaría cada recuerdo ni que el proceso sería más fácil. Había aprendido que algunas promesas solo servían para llenar el silencio, y no quería ofrecerle ninguna que no pudiera sostener.</p>
+<p>—Entonces aprende —dijo suavemente—. Sin castigarte cada vez que algo no salga como esperabas.</p>
+<p>Nicolás entrelazó los dedos con los suyos.</p>
+<p>—¿Y tú?</p>
+<p>—¿Yo qué?</p>
+<p>—¿Cómo estás de verdad?</p>
+<p>Emilia tardó un poco en responder.</p>
+<p>—Mejor. Creo que estoy mejor de lo que esperaba.</p>
+<p>—¿Por qué?</p>
+<p>Ella miró hacia la casa. Su hijo estaba sentado en la alfombra, mostrando a Vittoria una pieza que había conseguido encajar. Marco había regresado al salón. La escena era tan ordinaria que, por un instante, Emilia no supo qué decir.</p>
+<p>—Porque ya no siento que tenga que resolver mi vida entera para poder disfrutar de una tarde —respondió—. Todavía hay cosas pendientes. Con mi familia, con los documentos, con todo lo que hemos descubierto. Pero no quiero que eso sea lo único que exista.</p>
+<p>Nicolás asintió.</p>
+<p>—Me alegro.</p>
+<p>—Y porque... —Emilia se volvió hacia él— porque me gusta estar contigo.</p>
+<p>Él sonrió. No de una manera triunfal, ni como si aquella frase le hubiera concedido algo que esperaba reclamar. Solo sonrió.</p>
+<p>—A mí también me gusta estar contigo.</p>
+<p>Emilia se acercó y lo besó.</p>
+<p>Fue un beso breve, cálido, sin prisa. Cuando se apartó, Nicolás le rozó la mejilla con los dedos.</p>
+<p>—Podría acostumbrarme a esto —murmuró.</p>
+<p>—No te acostumbres demasiado. Soy insoportable.</p>
+<p>—Lo estoy comprobando.</p>
+<p>Ella le dio un pequeño golpe en el brazo y ambos se rieron.</p>
+<p>Desde el salón, Vittoria los llamó para que regresaran antes de que Marco se comiera el último pastel.</p>
+<p>Emilia suspiró.</p>
+<p>—Tenemos que salvar la flor.</p>
+<p>—¿La patata? —preguntó Nicolás.</p>
+<p>—No la llames así delante de Vittoria.</p>
+<p>Volvieron a entrar.</p>
+<p>La noche terminó sin una noticia que alterara la casa, sin una llamada que obligara a nadie a levantarse, sin un acontecimiento que pudiera convertirse en el centro de sus vidas. El niño se quedó dormido durante el trayecto de vuelta. Emilia lo acomodó en la cama, le quitó los zapatos y dejó la puerta entreabierta.</p>
+<p>En el pasillo, se detuvo unos segundos.</p>
+<p>Había pasado mucho tiempo desde que una noche normal le parecía algo que podía perderse. Quizá por eso, ahora, no intentaba guardar cada momento como si fuera una prueba. No necesitaba fotografiarlo, escribirlo ni explicarlo. Podía dejar que existiera.</p>
+<p>Cuando regresó a su habitación, el teléfono tenía un mensaje de Nicolás.</p>
+<p>«Gracias por hoy».</p>
+<p>Emilia sonrió y respondió:</p>
+<p>«Gracias a ti».</p>
+<p>Después dejó el móvil sobre la mesilla, apagó la luz y se acostó.</p>
+<p>El día siguiente tendría sus propias preguntas. Los asuntos familiares no habían desaparecido. La rehabilitación continuaría. Los recuerdos de Nicolás seguirían llegando —o no— cuando quisieran. Y Emilia todavía tendría que decidir qué hacer con algunas verdades que no habían terminado de acomodarse en su vida.</p>
+<p>Pero aquella noche no quiso adelantarse.</p>
+<p>Se quedó quieta, escuchando el silencio de la casa.</p>
+<p>Y por primera vez, no tuvo miedo de que la tranquilidad fuera solamente el intervalo entre dos desgracias.
+</p>
+<p>Desde que sus padres y sus hermanas habían salido de viaje por una serie de reuniones empresariales que se prolongarían varias semanas, Emilia había intentado convencerse de que no necesitaba compañía. La habían invitado a acompañarlos, incluso le habían insistido en que podía trabajar desde cualquier lugar, pero ella había rechazado la propuesta. No quería abandonar lo que estaba intentando construir ni convertir cada decisión en una huida. Las llamadas familiares, eso sí, seguían llegando a horas absurdas y con cuatro voces hablando a la vez.</p><p>Más tarde, Nicolás le dejó una taza de té junto al sofá. No preguntó por qué llevaba un rato mirando el móvil. Solo se sentó a su lado y, cuando Emilia apoyó la cabeza en su hombro casi sin darse cuenta, permaneció quieto. Después le acarició el cabello con una delicadeza que hizo que ella cerrara los ojos.</p><p>—Puedes quedarte así —murmuró él—. No tienes que explicar nada.</p><p>Emilia terminó enlazando sus dedos con los de él. El gesto fue pequeño, pero aquella noche se quedó dormida con la mano de Nicolás entre las suyas.</p><nav class="chapter-navigation"><a href="prologo.html">← Prólogo</a><a class="next" href="capitulo-2.html">Capítulo 2 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 1</footer></body></html>

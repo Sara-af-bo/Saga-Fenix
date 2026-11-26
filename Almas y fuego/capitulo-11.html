@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 11 — Los nombres que permanecen | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em}@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 11</div><h1>Los nombres que permanecen</h1></header>
+<h2>Los nombres que permanecen</h2>
+<p>El teléfono de Emilia sonó poco después del mediodía. Estaba terminando de ordenar unas carpetas cuando vio que era Vittoria. Contestó con la expectativa de que se tratara de algún plan improvisado, pero la voz al otro lado sonaba más seria.</p>
+<p>—¿Tienes un momento?</p>
+<p>—Sí. ¿Qué pasa?</p>
+<p>—Marco ha estado revisando algunos asuntos antiguos. Hay algo que creemos que deberías conocer. No es urgente, pero tampoco quiero que te enteres por otra persona.</p>
+<p>Emilia dejó la carpeta sobre la mesa.</p>
+<p>—¿De qué se trata?</p>
+<p>—Prefiero explicártelo en persona. Si te parece, podemos ir esta tarde. Y, si quieres que Nicolás esté, también.</p>
+<p>Emilia miró hacia la ventana. No sentía la alarma de otras veces, pero sí una cautela que no había desaparecido.</p>
+<p>—Iremos. Quiero escucharlo todo.</p>
+<p>Cuando se lo contó a Nicolás, él aceptó acompañarla. No preguntó si debía prepararse ni si aquella información podía ser difícil. Solo dijo que estaría allí y que, si Emilia necesitaba detener la conversación, lo harían.</p>
+<p>Marco los recibió en su despacho. Sobre la mesa había una carpeta delgada, varias copias de documentos y una libreta. No parecía una reunión preparada para imponer una decisión. Vittoria les ofreció café y esperó a que se sentaran.</p>
+<p>—Lo que hemos encontrado no cambia lo que ya hablamos —comenzó Marco—. Pero completa una parte.</p>
+<p>Explicó que, durante años, ciertos asuntos familiares habían quedado registrados de forma incompleta o dispersa. No todo se había ocultado deliberadamente; algunas decisiones se habían tomado con información parcial, otras se habían dejado sin seguimiento y, en más de una ocasión, alguien había preferido no hacer preguntas. Habían reunido los documentos que podían verificarse y separado las cuestiones confirmadas de las que todavía requerían investigación.</p>
+<p>Emilia escuchó sin interrumpir. Cuando Marco le mostró una fecha que no encajaba con lo que ella recordaba, pidió que se la explicara. Cuando Vittoria mencionó una decisión tomada en su nombre, Emilia preguntó quién la había autorizado y por qué no se le había consultado.</p>
+<p>Las respuestas no fueron perfectas. Algunas cosas seguían sin tener una explicación definitiva. Sin embargo, ninguno de los dos intentó cerrar la conversación con una excusa.</p>
+<p>—No quiero que esto se convierta en otra carpeta que guardamos hasta que alguien se enfade —dijo Emilia finalmente—. Si hay algo que me afecta, quiero saberlo. Y si no tenéis una respuesta, prefiero que me digáis eso.</p>
+<p>—De acuerdo —respondió Marco.</p>
+<p>—No quiero promesas hechas porque estamos aquí sentados. Quiero que lo hagáis.</p>
+<p>Vittoria asintió.</p>
+<p>—Lo haremos.</p>
+<p>Nicolás había permanecido atento, sin intervenir salvo cuando Emilia le pidió que revisara una de las fechas. Al salir, caminó junto a ella hasta el coche.</p>
+<p>—¿Cómo te sientes?</p>
+<p>Emilia tardó en contestar.</p>
+<p>—Cansada. Pero no siento que me hayan quitado el control de la conversación.</p>
+<p>—Eso es importante.</p>
+<p>—Sí. Lo es.</p>
+<p>De regreso, pasaron por una tienda porque el niño había pedido algo para una actividad que quería hacer el fin de semana. Emilia se sorprendió al ver a Nicolás elegir con cuidado, comparando dos opciones y preguntándole qué creía que sería más útil. No era un gesto extraordinario, pero le recordó que la vida no se detenía en los asuntos familiares que aún quedaban por resolver.</p>
+<p>En casa, el niño los recibió con una pregunta sobre la compra. Nicolás le explicó lo que habían traído y, enseguida, ambos comenzaron a preparar la mesa para la actividad. Emilia los observó unos segundos antes de dejar la carpeta en un cajón.</p>
+<p>Por la noche, cuando el pequeño ya dormía, Nicolás se acercó a ella.</p>
+<p>—Hoy has estado muy firme.</p>
+<p>—No quería volver a dejar que decidieran por mí.</p>
+<p>—Y no lo has hecho.</p>
+<p>Emilia se apoyó contra él.</p>
+<p>—A veces todavía me cuesta creer que puedo hablar y que alguien simplemente me escuche.</p>
+<p>Nicolás le acarició el cabello.</p>
+<p>—Entonces tendremos que acostumbrarnos a eso.</p>
+<p>Ella levantó la mirada y lo besó. No fue un beso para olvidar los problemas, ni para prometer que todo estaba resuelto. Fue una forma de reconocer el día, las pequeñas victorias y la tranquilidad imperfecta que habían conseguido conservar.</p>
+<p>En el despacho de Marco, la carpeta seguía abierta. Había asuntos pendientes, nombres que aún debían verificarse y preguntas que no podían responderse de inmediato. Pero por primera vez, Emilia sabía exactamente qué se estaba revisando y había decidido cómo participar.</p>
+<p>Y esa diferencia, por pequeña que pareciera, era suficiente para seguir avanzando.</p>
+<p>Emilia guardó una fotografía reciente de sus hermanas en la mesilla. Nicolás la vio y preguntó quién había enviado aquella imagen. Ella le explicó que sus hermanas habían fotografiado una cena de negocios, posando como si estuvieran en una alfombra roja. Él escuchó la historia y, cuando Emilia terminó riéndose, la besó en la frente.</p><p>—Me gusta cuando hablas de ellas.</p><p>—¿Por qué?</p><p>—Porque se nota que las quieres.</p><p>Emilia le acarició la mejilla.</p><p>—También se nota que te quiero a ti, aunque todavía no sepa qué hacer con todas estas cosas.</p><p>Él no le pidió que las resolviera. La abrazó y dejó que el silencio les hiciera sitio.</p><nav class="chapter-navigation"><a href="capitulo-10.html">← Capítulo 10</a><a class="next" href="capitulo-12.html">Capítulo 12 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 11</footer></body></html>

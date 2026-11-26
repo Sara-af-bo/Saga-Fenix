@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 40 — La prueba que no podían entregar</title>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+main{max-width:850px;margin:48px auto;padding:36px 28px}
+h1{text-align:center;font-weight:normal;font-size:2rem;margin-bottom:2.4rem}
+p{margin:0 0 1.25em;text-align:justify}
+@media(max-width:600px){main{margin:12px auto;padding:24px 20px}h1{font-size:1.6rem}}
+</style>
+
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 40</div><h1>La prueba que no podían entregar</h1></header><main>
+
+<p>La grabación de Irene duraba apenas once segundos. Emilia la había escuchado tantas veces que ya podía anticipar cada pausa, cada respiración agitada y el pequeño ruido que se producía al final, como si la mujer hubiera tenido que esconder el teléfono de golpe.</p>
+<p>«Está preguntando por ti. No deja de hacerlo. No le digas que estoy haciendo esto… por favor».</p>
+<p>La última palabra se había quedado atrapada en Emilia. No sabía quién era Irene, cuánto arriesgaba ni por qué había decidido ayudar a Luca, pero aquellas once segundos constituían la única señal que habían recibido desde que su hijo desapareció.</p>
+<p>—No podemos responderle directamente —dijo Esteban, después de escuchar el audio por cuarta vez—. Si han conseguido controlar las comunicaciones de ese lugar, cualquier respuesta podría ponerla en peligro.</p>
+<p>—Y si no respondemos, puede pensar que no hemos recibido nada —replicó Emilia.</p>
+<p>Nicolás estaba junto a la ventana, con los brazos cruzados. No había dormido. Cada vez que cerraba los ojos veía el dibujo que Luca había dejado sobre la mesa aquella mañana: tres figuras de la mano, una casa y un sol desproporcionadamente grande. El dibujo seguía allí, intacto, como si alguien pudiera regresar y terminarlo.</p>
+<p>—Necesitamos una forma de que sepa que la hemos escuchado —dijo finalmente—. Sin comprometerla.</p>
+<p>Marco se levantó de la silla.</p>
+<p>—La policía está trabajando en eso. No vamos a improvisar un contacto que pueda empeorar la situación.</p>
+<p>La frase no gustó a ninguno, pero nadie la discutió. Habían aprendido, demasiado rápido, que actuar por desesperación podía ser exactamente lo que esperaba quien había organizado el secuestro.</p>
+<p>Mientras el equipo policial revisaba los datos de la grabación y los posibles lugares relacionados con Salvat, Gabriel llegó con una noticia sobre la caja de seguridad.</p>
+<p>—La entidad ha confirmado que existe una copia del anexo AR-2 —anunció—. No es el original, pero está autenticada por el sistema de custodia. El acceso requiere una autorización adicional y la verificación de dos titulares que figuran en los documentos antiguos.</p>
+<p>—¿Podemos conseguirla? —preguntó Nicolás.</p>
+<p>—Sí. Pero no hoy. Y, aunque la consigamos, no debemos entregarla sin que la fiscalía determine qué contiene y qué puede hacerse con ella.</p>
+<p>Emilia se llevó una mano a la frente.</p>
+<p>—Entonces estamos otra vez en el mismo sitio.</p>
+<p>—No —intervino Gabriel—. Ahora sabemos que la copia existe. Y sabemos que alguien ha movido cielo y tierra para conseguir algo que ni siquiera está en manos de Salvat.</p>
+<p>El teléfono de Marco vibró. Era un número desconocido. No puso el altavoz de inmediato; miró a los demás y, cuando la policía confirmó que podía atender la llamada bajo sus instrucciones, activó el sonido.</p>
+<p>—¿Tiene el anexo? —preguntó una voz masculina, distorsionada por un filtro.</p>
+<p>—No —respondió Marco—. Y no vamos a entregarlo a ciegas.</p>
+<p>—No se trata de ustedes.</p>
+<p>—Se trata de un niño que han secuestrado.</p>
+<p>Al otro lado hubo una pausa.</p>
+<p>—El niño está bien. Si quieren que siga así, dejen de hacer preguntas sobre Darío Salvat.</p>
+<p>—¿Quién eres?</p>
+<p>La voz soltó una risa seca.</p>
+<p>—Alguien que conoce el precio de los errores de Nicolás.</p>
+<p>Nicolás se acercó al teléfono, pero Marco levantó la mano para impedir que hablara.</p>
+<p>—Si conoce a Nicolás, entonces sabe que no vamos a aceptar amenazas —dijo Marco.</p>
+<p>—No lo conocen tan bien como creen.</p>
+<p>La llamada terminó.</p>
+<p>Durante unos segundos nadie se movió. Después, el agente que coordinaba la investigación pidió el registro de la llamada y comunicó que el número, aunque oculto, había dejado una huella de conexión que podían intentar cruzar con otros datos. No prometió resultados inmediatos.</p>
+<p>—Ha cambiado el mensaje —observó Esteban—. Antes exigían el anexo. Ahora quieren que dejemos de buscar a Salvat.</p>
+<p>—Porque Salvat no es lo que les preocupa —dijo Gabriel—. Es lo que sabe.</p>
+<p>Emilia se apartó de la mesa. Se sentía agotada, pero no podía permitirse que el agotamiento se transformara en una decisión precipitada. Luca seguía allí, en algún lugar. Había preguntado por ella. Eso era lo único que necesitaba repetir.</p>
+<p>En el lugar donde lo retenían, Luca estaba sentado sobre una manta, con un vaso de agua entre las manos. Irene se acercó cuando el hombre que vigilaba la puerta salió a atender una llamada.</p>
+<p>—¿Quieres que te lea algo? —preguntó suavemente.</p>
+<p>El niño negó con la cabeza.</p>
+<p>—Quiero a mamá.</p>
+<p>Irene se agachó a su altura. No le prometió que estaría allí al día siguiente, porque no sabía si podría cumplirlo. Le acomodó la manta y le dijo que su madre estaba buscándolo, que no había dejado de hacerlo ni un minuto.</p>
+<p>—¿Y papá?</p>
+<p>—También.</p>
+<p>Luca miró hacia la puerta.</p>
+<p>—¿Puedo hacer un dibujo?</p>
+<p>Irene le acercó un papel y un lápiz que había conseguido esconder. El niño dibujó dos manos grandes y una pequeña en medio. Después escribió, con letras torcidas, su nombre.</p>
+<p>Cuando Irene volvió a esconder el teléfono, había tomado una decisión. No podía seguir esperando a que los hombres que dirigían aquello cometieran un error. Pero tampoco podía actuar sin medir las consecuencias.</p>
+<p>En la otra parte de la ciudad, Darío Salvat recibió una llamada que no esperaba.</p>
+<p>—La familia no está cediendo —informó alguien.</p>
+<p>—Ya lo sé.</p>
+<p>—Y la mujer que está con el niño ha empezado a hacer preguntas.</p>
+<p>Salvat cerró los ojos.</p>
+<p>—No debía hablar con nadie.</p>
+<p>—No es ella quien decide ahora.</p>
+<p>La voz que respondió no era la misma que había llamado a Marco. Salvat lo reconoció y se quedó inmóvil.</p>
+<p>—Me dijiste que no habría un niño involucrado.</p>
+<p>—Y tú aceptaste un trabajo. No confundas las condiciones con tus remordimientos.</p>
+<p>—Esto se está saliendo de control.</p>
+<p>—Entonces controla lo que todavía está a tu alcance.</p>
+<p>La llamada se cortó. Salvat contempló el teléfono durante un largo rato. Había aceptado participar porque le aseguraron que se trataba de recuperar documentos y presionar a un hombre que había olvidado demasiado. Nunca le explicaron por qué la familia debía convertirse en el punto de presión. Y, cuando lo comprendió, ya había demasiadas personas implicadas.</p>
+<p>En casa de Emilia, la noche avanzaba sin que nadie se atreviera a hablar de dormir.</p>
+<p>Nicolás se sentó frente a ella. No intentó consolarla con promesas vacías.</p>
+<p>—No sé qué voy a hacer cuando lo tengamos delante —confesó—. No sé si voy a recordar algo, si voy a ser capaz de mantener la cabeza fría. Pero no voy a dejar que esto decida quién soy ahora.</p>
+<p>Emilia le tomó la mano.</p>
+<p>—No tienes que recordar quién eras para ser su padre.</p>
+<p>Él asintió. La apretó con cuidado, como si aquel gesto fuera la única certeza que podía sostener.</p>
+<p>El agente volvió a entrar con una actualización. Habían encontrado una coincidencia parcial entre la llamada y una línea usada anteriormente por una empresa intermediaria. No era una ubicación, ni una prueba definitiva, pero abría una nueva vía de investigación.</p>
+<p>Y, por primera vez desde el secuestro, la búsqueda no dependía únicamente de lo que el desconocido estuviera dispuesto a revelar.</p>
+</main><p>Los padres de Emilia se mantuvieron al teléfono y, cuando pudieron, reorganizaron sus compromisos para estar más disponibles. Sus hermanas llamaron desde el viaje, incapaces de ocultar el miedo, y Emilia les pidió que no se culparan por estar lejos. En casa, Nicolás la abrazó mientras escuchaba, y ella apoyó la cabeza contra su pecho.</p><nav class="chapter-navigation"><a href="capitulo-39.html">← Capítulo 39</a><a class="next" href="capitulo-41.html">Capítulo 41 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 40</footer></body></html>

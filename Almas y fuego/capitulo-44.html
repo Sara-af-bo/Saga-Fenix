@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 44 — La advertencia de Ferrer</title>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+main{max-width:850px;margin:48px auto;padding:36px 28px}
+h1{text-align:center;font-weight:normal;font-size:2rem;margin-bottom:2.4rem}
+p{margin:0 0 1.25em;text-align:justify}
+@media(max-width:600px){main{margin:12px auto;padding:24px 20px}h1{font-size:1.6rem}}
+</style>
+
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 44</div><h1>La advertencia de Ferrer</h1></header><main>
+
+<p>El nombre de Adrián Ferrer había dejado de ser una referencia perdida entre papeles. Ahora estaba en el centro de una investigación que, sin embargo, todavía no podía afirmar que él dirigiera el secuestro. La policía había solicitado información sobre sus vínculos empresariales y movimientos conocidos. Marco insistía en que no se adelantaran a los hechos.</p>
+<p>—No quiero que confundamos una pista con una sentencia —dijo, mientras repasaba la información con Gabriel y Esteban—. Si Ferrer está implicado, lo demostrarán. Si hay otra persona, no podemos regalarle la oportunidad de desaparecer por perseguir al hombre equivocado.</p>
+<p>Nicolás estaba mirando la fotografía antigua. El fragmento que había recordado la noche anterior no había vuelto. Se había quedado con la frase, con una voz que no sabía ubicar y con la sensación de que, en algún momento, había decidido proteger a alguien.</p>
+<p>—¿Y si era Emilia? —preguntó.</p>
+<p>Emilia no apartó la mirada.</p>
+<p>—Puede ser. Pero no vamos a construir nuestra historia sobre un recuerdo incompleto.</p>
+<p>Él asintió. Aquello le dolía, pero era cierto.</p>
+<p>La actualización de la policía llegó poco antes del mediodía. Ferrer había mantenido vínculos con algunas de las sociedades investigadas, aunque varias habían sido disueltas o cambiadas de titular. El equipo estaba intentando establecer si había utilizado esas estructuras recientemente. No tenían autorización para acercarse a él ni para realizar una intervención sin nuevas pruebas.</p>
+<p>La familia no recibió más detalles por el momento.</p>
+<p>Mientras esperaban, Emilia abrió el armario de Luca. Había ropa que aún olía al detergente que utilizaban, una chaqueta pequeña que él insistía en llevar incluso cuando hacía calor y un par de zapatos que había dejado junto a la cama. Se sentó en el suelo y sostuvo la chaqueta sobre las rodillas.</p>
+<p>No lloró al principio. Se quedó inmóvil, escuchando el silencio de la casa. Después, sin poder evitarlo, se cubrió la cara.</p>
+<p>Nicolás la encontró unos minutos más tarde. No preguntó qué había ocurrido. Se sentó a su lado y la abrazó, dejando que llorara sin intentar detenerla.</p>
+<p>—No puedo soportar no saber —dijo ella.</p>
+<p>—Lo sé.</p>
+<p>—No sé si está durmiendo. Si tiene frío. Si está comiendo.</p>
+<p>—No lo sabemos. Pero seguimos buscándolo.</p>
+<p>Emilia se aferró a él.</p>
+<p>—No quiero perderlo.</p>
+<p>—No estás sola.</p>
+<p>En el lugar donde Luca permanecía retenido, Irene había conseguido memorizar algunas cosas sin escribirlas: los cambios de guardia, el sonido de la puerta exterior y la manera en que el visitante del reloj negro hablaba con Salvat. No eran detalles suficientes para escapar ni para localizar el edificio, pero le permitían entender que aquel hombre no visitaba el lugar por casualidad.</p>
+<p>Ese día, Ferrer llegó antes de lo habitual.</p>
+<p>Salvat lo esperaba en el pasillo.</p>
+<p>—Tenemos que hablar.</p>
+<p>—No ahora.</p>
+<p>—Ahora. La policía ha identificado tu nombre. Gabriel te reconoce. Ya no puedes mantener esto oculto.</p>
+<p>Ferrer lo miró con frialdad.</p>
+<p>—¿Qué han encontrado?</p>
+<p>—Una fotografía. Y una referencia en el anexo.</p>
+<p>—¿V-17?</p>
+<p>Salvat no respondió, pero su silencio bastó.</p>
+<p>Ferrer se quitó los guantes lentamente.</p>
+<p>—Entonces todavía no saben lo que significa.</p>
+<p>—No quiero que el niño siga aquí.</p>
+<p>—No vuelvas a repetirlo delante de los demás.</p>
+<p>—Esto no era lo que me dijiste.</p>
+<p>Ferrer se acercó. No levantó la voz.</p>
+<p>—Lo que te dije fue que necesitábamos el documento. Tú aceptaste gestionar la presión. Ahora no me interesa tu interpretación de los límites.</p>
+<p>Salvat dio un paso atrás. Ferrer entró en la habitación donde estaba Luca. Irene se levantó inmediatamente, pero el hombre le hizo un gesto para que permaneciera quieta.</p>
+<p>—¿Cómo te llamas? —preguntó al niño.</p>
+<p>—Luca.</p>
+<p>—Lo sé.</p>
+<p>El niño apretó el papel que tenía entre las manos.</p>
+<p>—¿Puedo ir con mi mamá?</p>
+<p>Ferrer no contestó enseguida. Miró el dibujo. Había una casa, tres figuras y un sol. La pequeña figura central tenía los brazos extendidos.</p>
+<p>—Todavía no —dijo.</p>
+<p>—¿Por qué?</p>
+<p>—Porque hay cosas que tienen que resolverse.</p>
+<p>Luca comenzó a llorar. Irene dio un paso, pero Ferrer se giró hacia ella.</p>
+<p>—No lo asustes más.</p>
+<p>—No lo estoy asustando. Está asustado porque está lejos de su familia.</p>
+<p>La respuesta pareció irritarlo. Se guardó el dibujo en el bolsillo del abrigo y salió.</p>
+<p>—Devuélvaselo —dijo Irene.</p>
+<p>Ferrer se detuvo, pero no volvió. La puerta se cerró.</p>
+<p>En el despacho contiguo, Salvat intentó hablar una vez más.</p>
+<p>—La situación se está volviendo insostenible.</p>
+<p>—La situación es exactamente la que debe ser.</p>
+<p>—¿Y si entregan el anexo?</p>
+<p>Ferrer se quedó mirando la ventana.</p>
+<p>—Entonces tendremos que decidir qué hacer con la verdad.</p>
+<p>—¿Qué verdad?</p>
+<p>El hombre del reloj negro no respondió. Había cosas que Salvat no debía conocer, y había otras que ni siquiera Ferrer estaba dispuesto a pronunciar.</p>
+<p>Horas después, una nueva comunicación llegó a la familia. No era una exigencia de dinero ni una amenaza directa. Era un mensaje breve, enviado a través del mismo canal utilizado anteriormente.</p>
+<p>«Dejen de buscar a Ferrer. Él no es quien debería temerles».</p>
+<p>El agente que recibió el mensaje lo registró y solicitó que no respondieran.</p>
+<p>Marco leyó la frase en voz alta. Gabriel se quedó mirando el teléfono.</p>
+<p>—¿Una advertencia para protegerlo? —preguntó Esteban.</p>
+<p>—O una advertencia para que no descubramos a alguien más —respondió Gabriel.</p>
+<p>Nicolás levantó la cabeza.</p>
+<p>—¿Y si Ferrer también está siendo utilizado?</p>
+<p>Nadie descartó la posibilidad. Tampoco la aceptaron.</p>
+<p>Emilia se acercó a la ventana. Afuera, la ciudad seguía con su rutina, indiferente a la ausencia de Luca. Miró el reflejo de Nicolás detrás de ella y pensó que, cuando su hijo regresara, tendrían que reconstruir muchas cosas. No solo la seguridad, sino la confianza, el sueño y la tranquilidad de volver a cerrar una puerta sin preguntarse quién podía estar al otro lado.</p>
+<p>En una habitación aislada, Irene encontró el dibujo de Luca escondido bajo una silla. Ferrer lo había dejado allí, o quizá alguien lo había devuelto sin que ella lo viera. Lo dobló con cuidado y lo guardó.</p>
+<p>En el reverso, Luca había escrito una frase que apenas se entendía:</p>
+<p>«Quiero volver a casa».</p>
+<p>Irene cerró los ojos. Esta vez, no esperaría al próximo jueves para intentar enviar otra señal.</p>
+</main><p>Al terminar las conversaciones, Emilia y Nicolás se quedaron abrazados. El temor no había desaparecido, pero ella le pidió que no confundiera protegerlos con alejarse emocionalmente. Nicolás prometió que seguiría hablándole, incluso cuando no supiera qué decir. Emilia le besó y permaneció junto a él.</p><nav class="chapter-navigation"><a href="capitulo-43.html">← Capítulo 43</a><a class="next" href="capitulo-45.html">Capítulo 45 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 44</footer></body></html>

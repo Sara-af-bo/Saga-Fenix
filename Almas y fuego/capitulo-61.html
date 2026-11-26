@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 61 — El vestido y la memoria</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 61</div><h1>El vestido y la memoria</h1></header><main><div class="subtitle">El vestido y la memoria</div>
+<p>Emilia no había pensado que elegir un vestido pudiera hacerla sentir tantas cosas a la vez.</p>
+<p>La cita estaba reservada para aquella mañana. Su madre había insistido en acompañarla, y el padre de Emilia se había ofrecido a llevarlas, aunque finalmente Nicolás lo convenció de que él se quedaría con Luca, que había decidido pasar la mañana construyendo una «sorpresa de boda» con cartón, cinta adhesiva y una cantidad inexplicable de purpurina.</p>
+<p>—No preguntes —le había dicho Nicolás al despedirse—. Creo que es mejor que no sepamos nada hasta que termine.</p>
+<p>Emilia había reído y lo había besado antes de salir.</p>
+<p>En la boutique, su madre no intentó dirigir la elección. Le preguntó qué quería sentir al caminar hacia Nicolás. La pregunta hizo que Emilia se quedara pensativa.</p>
+<p>—Tranquilidad —respondió al cabo—. Y alegría. Quiero sentir que no estoy corriendo hacia algo. Que estoy llegando.</p>
+<p>Su madre le apretó la mano.</p>
+<p>—Entonces buscaremos algo que sea tuyo. No algo que parezca que debes llevar.</p>
+<p>Probaron varios vestidos. Uno demasiado rígido, otro demasiado adornado, otro que Emilia descartó apenas se miró al espejo. Se reía, se quejaba del cierre, hacía comentarios absurdos sobre lo que Nicolás pensaría y su madre, por primera vez en mucho tiempo, la escuchaba sin interrumpir para ofrecer una solución.</p>
+<p>Cuando salió con el cuarto vestido, el salón quedó en silencio.</p>
+<p>No era extravagante. Tenía una caída suave, una línea elegante y detalles discretos que parecían hechos para ella. Emilia se miró desde distintos ángulos, pero no buscó defectos. Se quedó quieta, respirando.</p>
+<p>—Creo que... —comenzó.</p>
+<p>Su madre se llevó una mano a la boca. Sus ojos se llenaron de lágrimas.</p>
+<p>—No voy a decir nada —susurró—. Porque sé que quieres decidirlo tú.</p>
+<p>Emilia giró lentamente. Se vio de una manera distinta: no como alguien que había tenido que reconstruir su vida, sino como una mujer que estaba eligiendo una nueva etapa. Se le humedecieron los ojos.</p>
+<p>—Este.</p>
+<p>Su madre la abrazó, con cuidado de no arrugar la tela.</p>
+<p>—Este es tuyo, entonces.</p>
+<p>No hicieron fotografías para enviar a nadie. No llamaron a Nicolás. El vestido quedó reservado, guardado como una pequeña promesa, y Emilia salió de la boutique sintiendo que había tomado una decisión importante sin necesidad de convertirla en un espectáculo.</p>
+<p>Su padre las esperaba con café en el coche. Al verlas, se incorporó.</p>
+<p>—¿Lo encontraste?</p>
+<p>Emilia sonrió.</p>
+<p>—Sí.</p>
+<p>Él no preguntó cómo era. Solo la abrazó.</p>
+<p>—Me alegro, hija.</p>
+<p>En casa, Nicolás y Luca habían conseguido, contra todo pronóstico, terminar una estructura de cartón que parecía una mezcla de castillo, nave espacial y tarta. Nicolás tenía purpurina en el pelo. Luca, en la nariz.</p>
+<p>—No se puede ver —advirtió Luca cuando Emilia entró—. Es sorpresa.</p>
+<p>—No he visto nada.</p>
+<p>—¡Pero no mires!</p>
+<p>Emilia levantó ambas manos y se giró. Nicolás se acercó por detrás, le dio un beso en la mejilla y susurró:</p>
+<p>—Has sobrevivido a la mañana.</p>
+<p>—Y tú a la purpurina.</p>
+<p>—No estoy seguro de que vaya a sobrevivir a la purpurina.</p>
+<p>Durante la comida, Luca explicó que el proyecto era una decoración para la boda, aunque no quiso revelar dónde la colocarían. Sus abuelos escucharon la explicación por videollamada y el padre de Emilia ofreció, con mucha seriedad, guardar la obra en un lugar seguro.</p>
+<p>—No —protestó Luca—. Tiene que estar en la boda.</p>
+<p>—Entonces estará en la boda —aceptó el abuelo.</p>
+<p>La tarde fue de esas que Emilia deseaba poder guardar: su madre ayudando a Luca a limpiar la purpurina, Nicolás fingiendo que no necesitaba ayuda para quitarse un trozo de cinta del brazo, su padre debatiendo con el niño si una nave espacial podía tener flores. No había una perfección artificial. Había familia, con todo lo que todavía estaban aprendiendo a ser.</p>
+<p>Más tarde, Emilia encontró a Nicolás en el dormitorio, revisando una camisa que pensaba llevar para una de las pruebas.</p>
+<p>—¿Qué haces?</p>
+<p>—Intento decidir si esto es demasiado formal.</p>
+<p>—No es la boda todavía.</p>
+<p>—Estoy ensayando.</p>
+<p>Ella se acercó, le quitó la camisa de las manos y la dejó sobre la cama.</p>
+<p>—Ven.</p>
+<p>Nicolás la rodeó con los brazos.</p>
+<p>—¿Qué tal el vestido?</p>
+<p>—No puedo contártelo.</p>
+<p>—¿Ni una pista?</p>
+<p>—Ni una.</p>
+<p>—¿Es blanco?</p>
+<p>Emilia le dio un golpe suave en el hombro.</p>
+<p>—Nicolás.</p>
+<p>—Vale. Me rindo.</p>
+<p>Pero él la miró con una ternura que la hizo quedarse quieta. Le acarició la mejilla, apartó un mechón y la besó.</p>
+<p>—Estoy deseando verte.</p>
+<p>—Yo estoy deseando verte a ti.</p>
+<p>—Eso es injusto. Yo no tengo que esconder nada.</p>
+<p>—Puedes esconder la camisa que quieras. No voy a mirar.</p>
+<p>Él se rio y la besó otra vez, sujetándola con firmeza y delicadeza. Emilia le apoyó las manos en el pecho.</p>
+<p>—¿Sabes? Me daba miedo hacer planes.</p>
+<p>—Lo sé.</p>
+<p>—Pensaba que si me ilusionaba demasiado, algo iba a salir mal.</p>
+<p>Nicolás le acarició el pelo.</p>
+<p>—No puedo prometerte que todo saldrá exactamente como imaginamos. Pero sí que quiero vivirlo contigo. Lo bueno, lo complicado, lo inesperado. Todo.</p>
+<p>Emilia cerró los ojos y apoyó la frente contra la suya.</p>
+<p>—Entonces no quiero dejar de ilusionarme.</p>
+<p>—No lo hagas.</p>
+<p>Se quedaron abrazados, hasta que Luca gritó desde el salón que necesitaba «dos adultos urgentemente», porque la decoración se había desprendido de una pared. Nicolás suspiró.</p>
+<p>—La vida matrimonial empieza antes de la boda.</p>
+<p>—Y con purpurina —añadió Emilia.</p>
+<p>Ambos salieron riéndose.</p>
+<p>La sorpresa de Luca acabó pegada en una pared con cinta que prometía no durar demasiado. Emilia decidió que no la retirarían. Su padre tomó una foto, su madre la guardó y Nicolás, cuando nadie lo observaba, volvió a besar a Emilia.</p>
+<p>Ella lo descubrió.</p>
+<p>—¿Otra vez?</p>
+<p>—Estoy aprovechando.</p>
+<p>—¿Aprovechando qué?</p>
+<p>—Que todavía no me has dicho que pare.</p>
+<p>Emilia sonrió, lo agarró de la camisa y le dio un beso que respondió por ella.</p>
+<p>Había cosas que no necesitaban un plan, una lista ni una fecha.</p>
+<p>Y había otras, como aquella boda, que por fin podían esperarles sin miedo.</p>
+</main><p>Al volver del vestido, Emilia encontró a Nicolás esperándola. No le pidió que se lo enseñara ni intentó adelantarse al momento. Solo la abrazó y le preguntó cómo había ido. Ella le contó que su madre había llorado y que su padre se había ocupado de Luca con una seriedad casi ceremonial. Nicolás sonrió y le besó la frente.</p><nav class="chapter-navigation"><a href="capitulo-60.html">← Capítulo 60</a><a class="next" href="capitulo-62.html">Capítulo 62 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 61</footer></body></html>

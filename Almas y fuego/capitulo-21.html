@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Capítulo 21 — La sombra de una respuesta</title><style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 21</div><h1>La sombra de una respuesta</h1></header><main>
+<h2>La sombra de una respuesta</h2>
+<p>Los días siguientes transcurrieron con una normalidad cuidadosamente protegida. Marco había cumplido con lo acordado: revisaron los accesos de la casa, actualizaron algunos protocolos y dejaron claro a quienes trabajaban con ellos que cualquier movimiento extraño debía comunicarse, sin alarmar a Emilia ni al niño. No hubo escoltas visibles ni cambios que alteraran la rutina. Emilia se negó a convertir cada salida en una operación y Nicolás, aunque no siempre estaba de acuerdo, respetó esa decisión.</p>
+<p>La información de Esteban tardó en llegar. Una carpeta digital, algunos documentos escaneados y una lista de fechas. Marco la revisó primero y llamó a Nicolás cuando encontró algo que merecía atención.</p>
+<p>—Hay un contrato que nunca llegó a firmarse —explicó, desplegando una copia—. No es el que mencionó Esteban. Es anterior. La propuesta incluía una empresa intermediaria y una cláusula que permitía transferir responsabilidades a terceros.</p>
+<p>—¿Qué terceros?</p>
+<p>—No aparecen identificados en esta copia. Pero el documento fue retirado del registro interno poco después de la negociación.</p>
+<p>Nicolás se inclinó sobre la mesa. La firma al pie no era suya; ni siquiera había espacio para ella. En cambio, junto a la última página, alguien había escrito a mano una frase breve: <em>La negativa no será olvidada.</em></p>
+<p>—¿Quién escribió esto?</p>
+<p>—No lo sabemos.</p>
+<p>—¿Y la fecha?</p>
+<p>Marco señaló el margen. Era varios meses anterior a la fotografía que había recibido Nicolás.</p>
+<p>—Conti estaba involucrado —dijo Marco—. Eso sí podemos confirmarlo.</p>
+<p>—¿Y Salvat?</p>
+<p>—No hay firma, ni correo, ni prueba que lo vincule con este documento.</p>
+<p>Nicolás se apartó de la mesa, respirando lentamente. La frase no le devolvió ningún recuerdo. No vio una oficina, no escuchó una voz. Pero la sensación de haber sido empujado a tomar una decisión que no podía deshacer se le quedó en el pecho.</p>
+<p>—No quiero que esto se convierta en una excusa para perseguir a nadie —dijo—. Si alguien está intentando intimidarnos, lo sabremos. Si hay un problema real, lo resolveremos con pruebas.</p>
+<p>—Eso es lo que estamos haciendo —respondió Marco.</p>
+<p>Al regresar a casa, Nicolás encontró al niño sentado en el suelo del salón, rodeado de piezas de un puzzle. Emilia estaba cerca, leyendo, pero había levantado la vista varias veces para ayudarle.</p>
+<p>—No encaja —anunció el pequeño, sosteniendo una pieza.</p>
+<p>—A veces hay que girarla —dijo Nicolás, sentándose junto a él.</p>
+<p>—Ya la he girado.</p>
+<p>—Entonces quizá no sea esa.</p>
+<p>El niño le entregó la pieza y Nicolás la examinó. No encajaba en el espacio que habían estado intentando llenar. Unos minutos después, encontraron el lugar correcto en una esquina distinta.</p>
+<p>—¡Lo sabía! —celebró el pequeño, aunque evidentemente no lo había sabido.</p>
+<p>Nicolás se rio. Emilia también.</p>
+<p>Cuando el niño se fue a buscar otra caja, ella cerró el libro.</p>
+<p>—¿Ha aparecido algo?</p>
+<p>—Un documento antiguo. Una nota bastante desagradable. Nada que nos permita saber qué ocurrió realmente.</p>
+<p>—¿Te ha afectado?</p>
+<p>—Sí. Pero no quiero que me afecte más de lo necesario.</p>
+<p>Emilia le acarició la mejilla.</p>
+<p>—Entonces deja la carpeta en el despacho de Marco por hoy.</p>
+<p>—Eso pensaba hacer.</p>
+<p>—Bien. Porque esta noche tenemos una misión más importante.</p>
+<p>—¿Cuál?</p>
+<p>—Convencer a nuestro hijo de que no necesita desmontar todos los muebles para encontrar una pieza de puzzle que ha perdido.</p>
+<p>Nicolás soltó una carcajada y la abrazó por la cintura.</p>
+<p>—Estoy preparado.</p>
+<p>La noche terminó con piezas bajo el sofá, una cena que se enfrió dos veces y un cuento leído con voces ridículas. Nicolás se quedó junto a la cama del niño unos minutos después de que este cerrara los ojos. No sabía qué recuerdos le faltaban, ni cuánto de su pasado había sido construido por decisiones que ahora le resultaban ajenas. Pero aquella habitación, el pequeño cuerpo dormido y la voz de Emilia llamándolo desde el pasillo eran cosas que no necesitaban ser recuperadas. Estaban allí. Eran su presente.</p>
+<p>En otro lugar, una copia de aquel documento llegó a manos de Rafael Conti. No la había solicitado de manera directa; alguien se la había enviado como advertencia o como favor, y aún no sabía cuál de las dos cosas le convenía más.</p>
+<p>Conti recorrió la frase manuscrita con el pulgar.</p>
+<p>—Así que lo conservaron.</p>
+<p>Su interlocutor permaneció de pie.</p>
+<p>—¿Quieres que lo destruya?</p>
+<p>—No. Quiero saber quién ha tenido acceso a él.</p>
+<p>—Marco está revisando los archivos.</p>
+<p>Conti cerró la carpeta.</p>
+<p>—Entonces no les des motivos para revisar más rápido. Si Nicolás empieza a recordar, será él quien decida qué hacer. Y no quiero que alguien arruine eso antes de que podamos hablar.</p>
+<p>El hombre asintió, pero Conti no volvió a mirarlo. La frase del documento llevaba años sin aparecer. Y, por primera vez, le inquietó que alguien la hubiera encontrado.</p>
+</main><p>Emilia intentó no dejar que la incertidumbre ocupara cada conversación. Esa noche, Nicolás le preparó algo caliente y se sentó con ella en el sofá. No hablaron del expediente durante un rato. Él le preguntó por el libro que estaba leyendo, y ella acabó contándole una historia de sus hermanas que no tenía ningún sentido fuera de su familia. Nicolás se rio y Emilia, encantada de haberlo conseguido, le besó la mejilla.</p><nav class="chapter-navigation"><a href="capitulo-20.html">← Capítulo 20</a><a class="next" href="capitulo-22.html">Capítulo 22 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 21</footer></body></html>

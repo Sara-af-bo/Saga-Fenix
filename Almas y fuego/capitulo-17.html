@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 17 — Lo que queda en silencio</title>
+<style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 17</div><h1>Lo que queda en silencio</h1></header><main>
+<h2>Lo que queda en silencio</h2>
+<p>Emilia despertó antes de que sonara el despertador. No había tenido una pesadilla ni se había despertado sobresaltada; simplemente, abrió los ojos y supo que ya no iba a dormir. Nicolás estaba de lado, con una mano sobre la almohada y el rostro relajado, una expresión que pocas veces veía durante el día. Se quedó observándolo un momento antes de levantarse.</p>
+<p>En la cocina preparó café y revisó el calendario. La semana estaba llena de pequeñas obligaciones: una cita del niño, un asunto pendiente con Vittoria, la reunión que Marco había organizado para Nicolás y, ahora, el extraño mensaje que parecía haberse instalado en todos sus pensamientos. No quería que aquel asunto se convirtiera en el centro de su vida. Pero tampoco podía fingir que no existía.</p>
+<p>Nicolás apareció poco después, todavía despeinado.</p>
+<p>—¿Has dormido?</p>
+<p>—Más que tú, probablemente.</p>
+<p>—Eso no es difícil.</p>
+<p>Se acercó para besarla, y Emilia le pasó la taza. Durante un rato hablaron de cosas sencillas. El niño se despertó, protestó por la ropa que le habían preparado y acabó aceptando una alternativa que, según él, era mucho más adecuada. Nicolás lo acompañó a vestirse mientras Emilia terminaba de recoger.</p>
+<p>Cuando regresó, tenía el teléfono en la mano.</p>
+<p>—Marco ha encontrado algo más.</p>
+<p>Emilia dejó el paño sobre la encimera.</p>
+<p>—¿Qué?</p>
+<p>—Una copia parcial de un correo. Lo envié yo, hace años, a alguien de la empresa intermediaria. No está completo.</p>
+<p>—¿Qué dice?</p>
+<p>Nicolás le mostró la pantalla. El texto, recuperado de un archivo antiguo, apenas contenía unas líneas legibles: una referencia a un cambio de condiciones, una solicitud para suspender una reunión y una frase final que parecía escrita con prisa. <em>No permitir que esto llegue a ella.</em></p>
+<p>Emilia sintió que la frase le golpeaba más de lo que esperaba. No era una prueba de que hubiera ocurrido algo grave, pero tampoco podía ignorar la coincidencia con la anotación anterior.</p>
+<p>—¿A quién iba dirigido?</p>
+<p>—No se puede determinar. La cabecera está incompleta.</p>
+<p>—¿Y Marco?</p>
+<p>—Está intentando recuperar el archivo original. Dice que puede tardar.</p>
+<p>Emilia respiró despacio.</p>
+<p>—No quiero que nos quedemos atrapados en frases sueltas.</p>
+<p>—Yo tampoco.</p>
+<p>—Entonces no hagamos eso. Cuando tengamos algo que podamos comprobar, lo revisamos. Mientras tanto, seguimos viviendo.</p>
+<p>Nicolás guardó el teléfono. La miró con una mezcla de agradecimiento y frustración.</p>
+<p>—Es más fácil decirlo.</p>
+<p>—Lo sé.</p>
+<p>La mañana avanzó. Emilia salió a resolver un asunto que llevaba días pendiente y Nicolás se quedó con el niño. Juntos prepararon una merienda, discutieron sobre un dibujo y acabaron en el suelo, rodeados de piezas de construcción. El pequeño quiso enseñar a Nicolás una forma nueva de montar el techo, y él aceptó las instrucciones con una seriedad que provocó una carcajada.</p>
+<p>—No puedes poner esa pieza ahí —dijo el niño.</p>
+<p>—¿Por qué?</p>
+<p>—Porque se cae.</p>
+<p>—Eso es una explicación muy convincente.</p>
+<p>—¡Ya se cayó!</p>
+<p>Nicolás miró la construcción derrumbada, después a su hijo.</p>
+<p>—Bueno. El arquitecto tenía razón.</p>
+<p>Cuando Emilia regresó, encontró a ambos intentando reconstruirla. No preguntó por los mensajes ni por los documentos. Se sentó junto a ellos y ayudó a sostener una pared hasta que la estructura quedó estable.</p>
+<p>—¿Podemos dejarla aquí? —preguntó el niño—. Para mañana.</p>
+<p>—Claro —respondió Emilia.</p>
+<p>El pequeño fue a buscar una caja para guardar las piezas sobrantes. Nicolás se quedó mirando la construcción.</p>
+<p>—Me ha pedido que la dejemos para mañana.</p>
+<p>—¿Y?</p>
+<p>—Antes, creo que habría intentado terminarla.</p>
+<p>Emilia le sonrió.</p>
+<p>—Quizá ahora sabes que no todo tiene que terminar hoy.</p>
+<p>Él se volvió hacia ella. La frase parecía haberle encontrado en un lugar inesperado.</p>
+<p>—Quizá.</p>
+<p>Por la tarde, Marco llamó. Había conseguido hablar con un antiguo responsable de archivo, pero no había recuperado el correo completo. Le confirmaron, eso sí, que la intermediaria había dejado de operar poco después de la ruptura con Conti. Sus registros habían sido trasladados, y algunos documentos se habían perdido en una reorganización.</p>
+<p>—No es suficiente para sacar conclusiones —dijo Marco—. Estoy buscando otras vías, pero no quiero que os alarméis con cada dato.</p>
+<p>—Gracias por decirlo —respondió Emilia.</p>
+<p>Cuando terminó la llamada, Nicolás no parecía decepcionado. Más bien, estaba cansado de que el pasado se presentara en fragmentos que no permitían comprender nada.</p>
+<p>—Podría pasar meses así —dijo.</p>
+<p>—Podría.</p>
+<p>—Y quizá nunca sepamos qué ocurrió.</p>
+<p>Emilia le tomó la mano.</p>
+<p>—Entonces, si llega ese momento, decidiremos qué hacer con lo que sí sabemos. Pero no vamos a sacrificar nuestra vida esperando que un archivo aparezca.</p>
+<p>Nicolás la acercó a él y la besó. Fue un beso tranquilo, sin urgencia. Después apoyó la frente contra la suya.</p>
+<p>—No quiero perder esto.</p>
+<p>—No estás perdiéndolo.</p>
+<p>—A veces me cuesta creerlo.</p>
+<p>—Pues tendrás que dejar que te lo demuestre.</p>
+<p>En la habitación, el niño llamó para preguntar si podían leerle un cuento. Nicolás respondió que sí, y los tres acabaron sentados en la cama, con un libro abierto y voces distintas para cada personaje. El pequeño se rio tanto de una de las interpretaciones que pidió que la repitieran. Emilia protestó por la exageración y Nicolás volvió a hacerlo peor, deliberadamente.</p>
+<p>La noche terminó con el cuento, una luz apagada y una casa en silencio.</p>
+<p>Lejos de allí, alguien recibió una confirmación: el archivo original seguía sin aparecer. La persona no respondió de inmediato. Se limitó a mirar el mensaje, a guardar el teléfono y a abrir un cajón donde había una copia impresa de aquella correspondencia.</p>
+<p>El papel estaba doblado en cuatro.</p>
+<p>Y, en el margen, una frase escrita a mano decía: <em>Si vuelve a buscar, será demasiado tarde para detenerlo.</em></p>
+</main><p>Al cerrar la jornada, Nicolás le dejó un mensaje breve: «Estoy en casa. ¿Quieres que te espere para cenar?». Emilia respondió que sí y, al llegar, lo encontró con la mesa preparada de manera sencilla. No había nada especial salvo una flor en un vaso y la comida que ella había mencionado días atrás. Le besó antes de sentarse, y él sonrió como si aquella recompensa le bastara.</p><nav class="chapter-navigation"><a href="capitulo-16.html">← Capítulo 16</a><a class="next" href="capitulo-18.html">Capítulo 18 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 17</footer></body></html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 34 — La segunda copia</title>
+<style>body{background:#f8f5f1;color:#2b2522;font-family:Georgia,'Times New Roman',serif;line-height:1.85;margin:0;padding:40px 20px}main{max-width:850px;margin:auto}h1{text-align:center;font-size:2em;margin:0 0 .3em}h2{text-align:center;font-weight:normal;font-style:italic;margin:0 0 2.5em;color:#75645b}p{text-indent:2em;margin:0 0 1.25em}@media(max-width:600px){body{padding:25px 16px}h1{font-size:1.6em}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 34</div><h1>La segunda copia</h1></header><main><h2>La segunda copia</h2>
+<p>La memoria USB de Julián no contenía una revelación, sino un laberinto. Carpetas incompletas, nombres abreviados, registros de acceso y archivos cuya fecha no coincidía con la información que mostraban. Marco pasó la mañana revisándolo con Esteban, mientras Gabriel intentaba reconstruir el recorrido de los documentos.</p>
+<p>—Esto no se hizo desde una sola cuenta —dijo Marco, ampliando una tabla—. Hubo varias modificaciones, en días distintos. Alguien preparó el terreno.</p>
+<p>Esteban señaló una columna casi oculta.</p>
+<p>—Aquí. El traslado del anexo se registró como duplicación de respaldo. No como traslado físico.</p>
+<p>—¿Una copia? —preguntó Gabriel.</p>
+<p>—Dos, probablemente. Una digital y otra en papel.</p>
+<p>La pista los condujo a un antiguo proveedor de almacenamiento documental que había cerrado años atrás. Su edificio seguía en pie, aunque la empresa ya no existía. Los registros de propiedad indicaban que parte del mobiliario y los archivos habían sido adquiridos por una firma de gestión patrimonial. El nombre de esa firma no les decía nada, pero su representante legal había sido Darío Salvat.</p>
+<p>Marco no quiso precipitarse.</p>
+<p>—No vamos a entrar en ningún sitio sin saber qué buscamos y quién puede estar esperando.</p>
+<p>Gabriel estaba de acuerdo. Julián había sido claro: no sabía cuánto de los archivos se había conservado, ni quién había tenido acceso después de la liquidación. Podían estar siguiendo una pista real o una ruta diseñada para que se acercaran.</p>
+<p>Mientras ellos avanzaban, Emilia recibió una llamada de un número desconocido. No contestó. El teléfono volvió a sonar dos minutos después. Esta vez, una breve notificación apareció en pantalla: <em>Tenemos algo que Nicolás debería recordar.</em></p>
+<p>Emilia sintió un frío inmediato. No respondió al mensaje y llamó a Marco. Después se lo enseñó a Nicolás, que estaba en el salón con su hijo.</p>
+<p>—¿Qué quieren decir con que debería recordar?</p>
+<p>—No lo sé —respondió Emilia—. Y no pienso averiguarlo contestándoles.</p>
+<p>Nicolás miró el número. No era el mismo que había aparecido en otras comunicaciones. Aquello podía ser una estrategia para provocar una reacción, para separarlos o para obligarlos a buscar una explicación en un lugar peligroso.</p>
+<p>—Bloquéalo —dijo él, aunque enseguida se corrigió—. No, espera. Guardemos la captura y que Marco lo revise.</p>
+<p>Emilia lo observó.</p>
+<p>—Eso. No decisiones impulsivas.</p>
+<p>El niño se acercó con un dibujo en la mano. Había pintado tres figuras junto a una casa, con un sol enorme y un árbol imposible de alto.</p>
+<p>—¿Lo ponemos en la nevera?</p>
+<p>Nicolás tomó el papel y sonrió.</p>
+<p>—Por supuesto.</p>
+<p>Emilia aprovechó para respirar. El mensaje había despertado algo más que inquietud. La idea de que alguien utilizara los recuerdos de Nicolás como un anzuelo le resultaba profundamente desagradable. No quería que su pasado, ni las partes que él aún no recuperaba, se convirtieran en una herramienta para manipularlo.</p>
+<p>Marco llegó poco después. Revisó el mensaje, anotó el número y les pidió que no respondieran ni concertaran encuentros. No había ninguna prueba de que el remitente tuviera información genuina.</p>
+<p>—Puede que quieran que pensemos que saben algo —dijo—. Puede que sí sepan. Pero no vamos a concederles el control de la situación.</p>
+<p>—¿Y si se trata de la noche que Nicolás no recuerda? —preguntó Emilia.</p>
+<p>—Entonces lo investigaremos por vías que no pongan a nadie en peligro.</p>
+<p>Al anochecer, Nicolás salió al patio para hablar con Marco. No quería que Emilia cargara sola con la preocupación, pero tampoco deseaba ocultarle nada.</p>
+<p>—A veces tengo la sensación de que mi memoria es una puerta que todos quieren abrir menos yo —confesó.</p>
+<p>Marco apoyó los brazos sobre la barandilla.</p>
+<p>—No tienes que abrirla para satisfacer a nadie.</p>
+<p>—¿Y si hay algo importante detrás?</p>
+<p>—Lo habrá. O no. Pero lo importante no deja de ser importante porque decidas descubrirlo mañana.</p>
+<p>Nicolás se quedó mirando las luces del jardín. Aquella respuesta le alivió más de lo que esperaba.</p>
+<p>En una oficina que apenas conservaba muebles, Darío Salvat escuchó el informe de un hombre al que no había visto en meses.</p>
+<p>—El mensaje se ha enviado —dijo el subordinado—. No sabemos si lo han recibido todos.</p>
+<p>—Con que lo haya recibido ella basta.</p>
+<p>—¿Y si no reaccionan?</p>
+<p>Darío se levantó y cerró la carpeta.</p>
+<p>—Reaccionarán. No por el documento. Por lo que creen que el documento puede contener.</p>
+<p>—¿Seguimos con el plan?</p>
+<p>Salvat tardó en contestar.</p>
+<p>—Todavía no. Quiero que se acostumbren a pensar que somos una amenaza distante. Cuando cambien sus hábitos, sabremos qué les importa proteger.</p>
+<p>El hombre asintió, pero no parecía convencido.</p>
+<p>Darío volvió a mirar la fotografía que tenía sobre la mesa. No era una imagen reciente. En ella, Nicolás aparecía de perfil durante una reunión que había tenido lugar muchos años atrás. La fotografía estaba cortada; alguien había eliminado a otra persona del encuadre.</p>
+<p>Salvat guardó la imagen.</p>
+<p>Había llegado el momento de dejar de buscar el anexo por sí mismo. Otros lo encontrarían. Y, cuando lo hicieran, él estaría preparado para recuperar aquello que llevaba demasiado tiempo esperando.</p>
+</main><p>Cuando la jornada acabó, Emilia le pidió a Nicolás que salieran a caminar. No quería hablar del archivo. Quería contarle una idea para las vacaciones y preguntarle qué lugar le gustaría conocer con Luca. Nicolás respondió que cualquier lugar donde pudieran estar tranquilos. Ella le dio un beso y le dijo que esa respuesta era cursi. Él no se retractó.</p><nav class="chapter-navigation"><a href="capitulo-33.html">← Capítulo 33</a><a class="next" href="capitulo-35.html">Capítulo 35 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 34</footer></body></html>

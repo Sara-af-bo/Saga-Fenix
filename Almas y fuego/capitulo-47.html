@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 47 — La orden</title>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+main{max-width:850px;margin:0 auto;padding:55px 24px 80px}
+h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}
+.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}
+p{margin:0 0 1.35em;text-align:justify}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 47</div><h1>La orden</h1></header><main>
+<div class="subtitle">La orden</div>
+
+<p>La frase había sido breve, pero llevaba horas repitiéndose en la cabeza de Emilia.</p>
+
+<p><em>El perímetro ya no es seguro. No esperes al jueves.</em></p>
+
+<p>La habían leído en la sala de reuniones, en el coche de camino a casa y, una vez más, cuando Nicolás la encontró sentada en el borde de la cama, con el papel doblado entre las manos. No era una amenaza directa. Tampoco una pista suficientemente clara. Era la clase de mensaje que podía significar cualquier cosa, y precisamente por eso no conseguía dejar de pensar en él.</p>
+
+<p>—Deberías descansar —dijo Nicolás desde la puerta.</p>
+
+<p>Emilia levantó la mirada.</p>
+
+<p>—¿Tú has descansado?</p>
+
+<p>Él no contestó. Se acercó y se sentó a su lado.</p>
+
+<p>—No.</p>
+
+<p>—Entonces no me lo pidas como si fuera fácil.</p>
+
+<p>Nicolás esbozó una sonrisa que desapareció casi inmediatamente. Le quitó el papel con cuidado, lo dejó sobre la mesilla y apoyó los antebrazos en las rodillas.</p>
+
+<p>—Tengo miedo de que lo muevan.</p>
+
+<p>Emilia dejó escapar el aire.</p>
+
+<p>—Yo también.</p>
+
+<p>No intentaron disimularlo. Habían pasado demasiadas horas fingiendo que la calma era una decisión y no una obligación. Emilia se acercó a él, apoyando la cabeza contra su hombro. Nicolás la rodeó con un brazo.</p>
+
+<p>—Cuando Luca vuelva —murmuró ella—, no quiero que todo lo que recuerde de estos días sea miedo.</p>
+
+<p>—No lo será.</p>
+
+<p>—No puedes prometerlo.</p>
+
+<p>—No —admitió él—. Pero puedo prometer que no voy a dejar que esto defina el resto de su vida.</p>
+
+<p>Emilia cerró los ojos un instante. Era una promesa más real que cualquier otra que pudieran hacerse aquella noche.</p>
+
+<p>Al otro lado de la ciudad, Salvat estaba sentado en un coche estacionado frente a un edificio de oficinas. Había apagado el motor, pero no las luces del salpicadero. En el asiento del copiloto descansaba una carpeta que llevaba semanas intentando no abrir.</p>
+
+<p>La abrió.</p>
+
+<p>Dentro había copias de contratos, correos impresos y una lista de nombres. El suyo aparecía varias veces. También el de Ferrer. Y, en una página que había arrancado de un expediente antiguo, una referencia escrita a mano: <em>AR-2 / V-17 / custodio externo</em>.</p>
+
+<p>Salvat se frotó la cara.</p>
+
+<p>Había aceptado participar en una operación que, en su versión inicial, consistía en recuperar un documento y obligar a Nicolás a sentarse de nuevo frente a quienes había rechazado. No había entendido —o había preferido no entender— que la operación se convertiría en un secuestro. Cuando Luca apareció en el plan, ya era demasiado tarde para fingir que podía retirarse sin consecuencias.</p>
+
+<p>Pero había una diferencia entre estar atrapado y seguir obedeciendo.</p>
+
+<p>Marcó el número que había memorizado durante los últimos días. La llamada fue contestada, aunque nadie habló al principio.</p>
+
+<p>—Quiero que el niño salga —dijo Salvat.</p>
+
+<p>—Eso no depende de ti.</p>
+
+<p>—Entonces dime de quién depende.</p>
+
+<p>La voz al otro lado soltó una risa seca.</p>
+
+<p>—Estás empezando a hacer preguntas que no te convienen.</p>
+
+<p>—Ya no me conviene nada.</p>
+
+<p>—Escúchame bien. Ferrer está siendo vigilado. La policía está más cerca de lo que crees. Si haces una estupidez, todos perdemos.</p>
+
+<p>—El que está perdiendo es un niño.</p>
+
+<p>El silencio que siguió fue largo.</p>
+
+<p>—No vuelvas a llamar —dijo la voz.</p>
+
+<p>La comunicación se cortó.</p>
+
+<p>Salvat permaneció inmóvil. Después, guardó el teléfono, cogió la carpeta y salió del coche. No se dirigió a la entrada principal. Caminó hasta una calle lateral, donde un pequeño establecimiento de reparación de teléfonos mantenía la persiana a medio cerrar. El propietario lo conocía de antes y no hizo preguntas cuando Salvat dejó un sobre bajo el mostrador.</p>
+
+<p>—Si alguien viene a buscar esto —dijo—, entrégaselo a la policía. No a Ferrer. No a nadie que diga venir de mi parte.</p>
+
+<p>—¿Qué es?</p>
+
+<p>—Una dirección que puede estar equivocada. Y una matrícula que no.</p>
+
+<p>El hombre lo miró con desconfianza.</p>
+
+<p>—¿Te estás metiendo en problemas?</p>
+
+<p>—Ya estoy dentro.</p>
+
+<p>Salvat salió antes de que pudiera responder.</p>
+
+<p>En la instalación donde retenían a Luca, el cambio de rutina fue evidente desde primera hora. La mujer que lo acompañaba recogió la manta, el dibujo y las pocas cosas que habían dejado a su alcance. No le explicó nada. Cuando Luca preguntó, respondió que tenían que esperar.</p>
+
+<p>Pero Irene había visto algo que el niño no: el hombre de la chaqueta de trabajo había regresado dos veces, y ambas había mirado hacia la puerta del pasillo como si esperara a alguien que no llegaba.</p>
+
+<p>—¿Está enfadado? —preguntó Luca.</p>
+
+<p>—No lo sé.</p>
+
+<p>—¿Con nosotros?</p>
+
+<p>Irene se agachó frente a él.</p>
+
+<p>—No. Esto no es culpa tuya.</p>
+
+<p>Luca apretó los labios. Había empezado a hacer preguntas cada vez más pequeñas, como si temiera que las grandes fueran demasiado peligrosas.</p>
+
+<p>—¿Puedo guardar el dibujo?</p>
+
+<p>—Sí. Guárdalo.</p>
+
+<p>La puerta se abrió de nuevo. Ferrer apareció sin el reloj negro que Irene había descrito. Su muñeca estaba desnuda, y por primera vez parecía cansado en lugar de irritado.</p>
+
+<p>—Recoged —dijo—. No vamos a movernos todavía.</p>
+
+<p>Irene no mostró reacción.</p>
+
+<p>—¿Por qué?</p>
+
+<p>Ferrer la miró.</p>
+
+<p>—Porque alguien ha decidido que no.</p>
+
+<p>—¿Quién?</p>
+
+<p>—No hagas preguntas.</p>
+
+<p>Él se marchó, pero dejó la puerta abierta unos segundos más de lo habitual. Irene observó el pasillo, las luces, el tramo de suelo que podía ver desde su posición. No había una salida. No había un camino que pudiera improvisar. Solo había una posibilidad: mantener a Luca tranquilo y conseguir que la siguiente oportunidad, si llegaba, no se desperdiciara.</p>
+
+<p>En la comisaría, el sobre de Salvat llegó a manos de un agente poco antes del mediodía.</p>
+
+<p>La matrícula coincidía con un vehículo que aparecía en registros de acceso a una de las instalaciones descartadas inicialmente. No era suficiente para confirmar que Luca estuviera allí, pero sí para volver a examinarla. La dirección, además, no correspondía a una nave industrial convencional: era un complejo de mantenimiento con varias estructuras anexas, algunas arrendadas a empresas distintas.</p>
+
+<p>—Puede que el símbolo no fuera de la nave —dijo Gabriel cuando el inspector les explicó el hallazgo—. Puede que fuera de una de las unidades del complejo.</p>
+
+<p>—Eso es lo que estamos comprobando —respondió el inspector—. La matrícula nos permite vincular a un colaborador de Ferrer con la zona. No tenemos aún autorización ni elementos suficientes para identificar la unidad exacta.</p>
+
+<p>Emilia se aferró al respaldo de una silla.</p>
+
+<p>—¿Salvat ha entregado esto?</p>
+
+<p>—No directamente. La entrega se ha hecho a través de un tercero. Estamos verificando la cadena y la información.</p>
+
+<p>Nicolás se acercó a la ventana. Había una parte de él que quería salir, buscar el coche, seguir la matrícula, entrar en cada edificio hasta encontrar a Luca. Pero también sabía que la primera vez que actuara sin pensar podía arruinar aquello que tanto necesitaban.</p>
+
+<p>—Está intentando ayudar —dijo Gabriel.</p>
+
+<p>—O intentando salvarse —contestó Nicolás.</p>
+
+<p>—Puede ser ambas cosas.</p>
+
+<p>El inspector cerró la carpeta.</p>
+
+<p>—No vamos a basar una operación en la motivación de Salvat. Vamos a basarla en lo que podamos comprobar.</p>
+
+<p>Emilia asintió, aunque sentía que cada minuto de prudencia le arrancaba algo por dentro.</p>
+
+<p>Antes de salir de la sala, el inspector recibió una llamada. Escuchó sin interrumpir. Su expresión cambió apenas, pero Gabriel lo notó.</p>
+
+<p>—¿Qué ocurre?</p>
+
+<p>El inspector guardó el teléfono.</p>
+
+<p>—La unidad de vigilancia ha confirmado que uno de los vehículos vinculados a Ferrer ha abandonado el complejo. No sabemos quién va dentro.</p>
+
+<p>—¿Luca? —preguntó Emilia.</p>
+
+<p>—No lo sabemos.</p>
+
+<p>La respuesta fue brutal en su sencillez.</p>
+
+<p>Emilia se quedó quieta. Nicolás se volvió hacia ella, pero no encontró palabras. El inspector pidió que esperaran, que no llamaran a nadie, que no publicaran nada y que mantuvieran sus teléfonos disponibles.</p>
+
+<p>El vehículo podía ser una maniobra de distracción. Podía ser una retirada. Podía ser el inicio del traslado que habían aplazado.</p>
+
+<p>Y mientras la policía seguía intentando confirmar qué había ocurrido, en el interior de una habitación sin ventanas Luca escuchó cómo alguien cerraba una puerta al otro lado del pasillo.</p>
+
+<p>Esta vez, no preguntó cuándo volvería su madre.</p>
+
+<p>Se limitó a guardar el dibujo bajo la manta y a esperar.</p>
+</main><p>La familia permaneció coordinada con las autoridades. Emilia y Nicolás se aferraron a las pequeñas señales de progreso, y cuando la noche se volvió demasiado larga, él la abrazó por detrás y le susurró que no estaba sola. Ella se giró y lo besó, con los ojos llenos de lágrimas.</p><nav class="chapter-navigation"><a href="capitulo-46.html">← Capítulo 46</a><a class="next" href="capitulo-48.html">Capítulo 48 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 47</footer></body></html>

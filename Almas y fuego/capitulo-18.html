@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 18 — El hombre de la otra mesa</title>
+<style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 18</div><h1>El hombre de la otra mesa</h1></header><main>
+<h2>El hombre de la otra mesa</h2>
+<p>El nombre de Rafael Conti volvió a aparecer dos días después, esta vez en una conversación que Marco no había previsto tener. Había quedado con un antiguo colaborador para revisar algunos movimientos de la intermediaria, una empresa que llevaba años sin actividad, cuando el hombre mencionó que Conti había preguntado recientemente por Nicolás.</p>
+<p>Marco no interrumpió. Esperó a que terminara de hablar, pidió fechas y detalles y, cuando la conversación concluyó, no se apresuró a sacar conclusiones. La pregunta podía ser una coincidencia. También podía ser el comienzo de algo que llevaban días intentando comprender.</p>
+<p>En casa, Emilia estaba preparando una lista de compras cuando Nicolás recibió la llamada.</p>
+<p>—Marco quiere que nos veamos —dijo después de colgar—. Ha conseguido una información nueva.</p>
+<p>—¿Sobre Conti?</p>
+<p>—Sí. Parece que ha preguntado por mí.</p>
+<p>Emilia dejó el lápiz.</p>
+<p>—¿Directamente?</p>
+<p>—Eso le han dicho. No saben qué quería.</p>
+<p>—¿Y qué vais a hacer?</p>
+<p>—Marco quiere que vaya a una reunión con él. Sin compromisos. Solo para hablar con una persona que conoce a Conti.</p>
+<p>Emilia lo observó.</p>
+<p>—¿Te sientes preparado?</p>
+<p>—No sé si preparado es la palabra. Pero quiero ir. Si alguien está buscando información sobre mí, prefiero saber de dónde viene.</p>
+<p>—Entonces iremos. Y si algo no te parece bien, nos marchamos.</p>
+<p>La reunión se fijó para la tarde siguiente, en un restaurante discreto, lejos de las oficinas familiares. Marco había insistido en que no se trataba de una negociación ni de un encuentro con Conti, sino de hablar con un antiguo contacto que había coincidido con él en varias ocasiones.</p>
+<p>Nicolás y Emilia llegaron juntos. Marco ya estaba sentado en una mesa junto a la ventana, acompañado de un hombre de unos cincuenta años, traje sencillo, cabello gris y una expresión que parecía cansada de anticipar preguntas.</p>
+<p>—Nicolás —saludó Marco—. Emilia. Él es Andrés Varela.</p>
+<p>Andrés se levantó y estrechó sus manos.</p>
+<p>—Gracias por venir. Marco me ha explicado lo de la fotografía y los mensajes. No tengo todas las respuestas, pero quizá pueda aclarar algunas cosas.</p>
+<p>Se sentaron. Andrés no parecía incómodo, pero tampoco tenía la tranquilidad de alguien que se reúne para hablar de asuntos triviales.</p>
+<p>—Conocí a Conti hace años —comenzó—. Era un hombre que no aceptaba fácilmente que le dijeran que no. Cuando Nicolás decidió retirarse de aquella operación, Conti lo tomó como algo personal. No creo que fuera únicamente una cuestión de dinero.</p>
+<p>—¿Por qué? —preguntó Nicolás.</p>
+<p>—Porque había expectativas. Conti quería que Nicolás participara en una estructura más amplia, con varios socios y contactos. No era una propuesta que pudiera considerarse limpia en todos sus aspectos. Nicolás rechazó algunas condiciones y se apartó.</p>
+<p>Emilia mantuvo la mirada en Andrés.</p>
+<p>—¿Qué condiciones?</p>
+<p>—No puedo asegurar que fueran exactamente las que se discutieron. Había presión para utilizar empresas intermediarias y para hacer que ciertas operaciones parecieran independientes. Nicolás se negó a asumir responsabilidades que no podía controlar.</p>
+<p>Nicolás se quedó en silencio.</p>
+<p>—¿Y yo? —preguntó Emilia—. ¿Por qué aparece mi nombre en documentos?</p>
+<p>Andrés miró a Marco, que asintió ligeramente para que continuara.</p>
+<p>—No sé qué papel tuvo usted. Solo recuerdo que Conti mencionó que Nicolás estaba tomando decisiones por motivos personales. No dijo su nombre en aquella conversación, pero después vi la anotación sobre no involucrarla. Supuse que se refería a usted.</p>
+<p>Emilia sintió una tensión nueva, aunque no apartó la mirada.</p>
+<p>—¿Conti sabía de mí?</p>
+<p>—Creo que sí. No puedo decir cuánto ni desde cuándo.</p>
+<p>Nicolás se pasó la mano por la mandíbula. No había recuerdos, pero la información empezaba a dibujar un contorno: una propuesta, una negativa, la decisión de mantener a Emilia fuera. No sabía si había sido una protección o una forma de control. Tampoco quería que nadie se lo explicara como si la respuesta estuviera escrita.</p>
+<p>—¿Conti está intentando recuperar esa operación? —preguntó.</p>
+<p>—No lo sé —respondió Andrés—. Pero que haya preguntado por usted ahora, después de tantos años, no me parece casual. No quiero alarmaros. Solo os digo que tengáis cuidado con la información que compartís.</p>
+<p>Marco agradeció la conversación y no pidió más. Andrés se despidió, prometiendo comunicar cualquier dato verificable que surgiera. La reunión terminó sin amenazas ni escenas, pero el silencio del trayecto de vuelta fue más pesado que el de otros días.</p>
+<p>—No me gusta —dijo Emilia al fin.</p>
+<p>—A mí tampoco.</p>
+<p>—No porque sepamos que va a ocurrir algo. No lo sabemos. Pero no me gusta que alguien haya decidido que puede volver a acercarse a nuestras vidas sin explicar por qué.</p>
+<p>Nicolás le tomó la mano, apoyada sobre el asiento.</p>
+<p>—No quiero que te conviertas en una pieza de esto.</p>
+<p>—No soy una pieza, Nicolás. Soy una persona. Y si el pasado tiene algo que ver conmigo, quiero saberlo. No voy a quedarme al margen por una decisión que quizá tomaste hace años.</p>
+<p>Él la miró y asintió.</p>
+<p>—Lo sé. No voy a excluirte.</p>
+<p>Al llegar a casa, el niño corrió hacia ellos con una hoja de papel. Había dibujado una especie de mapa, con círculos, líneas y una casa en el centro.</p>
+<p>—Es un mapa para que no os perdáis.</p>
+<p>Emilia se agachó.</p>
+<p>—¿Y dónde estamos nosotros?</p>
+<p>El pequeño señaló la casa.</p>
+<p>—Aquí. Siempre se vuelve aquí.</p>
+<p>Nicolás se quedó mirando el dibujo. Después lo levantó con cuidado, como si fuera un documento importante, y lo colocó sobre la mesa.</p>
+<p>—Creo que este mapa es mejor que los que me ha enseñado Marco.</p>
+<p>—Porque el mío tiene colores —explicó el niño.</p>
+<p>Y por primera vez aquel día, Nicolás se rio sin que la risa tuviera nada que ver con la tensión que arrastraba.</p>
+<p>Sin embargo, en otra parte de la ciudad, un hombre recibió un informe breve: la reunión había tenido lugar, y Nicolás había escuchado. No se había alterado, no había hecho preguntas impulsivas y no había intentado buscar a Conti.</p>
+<p>El hombre dejó el informe sobre la mesa.</p>
+<p>—Está empezando a mirar —dijo.</p>
+<p>Su interlocutor preguntó si debían actuar.</p>
+<p>—No todavía. Que siga.</p>
+<p>La respuesta fue tranquila. Demasiado tranquila para alguien que llevaba tanto tiempo esperando.</p>
+</main><p>Después de hablar, Emilia y Nicolás caminaron hasta el coche sin soltarse las manos. Ella le preguntó si alguna vez se cansaba de que lo cuestionara todo. Nicolás respondió que no, que prefería sus preguntas a que fingiera estar de acuerdo. Emilia se detuvo, le rodeó el cuello y lo besó. —Entonces no te librarás de mí fácilmente. —No estaba intentando librarme.</p><nav class="chapter-navigation"><a href="capitulo-17.html">← Capítulo 17</a><a class="next" href="capitulo-19.html">Capítulo 19 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 18</footer></body></html>

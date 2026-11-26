@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 13 — La parte que no recuerda</title>
+<style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 13</div><h1>La parte que no recuerda</h1></header><main>
+<h2>La parte que no recuerda</h2>
+<p>El teléfono de Nicolás vibró cuando acababa de cerrar la puerta de la habitación. Había dejado a Emilia abajo, intentando convencer al niño de que la cena no podía consistir únicamente en galletas y fruta, y subió con la excusa de buscar una camisa. En realidad, necesitaba unos minutos para ordenar la cabeza.</p>
+<p>El mensaje de Marco era breve: la reunión se había confirmado para el jueves. Dos nombres, una dirección y la indicación de que no se hablaría de nada que Nicolás no quisiera abordar. Le parecía casi ridículo que alguien pudiera resumir una parte de su vida en unas líneas de teléfono. Un pasado entero, decisiones, personas, riesgos... todo reducido a una cita.</p>
+<p>Guardó el móvil, pero otro sonido lo hizo detenerse. Una notificación de un número desconocido. No había texto, solo una fotografía adjunta.</p>
+<p>La abrió sin pensar.</p>
+<p>En la imagen aparecía él. No el Nicolás que se miraba cada mañana en el espejo y todavía intentaba reconocerse, sino uno más joven, vestido con un traje oscuro, de pie junto a varios hombres en una sala que no identificaba. La postura era segura, casi arrogante. Su mano descansaba sobre el hombro de uno de ellos. Todos miraban a la cámara como si aquella fotografía no hubiera sido tomada para recordar un momento, sino para dejar constancia de quién estaba presente.</p>
+<p>Debajo, una frase: <em>Hay cosas que no cambian aunque olvides.</em></p>
+<p>Nicolás sintió un frío incómodo en el estómago. No sabía quién había enviado aquello ni qué pretendía. Amplió la imagen, buscando algún detalle que pudiera darle una pista. Un reloj, una pared, una cara conocida. Nada le devolvió una certeza.</p>
+<p>La segunda vibración llegó antes de que pudiera cerrar la fotografía.</p>
+<p><em>Pregúntale a Marco qué ocurrió aquella noche.</em></p>
+<p>Se quedó mirando el mensaje. Aquella noche. ¿Cuál? ¿Cuántas noches de su vida podían haber sido importantes para alguien que ahora decidía escribirle como si tuviera derecho a abrir una herida?</p>
+<p>Su primera reacción fue bajar y enseñárselo a Emilia. La segunda, inexplicablemente, fue guardar el teléfono en el bolsillo. No quería que el desconocido consiguiera alterar una tarde que había sido buena. Tampoco quería que Emilia tuviera que preocuparse por algo que ni siquiera entendía.</p>
+<p>Pero esconderlo le pesó casi de inmediato.</p>
+<p>Encontró a Emilia en la cocina, colocando los platos. El niño estaba sentado en una silla, contando con los dedos cuántas piezas de fruta podía comer antes de que aquello dejara de considerarse una cena.</p>
+<p>—Dos —sentenció Emilia.</p>
+<p>—Tres.</p>
+<p>—Dos.</p>
+<p>—Una grande y dos pequeñas.</p>
+<p>—Eso siguen siendo tres.</p>
+<p>Nicolás se apoyó en el marco de la puerta. El niño lo miró y le hizo una seña para que interviniera.</p>
+<p>—No me metas en esto —dijo Nicolás, aunque acabó acercándose a la mesa.</p>
+<p>—Traidor —murmuró el pequeño.</p>
+<p>La palabra le hizo sonreír. Sin embargo, la sonrisa desapareció cuando Emilia lo observó con más atención.</p>
+<p>—¿Todo bien?</p>
+<p>Podría haber dicho que sí. La respuesta habría sido sencilla, y quizá la conversación habría continuado con la fruta, los platos y cualquier otra cosa. Pero recordó lo que Emilia le había dicho días atrás: que no quería que los problemas se resolvieran a sus espaldas, que prefería conocerlos antes de que alguien decidiera por ella.</p>
+<p>—Me han enviado una fotografía —dijo.</p>
+<p>Emilia dejó el plato que tenía en las manos.</p>
+<p>—¿Quién?</p>
+<p>—No lo sé. Un número desconocido.</p>
+<p>Le mostró el teléfono. Emilia examinó la imagen, después los mensajes. No cambió de expresión de forma dramática, pero Nicolás la conocía lo suficiente —o quizá estaba aprendiendo a conocerla— para notar cómo se le tensaban los hombros.</p>
+<p>—¿Qué significa «aquella noche»?</p>
+<p>—No tengo ni idea.</p>
+<p>—¿Y por qué no me lo has enseñado antes?</p>
+<p>Él bajó la mirada.</p>
+<p>—Porque no quería estropear la tarde. Y porque... no sé. Me ha dado la sensación de que alguien estaba intentando obligarme a recordar algo.</p>
+<p>Emilia le devolvió el teléfono.</p>
+<p>—No tienes que recordar bajo presión. Pero tampoco vamos a ignorarlo.</p>
+<p>El niño, que había dejado de negociar con la fruta, los miró alternativamente.</p>
+<p>—¿Ha pasado algo malo?</p>
+<p>Emilia se agachó junto a su silla.</p>
+<p>—No lo sabemos todavía. Hay un mensaje que no nos gusta, pero estamos hablando de ello. No tienes que preocuparte ni hacer nada.</p>
+<p>—¿Nicolás está bien?</p>
+<p>La pregunta, tan directa, lo desarmó.</p>
+<p>—Estoy bien —respondió él, acercándose—. Y si no lo estuviera, te lo diría. ¿Vale?</p>
+<p>El niño asintió, aunque siguió observándolo unos segundos. Después pidió que le pasaran la fruta, y la cena retomó su curso con una normalidad algo frágil.</p>
+<p>Cuando el pequeño se fue a dormir, Emilia y Nicolás se quedaron en el salón. Ella había guardado una copia de los mensajes y anotado el número. No iba a responder, al menos por ahora.</p>
+<p>—Mañana hablaré con Marco —dijo Nicolás.</p>
+<p>—Hablaremos con Marco.</p>
+<p>Él la miró.</p>
+<p>—No quiero que esto te arrastre.</p>
+<p>—Y yo no quiero que decidas que protegerme significa dejarme fuera. No es lo mismo.</p>
+<p>Nicolás se pasó una mano por el rostro. No podía discutirlo. Aquella costumbre de intentar cargar solo con lo que le daba miedo quizá pertenecía a su pasado, quizá era simplemente una parte de él que todavía no había aprendido a cambiar. En cualquier caso, no quería que se convirtiera en otra distancia entre ambos.</p>
+<p>—Tienes razón —admitió—. Lo siento.</p>
+<p>Emilia le tomó la mano.</p>
+<p>—No necesitamos saberlo todo esta noche. Pero sí necesitamos estar del mismo lado.</p>
+<p>—Estamos del mismo lado.</p>
+<p>—Entonces mañana preguntamos. Y si alguien cree que puede asustarnos con fotografías, tendrá que explicar por qué.</p>
+<p>Nicolás apoyó la cabeza contra el respaldo del sofá. La imagen seguía apareciendo en su mente: aquel hombre que se parecía a él, pero que parecía vivir en un mundo que no podía alcanzar. No sabía qué había ocurrido aquella noche. No sabía quién quería que lo descubriera.</p>
+<p>Por primera vez, sin embargo, no pensó en enfrentarlo a solas.</p>
+<p>Emilia permaneció a su lado, con la mano enlazada a la suya, mientras la casa se apagaba lentamente. Y en algún lugar, lejos de allí, alguien comprobó que el mensaje había sido leído. No recibió respuesta. Eso no le importó.</p>
+<p>Había conseguido que Nicolás mirara hacia atrás.</p>
+<p>Y era suficiente, por el momento.</p>
+</main><p>Cuando la incertidumbre volvió a pesar, Nicolás no se limitó a decirle que todo estaría bien. Se sentó junto a ella, le tomó la mano y preguntó qué necesitaba. Emilia pidió que la abrazara. Él lo hizo, con una firmeza serena, y le besó el cabello varias veces hasta que ella dejó de tensar los hombros. No hubo promesas imposibles, solo una presencia que no se retiró cuando la conversación se volvió difícil.</p><nav class="chapter-navigation"><a href="capitulo-12.html">← Capítulo 12</a><a class="next" href="capitulo-14.html">Capítulo 14 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 13</footer></body></html>

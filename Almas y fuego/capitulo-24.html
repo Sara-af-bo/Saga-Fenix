@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Capítulo 24 — Lo que despierta</title><style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 24</div><h1>Lo que despierta</h1></header><main>
+<h2>Lo que despierta</h2>
+<p>La primera señal fue un olor.</p>
+<p>Nicolás estaba en el despacho de Marco, revisando una serie de documentos que habían llegado aquella mañana, cuando alguien dejó sobre la mesa una taza de café demasiado fuerte. El aroma le alcanzó antes de que pudiera verla. Y, de pronto, el despacho desapareció.</p>
+<p>Una puerta de madera. Un pasillo estrecho. La luz amarillenta de una lámpara. Voces al otro lado, contenidas, tensas. Una mano golpeando la mesa.</p>
+<p>—No voy a ponerla en medio.</p>
+<p>La voz era la suya.</p>
+<p>Nicolás se quedó inmóvil. La taza que tenía en la mano rozó el borde de la mesa y derramó unas gotas. Marco levantó la vista.</p>
+<p>—¿Nicolás?</p>
+<p>La imagen se deshizo tan rápidamente como había aparecido. Le quedó una presión detrás de los ojos y una sensación de desorientación que le obligó a apoyarse en el respaldo de la silla.</p>
+<p>—Creo que… —se interrumpió—. Creo que he recordado algo.</p>
+<p>Marco no se acercó de golpe.</p>
+<p>—¿Quieres que llamemos a alguien?</p>
+<p>—No. Dame un momento.</p>
+<p>Respiró despacio, intentando describir lo que había visto sin inventar detalles que no estaban allí.</p>
+<p>—Un pasillo. Una puerta. Estaba hablando con alguien. Dije que no iba a ponerla en medio.</p>
+<p>Marco se quedó serio.</p>
+<p>—¿A Emilia?</p>
+<p>—No lo sé. Pero creo que sí.</p>
+<p>El silencio que siguió fue distinto. Marco parecía estar considerando una posibilidad que llevaba tiempo evitando.</p>
+<p>—Nicolás, puede que esa frase tuviera que ver con el acuerdo de Conti.</p>
+<p>—¿Qué acuerdo?</p>
+<p>—No tenemos suficiente para asegurarlo. Y no quiero que confundas lo que recuerdas con lo que te estoy contando.</p>
+<p>Nicolás agradeció que lo dijera. Se levantó, caminó un poco por la habitación y volvió a sentarse.</p>
+<p>—Quiero hablar con Emilia. No para asustarla. Solo… no quiero que esto vuelva a ocurrir y que ella se entere por otra persona.</p>
+<p>La llamó desde el coche, antes de regresar. Emilia estaba en casa, y al escuchar su voz supo que algo había cambiado.</p>
+<p>—¿Qué pasa?</p>
+<p>—He tenido un recuerdo. O un fragmento, al menos.</p>
+<p>Ella guardó silencio para escucharlo.</p>
+<p>—¿Qué has visto?</p>
+<p>—Un pasillo. Una conversación. Dije que no iba a ponerla en medio. No sé a quién se lo decía ni por qué. Marco cree que podría estar relacionado con Conti, pero no lo sabe.</p>
+<p>Emilia respiró lentamente.</p>
+<p>—¿Cómo te encuentras?</p>
+<p>—Un poco mareado. Y frustrado porque no ha aparecido nada más.</p>
+<p>—No fuerces el recuerdo, Nicolás. Si te ha dejado así, descansa. Y habla con tu médico si vuelve a ocurrir o si te preocupa.</p>
+<p>—Lo haré.</p>
+<p>—Ven a casa. Hablaremos cuando estés aquí.</p>
+<p>Cuando llegó, Emilia no le pidió que repitiera cada detalle. Le preparó agua y se sentó junto a él. Nicolás intentó describir el lugar, la luz, el tono de la voz que había escuchado. No había rostros. No había nombres. Solo una frase que parecía tener un peso desproporcionado.</p>
+<p>—No voy a ponerla en medio —repitió en voz baja.</p>
+<p>—Puede que estuvieras intentando proteger a alguien —dijo Emilia—. Pero no sabemos de qué ni de quién.</p>
+<p>—¿Y si estaba intentando protegerte?</p>
+<p>Ella le tomó la mano.</p>
+<p>—Entonces tendremos que descubrirlo. Pero no quiero que conviertas una posibilidad en una culpa.</p>
+<p>El niño irrumpió en el salón con una hoja doblada en cuatro.</p>
+<p>—¡Tengo una sorpresa!</p>
+<p>Ambos se volvieron.</p>
+<p>—¿Qué has hecho? —preguntó Nicolás, esforzándose por recuperar la sonrisa.</p>
+<p>—Un dibujo. Pero no podéis verlo hasta que os sentéis.</p>
+<p>Los obligó a ocupar el sofá, abrió la hoja y mostró una casa, tres figuras y un árbol de proporciones imposibles.</p>
+<p>—Es nuestra casa cuando seamos mayores —explicó—. El árbol es más grande porque va a tener sombra.</p>
+<p>Nicolás observó el dibujo durante un largo instante. No reconocía aquella imagen de ningún pasado. No había vivido aquella casa, no sabía si algún día existiría. Pero el niño había dibujado un espacio para todos, sin pensar que él pudiera faltar.</p>
+<p>—Me gusta mucho —dijo.</p>
+<p>—¿La vas a guardar?</p>
+<p>—Sí. Si me dejas.</p>
+<p>El pequeño se lo entregó orgulloso y salió corriendo a buscar lápices para añadir ventanas.</p>
+<p>Emilia miró a Nicolás.</p>
+<p>—No tienes que recuperar todo de golpe.</p>
+<p>Él dobló cuidadosamente la hoja, sin aplastar el árbol.</p>
+<p>—Lo sé. Pero quizá haya cosas que sí quiera recordar.</p>
+<p>Y, por primera vez, la idea no le pareció una amenaza.</p>
+<p>En la otra punta de la ciudad, Gabriel Luján recibió una llamada que no esperaba.</p>
+<p>—Ha tenido un recuerdo —le comunicaron.</p>
+<p>Gabriel dejó de caminar.</p>
+<p>—¿Qué recuerda?</p>
+<p>—Una frase. Que no iba a ponerla en medio.</p>
+<p>El silencio se prolongó.</p>
+<p>—¿Marco lo ha escuchado?</p>
+<p>—Sí.</p>
+<p>Gabriel cerró los ojos un instante.</p>
+<p>—Entonces las cosas se están moviendo antes de lo previsto.</p>
+<p>—¿Qué hacemos?</p>
+<p>—Nada. Por ahora, nada. Si intervenimos, solo conseguiremos que empiecen a unir piezas que todavía no tienen.</p>
+<p>Colgó, pero ya no parecía tan tranquilo como antes. La memoria de Nicolás podía abrir una puerta que Gabriel llevaba años intentando mantener cerrada.</p>
+</main><p>Emilia y Nicolás hablaron de lo que aquella información significaba para ambos. Al final, ella le pidió que no olvidara que, por encima de cualquier investigación, tenían una vida que proteger. Nicolás le tomó las manos y prometió que no convertiría su hogar en otra sala de reuniones. Emilia lo besó, agradecida por la intención y por la posibilidad de seguir construyendo algo distinto.</p><nav class="chapter-navigation"><a href="capitulo-23.html">← Capítulo 23</a><a class="next" href="capitulo-25.html">Capítulo 25 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 24</footer></body></html>

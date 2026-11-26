@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 52 — Después del ruido</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 52</div><h1>Después del ruido</h1></header><main><div class="subtitle">Después del ruido</div>
+<p>El silencio de aquella habitación no se parecía al de la casa.</p>
+<p>En casa, el silencio había sido una ausencia: un teléfono que no sonaba, una puerta que no se abría, un niño cuyo nombre parecía haberse quedado atrapado en cada rincón. Allí, en cambio, el silencio estaba lleno de pequeñas cosas. El roce de la manta. El movimiento de una enfermera al ordenar material. El sonido discreto de un reloj.</p>
+<p>Luca dormía.</p>
+<p>Emilia llevaba casi una hora sentada a su lado, sin apartar demasiado la mirada. Había aprendido, durante aquellas últimas semanas, a no despertarlo cuando conseguía descansar. A no preguntar antes de tiempo. A no convertir cada gesto en una prueba de que estaba bien.</p>
+<p>Nicolás permanecía en el otro lado de la cama. Tenía la mano de Luca entre las suyas, aunque el niño la había soltado hacía unos minutos. No parecía darse cuenta.</p>
+<p>—Tienes que comer algo —le dijo Emilia en voz baja.</p>
+<p>—Tú también.</p>
+<p>Se miraron. Ninguno tenía hambre.</p>
+<p>La madre de Emilia apareció con una bolsa y la dejó sobre una silla.</p>
+<p>—He traído cosas que no necesitan calentarse. Y café para los que todavía creen que el café arregla algo.</p>
+<p>Su padre venía detrás, con una carpeta. No la abrió de inmediato.</p>
+<p>—He hablado con el inspector —explicó—. No para preguntar por detalles que no puede darnos. Nos ha indicado qué documentación necesitan para verificar unas cuestiones de la empresa que mencionó Gabriel.</p>
+<p>Emilia lo miró.</p>
+<p>—¿Sigues con eso?</p>
+<p>—No voy a dejarlo. Pero tampoco voy a interferir en la investigación. Hay registros que puedo facilitar legalmente. Y hay otros que no tocaré sin autorización.</p>
+<p>Gabriel, que había llegado poco antes, asintió.</p>
+<p>—Es la diferencia entre ayudar y estropearlo.</p>
+<p>El padre de Emilia abrió la carpeta. Había copias de registros de mantenimiento, fechas y referencias a dos proveedores que habían trabajado en instalaciones vinculadas a Ferrer. No eran pruebas concluyentes, pero sí una pista que podía verificarse.</p>
+<p>—No quiero que esto se convierta en otra amenaza —dijo Emilia—. Ya no quiero que nuestra vida esté pendiente de un papel.</p>
+<p>—Lo entiendo —respondió su padre—. Y si quieres que lo deje, lo dejaré. Pero esta vez no se trata de buscar algo por obsesión. Se trata de que la gente que ha hecho esto responda por ello.</p>
+<p>Emilia guardó silencio. Su madre le acomodó un mechón detrás de la oreja.</p>
+<p>—No tienes que decidir nada ahora.</p>
+<p>Un movimiento en la cama interrumpió la conversación. Luca abrió los ojos, desorientado. Miró primero a Emilia y luego a Nicolás.</p>
+<p>—¿Estamos en casa?</p>
+<p>Emilia se acercó.</p>
+<p>—Todavía no, cariño. Pero vamos a volver.</p>
+<p>—¿Hoy?</p>
+<p>La pregunta la atravesó. No quiso prometerle algo que no dependía de ella.</p>
+<p>—Cuando los médicos digan que puedes. Y cuando tú estés preparado.</p>
+<p>Luca se quedó mirando el borde de la manta.</p>
+<p>—No quiero dormir solo.</p>
+<p>—No tendrás que hacerlo ahora —dijo Nicolás.</p>
+<p>El niño asintió, y después pidió agua.</p>
+<p>Más tarde, una psicóloga del centro habló con ellos. Les explicó que podían aparecer pesadillas, irritabilidad, miedo a separarse, silencios repentinos o preguntas repetidas. No significaba que estuvieran retrocediendo. Lo importante era no exigirle un relato, no presionarlo para que demostrara valentía y mantener rutinas sencillas cuando regresara.</p>
+<p>Emilia escuchó cada palabra, tomando notas en el móvil. Nicolás preguntó qué hacer si Luca se despertaba aterrorizado. La profesional le explicó que bastaba con orientarlo con calma, recordarle dónde estaba y permitir que recuperara el control sin inundarlo de preguntas.</p>
+<p>Al salir, Nicolás se quedó unos minutos en el pasillo.</p>
+<p>—No sabía que podía hacer tantas cosas mal intentando ayudar.</p>
+<p>Emilia se apoyó junto a él.</p>
+<p>—No lo sabíamos. Ahora lo sabemos.</p>
+<p>Su madre se acercó con dos vasos de agua.</p>
+<p>—Y no vais a aprenderlo todo hoy. Ni mañana.</p>
+<p>El padre de Emilia recibió un mensaje y lo leyó con el ceño fruncido. Era una confirmación de que los documentos entregados habían sido recibidos por el investigador asignado. Nada más. Guardó el teléfono.</p>
+<p>—Una cosa está clara —dijo—. No voy a desaparecer cuando salgamos de aquí.</p>
+<p>Emilia lo miró, sorprendida por la firmeza de su voz.</p>
+<p>—No te lo he pedido.</p>
+<p>—Lo sé. Precisamente por eso quiero decirlo.</p>
+<p>Su madre tomó asiento junto a ella.</p>
+<p>—Queremos formar parte de vuestra vida, no aparecer únicamente cuando todo se rompe.</p>
+<p>Emilia bajó la mirada. Había tantas cosas que todavía no sabía cómo acomodar: los años perdidos, los encuentros tardíos, las conversaciones que habían empezado con cautela. Y, aun así, aquella frase le hizo sentir algo que no era miedo.</p>
+<p>—Entonces quedaos —dijo.</p>
+<p>Su madre le tomó la mano.</p>
+<p>—Nos quedamos.</p>
+<p>En la habitación, Luca volvió a dormirse. Nicolás se sentó junto a él y Emilia, por primera vez en días, salió unos minutos a tomar aire sin sentir que abandonaba a su hijo. Su padre la acompañó hasta la ventana del pasillo.</p>
+<p>—¿Te acuerdas de cuando no sabíamos cómo hablar? —preguntó él.</p>
+<p>—Todavía hay veces que no sé.</p>
+<p>—Yo tampoco.</p>
+<p>Se quedaron mirando la luz de la tarde.</p>
+<p>—Pero quiero hacerlo bien —añadió su padre.</p>
+<p>Emilia lo abrazó. No fue un gesto perfecto ni una reconciliación que borrara el pasado. Fue un abrazo real, de dos personas que habían llegado tarde a muchas cosas y que, al menos, estaban intentando no llegar tarde a las siguientes.</p>
+<p>Cuando regresaron a la habitación, Nicolás levantó la vista.</p>
+<p>—Luca ha preguntado si mañana puede desayunar tortitas.</p>
+<p>La madre de Emilia sonrió por primera vez en todo el día.</p>
+<p>—Entonces mañana habrá tortitas.</p>
+<p>Y, por un instante pequeño y frágil, la familia habló de desayunos, de volver a casa y de cosas que no tenían que ver con expedientes, amenazas ni nombres ocultos.</p>
+<p>El ruido había terminado.</p>
+<p>Ahora tendrían que aprender a vivir después de él.</p></main><p>En las horas siguientes, los abuelos se turnaron para preparar comida y atender las pequeñas necesidades de la casa. Emilia agradeció poder apoyarse en ellos. Nicolás la encontró en un momento de agotamiento y la abrazó por detrás. Ella se giró y le dio un beso, apenas un gesto, pero lleno de gratitud por haber llegado hasta allí juntos.</p><nav class="chapter-navigation"><a href="capitulo-51.html">← Capítulo 51</a><a class="next" href="capitulo-53.html">Capítulo 53 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 52</footer></body></html>

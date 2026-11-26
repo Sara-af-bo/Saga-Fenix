@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 57 — Una deuda pendiente</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 57</div><h1>Una deuda pendiente</h1></header><main><div class="subtitle">Una deuda pendiente</div>
+<p>Gabriel pidió reunirse con Nicolás en un lugar discreto, pero no apartado. Una cafetería tranquila, a plena luz del día, con gente entrando y saliendo y ninguna razón para convertir la conversación en un secreto.</p>
+<p>Emilia sabía de la reunión. No le gustaba que Nicolás tuviera que volver a escuchar nombres relacionados con el secuestro, pero tampoco iba a pedirle que fingiera que la investigación no existía.</p>
+<p>—No te quedes más de lo necesario —le dijo al despedirse.</p>
+<p>—No lo haré.</p>
+<p>Gabriel esperaba con una carpeta cerrada. No la abrió hasta que Nicolás se sentó.</p>
+<p>—Hay algo que quiero que entiendas antes de hablar de los documentos —dijo—. No tenemos una conclusión. Lo que sabemos está en manos de los investigadores, y lo que te voy a contar es lo que he podido verificar a través de los contactos que todavía tengo.</p>
+<p>Nicolás asintió.</p>
+<p>—Adelante.</p>
+<p>Gabriel explicó que Ferrer había participado en la estructura de negociación de años atrás, pero que la documentación recuperada indicaba que algunas decisiones no habían sido suyas. Había una cadena de intermediarios, empresas que cambiaban de nombre y contratos que se habían alterado antes de llegar a la firma final. La operación que desembocó en el secuestro parecía haber sido diseñada para presionar a Nicolás y recuperar algo que nunca se había entregado.</p>
+<p>—¿Qué?</p>
+<p>—Todavía no está claro. Puede ser un archivo, una prueba de una operación antigua o algo que alguien cree que tú conservas.</p>
+<p>Nicolás se quedó mirando la carpeta.</p>
+<p>—No recuerdo haber guardado nada.</p>
+<p>—Y no tienes que forzarte a recordar. El investigador está trabajando con registros, no con tus recuerdos.</p>
+<p>Gabriel deslizó una hoja con un resumen, sin detalles sensibles de la investigación. Había una referencia a una sociedad que había cambiado de titularidad y una fecha que coincidía con la época en que Nicolás había rechazado el contrato original.</p>
+<p>—La empresa aparece en dos lugares distintos —dijo Gabriel—. Uno, en la documentación de Ferrer. Otro, en una operación que no parece tener relación hasta que comparas las fechas.</p>
+<p>—¿Y eso?</p>
+<p>—Es la deuda pendiente. Alguien utilizó una decisión que tomaste hace años como excusa para mantener una estructura de presión. No sabemos quién inició todo. Pero sí sabemos que no fue un conflicto que naciera la semana pasada.</p>
+<p>Nicolás cerró la carpeta.</p>
+<p>—No quiero que esto vuelva a afectar a Emilia.</p>
+<p>—Precisamente por eso no te estoy pidiendo que hagas nada. Los documentos se han entregado. Si hay más información, se canalizará por las vías oficiales.</p>
+<p>La conversación terminó poco después. Gabriel no intentó retenerlo ni convertirlo en una advertencia dramática. Le pidió que se cuidara y que no confundiera la necesidad de justicia con la obligación de cargar él solo con toda la historia.</p>
+<p>Cuando Nicolás regresó, Emilia estaba en el salón con Luca y su madre. Habían empezado a montar un puzzle, y el niño insistía en que las piezas de borde debían colocarse primero aunque la imagen no tuviera marco.</p>
+<p>—¿Todo bien? —preguntó Emilia.</p>
+<p>—Sí. No hay nada que tengamos que hacer.</p>
+<p>Ella dejó una pieza sobre la mesa.</p>
+<p>—¿Qué te ha contado?</p>
+<p>Nicolás se sentó y explicó lo esencial. No ocultó la incertidumbre, ni exageró las conexiones. Emilia escuchó, y al final preguntó:</p>
+<p>—¿Te preocupa?</p>
+<p>—Me preocupa que alguien haya mantenido esto durante años.</p>
+<p>—A mí también. Pero no vamos a perseguirlo.</p>
+<p>—No.</p>
+<p>La madre de Emilia, que había escuchado parte de la conversación, no intervino hasta que Luca fue a buscar otra pieza.</p>
+<p>—A veces, conocer la verdad no significa tener que hacer algo con ella inmediatamente —dijo.</p>
+<p>Emilia la miró.</p>
+<p>—¿Eso te lo enseñó alguien?</p>
+<p>—No. Lo aprendí tarde.</p>
+<p>Su padre llegó poco después, con una pequeña bolsa de libros que había prometido a Luca. En cuanto se enteró de la reunión, preguntó si había algo que debiera entregar a los investigadores. Nicolás le respondió que no, que Gabriel había dejado claro que cualquier material debía seguir el canal formal.</p>
+<p>—Bien —dijo el hombre—. Entonces hoy no hablamos de eso.</p>
+<p>Y no hablaron.</p>
+<p>La tarde terminó con el puzzle, una merienda improvisada y una discusión absurda sobre si un dinosaurio de juguete podía ser considerado parte de una familia de dragones. Luca defendió su teoría con tanta vehemencia que su abuelo acabó aceptándola.</p>
+<p>Emilia, sentada junto a Nicolás, observó a los tres.</p>
+<p>La historia seguía teniendo páginas que no habían leído. Pero no estaban obligados a abrirlas todas al mismo tiempo.</p>
+<p>Y, por primera vez, esa idea no le pareció una derrota.</p></main><p>Al cerrar aquella conversación, Emilia tomó la mano de Nicolás. No quería que el pasado definiera la siguiente etapa. Sus padres estaban cerca, Luca dormía y, por primera vez en mucho tiempo, el futuro no parecía una obligación de estar alerta. Era algo que podían construir despacio.</p><nav class="chapter-navigation"><a href="capitulo-56.html">← Capítulo 56</a><a class="next" href="capitulo-58.html">Capítulo 58 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 57</footer></body></html>

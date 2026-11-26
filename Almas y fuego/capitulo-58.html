@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 58 — Volver a elegirte</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 58</div><h1>Volver a elegirte</h1></header><main><div class="subtitle">Volver a elegirte</div>
+<p>La llamada de su madre llegó poco antes de las siete.</p>
+<p>—Luca quiere quedarse a dormir aquí —anunció, con una voz que Emilia reconoció enseguida como la de alguien que estaba intentando no parecer demasiado emocionada—. Hemos preparado la habitación. Dice que quiere enseñarle mañana a su abuelo cómo se juega al juego ese que nos hizo perder a todos.</p>
+<p>Emilia miró a Nicolás. Él arqueó las cejas.</p>
+<p>—¿Está seguro?</p>
+<p>—Lo ha preguntado él tres veces. Y hemos dejado claro que, si cambia de opinión, podéis venir a buscarlo o nosotros lo llevamos. Sin drama.</p>
+<p>Emilia habló unos minutos con Luca. El niño parecía animado, aunque antes de despedirse le pidió que le enviara un mensaje cuando estuvieran en casa. Nicolás también le prometió que lo haría.</p>
+<p>Cuando colgaron, la casa quedó extrañamente vacía.</p>
+<p>—¿Qué hacemos con una noche sin un niño que nos reclame cada cinco minutos? —preguntó Nicolás.</p>
+<p>—Podríamos aprovechar para terminar las cosas que llevamos semanas aplazando.</p>
+<p>—¿Como dormir ocho horas?</p>
+<p>Emilia lo miró, seria durante exactamente dos segundos.</p>
+<p>—También. Pero tenía otras ideas.</p>
+<p>Nicolás se acercó despacio.</p>
+<p>—Espero que sean buenas.</p>
+<p>—Depende de cuánto te guste que te distraigan.</p>
+<p>Él sonrió. La tomó de la cintura, y Emilia le rodeó el cuello con los brazos. Se besaron sin prisa, sin la interrupción de una llamada ni la necesidad de estar atentos a un pasillo. Al principio fue un beso breve, casi una comprobación. Luego Nicolás le acarició la mejilla y volvió a besarla, más profundamente.</p>
+<p>—Te he echado de menos —murmuró él.</p>
+<p>Emilia apoyó la frente contra la suya.</p>
+<p>—Estamos juntos todos los días.</p>
+<p>—No me refiero a eso.</p>
+<p>Lo entendió. Habían estado juntos, sí. Pero durante semanas cada gesto había tenido algo de supervivencia: dormir poco, hablar de médicos, de policía, de miedo, de Luca. Habían abrazado a su hijo y se habían sostenido mutuamente, pero el espacio que era solo de ellos había quedado reducido a unos minutos robados.</p>
+<p>—Yo también —dijo ella.</p>
+<p>Nicolás le apartó el pelo de la cara.</p>
+<p>—A veces tengo la sensación de que todo lo que quiero decirte se me queda corto.</p>
+<p>—Entonces no lo digas todo.</p>
+<p>—¿No?</p>
+<p>—Puedes demostrarlo.</p>
+<p>La sonrisa de Nicolás cambió. La besó, y Emilia se rio contra su boca cuando él la levantó apenas para sentarla sobre la encimera, sin dejar de sostenerla. Ella le sujetó la camisa.</p>
+<p>—Cuidado. Esa encimera tiene más años que nosotros.</p>
+<p>—La trataré con respeto.</p>
+<p>—No parece que estés respetando mucho nada ahora mismo.</p>
+<p>Él soltó una carcajada y le besó la nariz antes de volver a sus labios. Emilia le acarició el rostro, deteniéndose en una pequeña cicatriz que conocía de memoria. Había pasado tanto tiempo temiendo perderlo, temiendo que la memoria le arrebatara otra parte, que aquella cercanía sencilla se sentía casi extraordinaria.</p>
+<p>—¿Qué? —preguntó Nicolás, al notar que lo observaba.</p>
+<p>—Nada. Solo quería mirarte.</p>
+<p>—Puedes hacerlo cuanto quieras.</p>
+<p>—No te pongas presumido.</p>
+<p>—Es tarde para eso.</p>
+<p>Emilia le dio un pequeño empujón en el pecho, pero lo atrajo de nuevo. Esta vez el beso fue lento. Sus manos se encontraron, sus risas se apagaron y, durante un rato, dejaron que el resto de la noche quedara fuera.</p>
+<p>Más tarde, Nicolás preparó la cena con una competencia cuestionable. Emilia lo observó desde una silla, robándole trozos de comida y criticando sus decisiones culinarias. Él le devolvió la provocación con un beso cada vez que ella se acercaba demasiado a la sartén.</p>
+<p>—Esto es sabotaje —declaró ella.</p>
+<p>—Esto es cocinar en pareja.</p>
+<p>—No sabía que la receta incluía besos.</p>
+<p>—Es mi versión.</p>
+<p>Comieron junto a la ventana, con música baja. No hablaron del secuestro, ni de Ferrer, ni de los documentos. Hablaron de cosas que habían querido hacer antes de que todo se complicara: un viaje, una tarde en la que no tuvieran que mirar el reloj, una casa que algún día quizá necesitaría cambios. Emilia mencionó que Luca quería aprender a nadar mejor. Nicolás recordó una película que habían empezado tres veces y nunca terminado.</p>
+<p>Después de cenar, bailaron.</p>
+<p>No había música especialmente romántica. Era una canción que Emilia había puesto al azar, pero Nicolás le ofreció la mano con exagerada solemnidad.</p>
+<p>—¿Me concede este baile?</p>
+<p>—Depende. ¿Sabe bailar?</p>
+<p>—Estoy dispuesto a mentir.</p>
+<p>Ella aceptó.</p>
+<p>Se movieron despacio por el salón. Emilia apoyó la cabeza en su hombro y Nicolás le acarició la espalda. Al terminar la canción, ninguno se apartó.</p>
+<p>—Quiero que nos casemos —dijo él.</p>
+<p>Emilia levantó la cabeza.</p>
+<p>—Ya lo habíamos hablado.</p>
+<p>—Lo sé. Pero quiero hacerlo bien. Quiero que tengamos una fecha, que Luca participe, que tus padres estén, que Gabriel deje de fingir que no se emociona con nada. Quiero que sea una decisión nuestra, no algo que hagamos porque sobrevivimos a una tragedia.</p>
+<p>Emilia lo miró, con una sonrisa que empezó a temblarle.</p>
+<p>—¿Me estás pidiendo que me case contigo otra vez?</p>
+<p>—No exactamente. Estoy preguntándote si podemos empezar a organizarlo.</p>
+<p>Ella le tomó la cara entre las manos.</p>
+<p>—Sí. Claro que sí.</p>
+<p>Nicolás la besó. Emilia sintió que se le escapaba una lágrima, pero no era tristeza. Lo abrazó con fuerza, y él la sostuvo, sin intentar convertir aquel instante en una frase perfecta.</p>
+<p>—Te amo —le dijo.</p>
+<p>—Te amo.</p>
+<p>Se quedaron abrazados en medio del salón, bajo una luz cálida y una canción que ya había terminado. No necesitaban que la noche fuera extraordinaria. Habían vuelto a elegir estar allí, juntos, y por una vez el futuro que imaginaban no estaba construido sobre el miedo.</p>
+<p>Era algo que querían.</p>
+<p>Y podían empezar a hacerlo realidad.</p></main><p>Cuando Luca se quedó con sus abuelos, Emilia se permitió disfrutar de la noche sin mirar el reloj. Nicolás le puso música y la invitó a bailar en medio del salón. Ella se rio al pisarlo, pero él no la soltó. Le besó la mano, la frente y finalmente los labios, hasta que Emilia murmuró que, si seguía así, no llegarían a cenar. Nicolás respondió que podía vivir con esa consecuencia.</p><nav class="chapter-navigation"><a href="capitulo-57.html">← Capítulo 57</a><a class="next" href="capitulo-59.html">Capítulo 59 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 58</footer></body></html>

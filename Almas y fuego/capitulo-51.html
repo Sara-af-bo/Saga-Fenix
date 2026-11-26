@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 51 — La puerta correcta</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 51</div><h1>La puerta correcta</h1></header><main>
+<div class="subtitle">La puerta correcta</div>
+<p>La mañana comenzó con una llamada que nadie quiso contestar al primer tono.</p>
+<p>El teléfono del inspector vibró sobre la mesa. Él lo miró, comprobó el número y se levantó para atender. Gabriel, que estaba junto a la ventana, vio cómo su expresión cambiaba en los primeros segundos.</p>
+<p>—Repítame eso —dijo el inspector.</p>
+<p>Escuchó. Hizo una anotación. Después pidió que no se movieran hasta que llegara el equipo.</p>
+<p>Cuando regresó a la sala, Emilia se puso de pie.</p>
+<p>—¿Qué ha pasado?</p>
+<p>—La unidad que estamos verificando ha registrado una actividad anómala. No sabemos si están preparando un traslado o si han detectado la vigilancia. Hemos obtenido elementos suficientes para solicitar intervención.</p>
+<p>El padre de Emilia cerró los ojos un instante. Su madre se llevó una mano a la boca.</p>
+<p>—¿Luca está ahí? —preguntó Emilia.</p>
+<p>—Es la hipótesis que estamos comprobando. No voy a decirles que está allí hasta tener confirmación.</p>
+<p>Emilia asintió, aunque la espera le parecía insoportable.</p>
+<p>—¿Qué necesitan de nosotros?</p>
+<p>—Que permanezcan aquí. Si hay una intervención, les informaremos tan pronto como sea posible.</p>
+<p>Nicolás se levantó. El inspector lo miró directamente.</p>
+<p>—Sé lo que está pensando. No va a salir. No va a acercarse. No va a intentar entrar.</p>
+<p>—No necesito que me repita lo que no puedo hacer.</p>
+<p>—Necesito que lo entienda.</p>
+<p>Gabriel se interpuso antes de que la tensión aumentara.</p>
+<p>—Lo entiende. Estamos aquí.</p>
+<p>El inspector salió. Emilia caminó hasta el pasillo, pero su madre la siguió y le tomó la mano.</p>
+<p>—Respira conmigo.</p>
+<p>—No puedo.</p>
+<p>—Sí puedes. No tienes que hacerlo perfectamente. Solo un minuto.</p>
+<p>Emilia intentó seguir el ritmo que le marcaba. Una inhalación, una exhalación. Le temblaban los dedos.</p>
+<p>—Si está ahí…</p>
+<p>—Si está ahí, habrá gente preparada para sacarlo —dijo su madre—. No vas a tener que hacerlo tú.</p>
+<p>Emilia se apoyó contra ella. En el salón, su padre permanecía junto a Nicolás, que había vuelto a mirar el teléfono. No había mensajes. No había llamadas. No había nada que pudiera hacer con sus manos, y esa falta de acción le estaba costando más que cualquier otra cosa.</p>
+<p>—Me siento inútil —dijo.</p>
+<p>El padre de Emilia se acercó.</p>
+<p>—No lo eres.</p>
+<p>—No puedo encontrarlo.</p>
+<p>—No es tu trabajo encontrarlo solo.</p>
+<p>Nicolás se pasó la mano por la cara.</p>
+<p>—No quiero que Emilia vuelva a pasar por esto.</p>
+<p>—Entonces no la dejes sola —respondió el hombre—. Eso sí puedes hacerlo.</p>
+<p>La espera se prolongó. Gabriel recibió una llamada breve del inspector, pero no compartió detalles operativos. Solo confirmó que el equipo estaba en movimiento y que la familia debía mantenerse fuera de la zona.</p>
+<p>Emilia y Nicolás se sentaron juntos. Su madre les acercó agua. Su padre caminó una vez por el salón, se detuvo y volvió a sentarse. Nadie fingía que estaba tranquilo.</p>
+<p>En el complejo, Irene había oído el ruido de vehículos desde hacía varios minutos. No sabía si era una coincidencia, una amenaza o algo que llevaba esperando desde que escondió la primera nota. Luca estaba sentado junto a ella, abrazando el dibujo.</p>
+<p>—¿Qué es ese ruido? —preguntó.</p>
+<p>—No lo sé.</p>
+<p>La puerta se abrió de golpe. Ferrer entró, pálido y sin la habitual calma de quien intenta controlar la situación.</p>
+<p>—No os mováis.</p>
+<p>Irene se puso de pie.</p>
+<p>—¿Qué está pasando?</p>
+<p>—Silencio.</p>
+<p>Ferrer salió. Irene escuchó voces, pasos y una orden que no pudo distinguir. Se acercó a Luca y le sostuvo los hombros.</p>
+<p>—Mírame. Pase lo que pase, quédate conmigo.</p>
+<p>El niño asintió. Tenía los ojos muy abiertos.</p>
+<p>En el exterior, el operativo avanzó con coordinación. La policía había confirmado suficientes elementos para intervenir en la unidad, y los equipos entraron siguiendo el plan establecido. No hubo una carrera improvisada de familiares ni una puerta abierta por casualidad. Hubo instrucciones, comprobaciones y el cuidado de asegurar cada espacio.</p>
+<p>En la casa, el inspector no llamó durante los primeros minutos.</p>
+<p>Emilia caminaba de un extremo al otro del salón. Nicolás se había quedado junto a la mesa, con las manos apoyadas sobre la madera. Su padre se levantó y le ofreció el brazo. Emilia no lo tomó al principio. Después lo hizo, sin decir nada.</p>
+<p>El teléfono vibró.</p>
+<p>Todos se detuvieron.</p>
+<p>El inspector.</p>
+<p>—Hemos encontrado a Luca —dijo.</p>
+<p>Emilia no consiguió hablar.</p>
+<p>—Está vivo. Está con nosotros. Necesita una evaluación médica, pero está vivo.</p>
+<p>La madre de Emilia soltó un sonido que fue mitad llanto, mitad alivio. Su padre la abrazó. Nicolás se quedó inmóvil un segundo, como si las palabras no hubieran llegado a un lugar capaz de comprenderlas. Después se llevó ambas manos a la cara.</p>
+<p>—¿Podemos verlo? —consiguió preguntar Emilia.</p>
+<p>—Estamos organizándolo. No se dirijan allí por su cuenta. Les daremos el punto de encuentro y las instrucciones en cuanto sea seguro.</p>
+<p>Emilia empezó a llorar. Nicolás la abrazó y, esta vez, no intentó contenerse. Su madre los rodeó, y su padre se quedó cerca, con una mano sobre el hombro de Nicolás.</p>
+<p>—Está vivo —repetía Emilia—. Está vivo.</p>
+<p>En el complejo, Luca había sido encontrado junto a Irene. La mujer había colaborado con las indicaciones que pudo aportar, y los agentes habían separado a los implicados y asegurado el lugar. Ferrer había sido detenido. No todo estaba resuelto: quedaban otras personas por identificar, documentos por recuperar y una investigación que no terminaría con aquella intervención.</p>
+<p>Pero Luca ya no estaba en manos de quienes lo habían retenido.</p>
+<p>Cuando les permitieron llegar al centro donde lo estaban evaluando, Emilia bajó del coche antes de que su padre terminara de estacionar. Nicolás la alcanzó. No corrieron por los pasillos ni irrumpieron en la sala. Una profesional les indicó dónde esperar y les explicó que Luca estaba cansado, asustado y que necesitaba un encuentro tranquilo.</p>
+<p>La puerta se abrió.</p>
+<p>Luca estaba sentado en una cama, con una manta sobre los hombros. Al verlos, no se levantó inmediatamente. Se quedó mirando, como si necesitara comprobar que no se trataba de otra promesa que podía desaparecer.</p>
+<p>—Mamá…</p>
+<p>Emilia se acercó despacio.</p>
+<p>—Estoy aquí, mi amor.</p>
+<p>Él extendió los brazos. Ella lo abrazó con cuidado, llorando contra su cabello. Nicolás se arrodilló junto a la cama, y Luca lo miró.</p>
+<p>—Papá.</p>
+<p>Nicolás le tomó la mano.</p>
+<p>—Estoy aquí. Ya estoy aquí.</p>
+<p>Luca se inclinó hacia él también. Los tres se abrazaron, sin preguntas, sin exigir que el niño contara nada. Solo sosteniéndolo.</p>
+<p>La puerta volvió a abrirse unos minutos después. Los padres de Emilia entraron, despacio, con permiso del equipo médico. Su madre se llevó una mano al pecho al verlo.</p>
+<p>—Hola, mi vida —susurró.</p>
+<p>Luca la reconoció y extendió una mano.</p>
+<p>—Abuela.</p>
+<p>La mujer lo besó con cuidado, llorando. Su abuelo se acercó y le acarició la espalda.</p>
+<p>—Ya estás con nosotros, pequeño.</p>
+<p>La familia permaneció alrededor de la cama, sin llenar el espacio de palabras. Irene también estaba siendo atendida, y el equipo explicó que podrían hablar con ella más adelante, cuando estuviera preparada.</p>
+<p>Emilia levantó la mirada hacia sus padres. No necesitó decir nada. Su madre le apretó el hombro y su padre asintió.</p>
+<p>Por primera vez desde que Luca había desaparecido, el miedo dejó de ser una puerta cerrada.</p>
+<p>Seguía existiendo. Seguía habiendo consecuencias, preguntas y una historia que no terminaría aquel día.</p>
+<p>Pero su hijo estaba allí. Y, alrededor de él, estaban todos.</p>
+</main><p>Cuando Luca volvió a estar con ellos, Emilia no quiso separarse de él. Nicolás la abrazó también, y sus padres se acercaron con cuidado, dejando que el niño decidiera cómo quería recibirlos. No hubo exigencias ni preguntas. Solo brazos abiertos, lágrimas y una familia que volvía a reunirse.</p><nav class="chapter-navigation"><a href="capitulo-50.html">← Capítulo 50</a><a class="next" href="capitulo-52.html">Capítulo 52 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 51</footer></body></html>

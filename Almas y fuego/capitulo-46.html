@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 46 — El perímetro</title>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+main{max-width:850px;margin:0 auto;padding:55px 24px 80px}
+h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}
+.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}
+p{margin:0 0 1.35em;text-align:justify}
+</style>
+
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 46</div><h1>El perímetro</h1></header><main>
+<div class="subtitle">El perímetro</div>
+
+<p>La primera certeza llegó poco después de las seis de la mañana, y no fue una certeza agradable.</p>
+
+<p>El inspector dejó una carpeta sobre la mesa de la sala de reuniones. Había fotografías impresas, dos planos incompletos y una lista de empresas que, a simple vista, no tenían nada en común. Emilia permanecía de pie junto a la ventana, con los brazos cruzados y la mirada fija en la calle. Nicolás estaba sentado, aunque llevaba varios minutos sin tocar el café que le habían servido.</p>
+
+<p>—No tenemos una dirección —dijo el inspector—. Tenemos una zona probable, tres instalaciones que encajan con la información y una señal que podría ser deliberada.</p>
+
+<p>Gabriel se inclinó sobre los planos.</p>
+
+<p>—¿La nota de Irene?</p>
+
+<p>—La hemos contrastado. El símbolo que dibujó Luca no corresponde a una empresa concreta, pero aparece en documentación de mantenimiento de dos de los lugares. El tercero queda descartado por ahora.</p>
+
+<p>Emilia se acercó a la mesa. No preguntó cuánto faltaba para encontrarlo. Había aprendido, en las últimas horas, que formular esa pregunta no obligaba a nadie a tener una respuesta.</p>
+
+<p>—¿Y Salvat?</p>
+
+<p>El inspector intercambió una mirada con su compañero antes de contestar.</p>
+
+<p>—Está colaborando de forma irregular. Ha confirmado que Ferrer no es quien da las órdenes. También ha facilitado información sobre una reunión que tuvo lugar hace meses. Pero sigue ocultando cosas.</p>
+
+<p>—Entonces no confíen en él —murmuró Nicolás.</p>
+
+<p>—No estamos confiando. Estamos verificando.</p>
+
+<p>La frase quedó suspendida entre ellos. Nicolás bajó la mirada hacia una fotografía de una nave industrial. No reconocía el lugar, pero la distribución de las puertas, la línea de ventanas altas y el patio de carga le provocaron una sensación incómoda. No era un recuerdo. Era apenas una reacción de su cuerpo, una familiaridad sin explicación.</p>
+
+<p>Se obligó a apartar la fotografía.</p>
+
+<p>Emilia lo vio hacerlo y no dijo nada. Desde que Luca había desaparecido, Nicolás había empezado a buscar respuestas en cada fragmento de su pasado, como si alguna de aquellas piezas pudiera abrir una puerta que la investigación aún no encontraba. Ella sabía que esa desesperación podía empujarlo a cometer errores.</p>
+
+<p>—Necesitamos que nos expliquen qué significa AR-2 —dijo Emilia, volviendo al inspector—. No solo por el documento. Quiero saber por qué lo quieren.</p>
+
+<p>—Estamos intentando determinarlo. Parece una referencia a un anexo contractual antiguo, pero no podemos asegurar que el contenido que buscan sea el mismo que ustedes conocen.</p>
+
+<p>Gabriel soltó una exhalación breve.</p>
+
+<p>—Ferrer ha estado usando ese asunto como palanca. Si hay otra persona detrás, puede que ni siquiera le interese el documento completo. Puede querer que Nicolás vuelva a aparecer en el tablero.</p>
+
+<p>—No voy a aparecer donde ellos quieran —respondió Nicolás.</p>
+
+<p>—Eso no significa que no puedan obligarte a hacerlo.</p>
+
+<p>La discusión no continuó. El inspector pidió que se mantuvieran disponibles y recordó, por tercera vez, que no debían acercarse a las instalaciones ni contactar por su cuenta con los implicados. Después salió para atender una llamada.</p>
+
+<p>Durante unos minutos, nadie habló.</p>
+
+<p>Emilia recogió la fotografía que Nicolás había apartado. La nave parecía abandonada, aunque en una esquina se distinguía un vehículo oscuro estacionado junto a una puerta lateral.</p>
+
+<p>—¿Te suena? —preguntó ella.</p>
+
+<p>—No.</p>
+
+<p>—No tienes que forzarlo.</p>
+
+<p>Él la miró.</p>
+
+<p>—Lo sé. Pero cada vez que aparece uno de esos nombres, siento que debería recordar algo. Que hay una parte de mí que está dejando que esto ocurra porque no sabe dónde mirar.</p>
+
+<p>Emilia dejó la fotografía sobre la mesa y le tomó la mano.</p>
+
+<p>—Luca no está ahí porque tú hayas olvidado. Está ahí porque alguien decidió hacerle daño a nuestra familia. No conviertas sus decisiones en culpa tuya.</p>
+
+<p>Nicolás cerró los dedos alrededor de los de ella. Le costó responder. No porque no entendiera, sino porque una parte de él seguía buscando una manera de transformar el miedo en algo que pudiera controlar.</p>
+
+<p>—Si lo encontramos —dijo al fin—, no quiero que vuelva a sentir que tiene que esconderse de mí.</p>
+
+<p>—Entonces cuando vuelva, vas a estar allí. Eso es lo que necesita.</p>
+
+<p>La palabra <em>cuando</em> no solucionó nada. Pero Emilia la pronunció sin vacilar, y Nicolás se aferró a ella.</p>
+
+<p>Mientras tanto, en un edificio sin ventanas visibles desde la carretera, Irene había conseguido que la dejaran sola durante unos minutos.</p>
+
+<p>No sabía cuánto tiempo llevaba allí. Había dejado de contar las horas con precisión porque los cambios de luz no siempre significaban que fuera de día o de noche. La mujer que se hacía llamar Irene —un nombre que Luca había escuchado tantas veces que ya no cuestionaba— había conseguido mantener una rutina mínima: agua, comida, una manta y, en ocasiones, la posibilidad de sentarse cerca de una puerta sin que nadie la vigilara demasiado de cerca.</p>
+
+<p>Ese margen era pequeño. Lo sabía.</p>
+
+<p>También sabía que el hombre del reloj negro había empezado a impacientarse.</p>
+
+<p>La noche anterior, Ferrer había discutido con alguien por teléfono. No había gritado, pero su voz se había endurecido hasta volverse irreconocible. Irene había oído una frase antes de que él cortara la llamada:</p>
+
+<p>—No voy a seguir sosteniendo esto si no cumplen lo que prometieron.</p>
+
+<p>Después, había mirado hacia ella como si recordara que no estaba solo.</p>
+
+<p>Hoy, sin embargo, el ruido de pasos que se acercaban no pertenecía a Ferrer.</p>
+
+<p>Luca se incorporó de inmediato. Irene le indicó con un gesto que no se moviera. La puerta se abrió y apareció un hombre que ninguno de los dos había visto antes. Llevaba una chaqueta de trabajo, una carpeta bajo el brazo y una expresión que intentaba parecer aburrida.</p>
+
+<p>—¿Está el chico?</p>
+
+<p>—Aquí —contestó Irene.</p>
+
+<p>El hombre dejó una botella de agua y una bolsa sobre una mesa. No miró a Luca directamente.</p>
+
+<p>—Cambian de sitio.</p>
+
+<p>Irene sintió que el estómago se le encogía.</p>
+
+<p>—¿Cuándo?</p>
+
+<p>—Pronto.</p>
+
+<p>—¿Por qué?</p>
+
+<p>—No me pagan para responder preguntas.</p>
+
+<p>Pero antes de salir, el hombre se detuvo. Miró el dibujo que Luca había dejado junto a la manta. Era una hoja doblada, con líneas torcidas y un pequeño símbolo que había copiado de una señal en el exterior.</p>
+
+<p>—¿Quién te ha dado eso?</p>
+
+<p>Luca apretó la hoja contra el pecho.</p>
+
+<p>—Lo hice yo.</p>
+
+<p>El hombre no insistió. Sin embargo, se llevó la mano al bolsillo, comprobó algo en su teléfono y abandonó la habitación con más prisa de la que había entrado.</p>
+
+<p>Irene esperó a que los pasos se alejaran.</p>
+
+<p>—Luca, escúchame. Si nos cambian de lugar, no significa que hayas hecho nada mal.</p>
+
+<p>—¿Nos van a separar?</p>
+
+<p>—No lo sé.</p>
+
+<p>La honestidad le dolió más que una mentira, pero no podía prometer algo que desconocía.</p>
+
+<p>El niño bajó la cabeza.</p>
+
+<p>—Quiero a mamá.</p>
+
+<p>Irene se sentó a su lado y le rodeó los hombros.</p>
+
+<p>—Lo sé.</p>
+
+<p>—Y a papá.</p>
+
+<p>—Lo sé, cariño.</p>
+
+<p>En el exterior, el hombre de la chaqueta de trabajo se dirigió a una zona de estacionamiento y marcó un número. La llamada fue contestada al segundo tono.</p>
+
+<p>—Hay un problema —dijo—. El chico ha visto el símbolo.</p>
+
+<p>Al otro lado, una voz tranquila le pidió que repitiera.</p>
+
+<p>—Lo ha dibujado. No sé cuánto entiende, pero alguien podría reconocerlo.</p>
+
+<p>—¿La mujer?</p>
+
+<p>—Ella está pendiente de todo.</p>
+
+<p>Hubo un silencio.</p>
+
+<p>—Entonces no los muevas todavía —ordenó la voz—. Espera a que te lo diga.</p>
+
+<p>—Ferrer quiere hacerlo esta noche.</p>
+
+<p>—Ferrer no decide.</p>
+
+<p>La llamada terminó.</p>
+
+<p>El hombre permaneció unos segundos mirando la pantalla apagada. Luego guardó el teléfono y volvió hacia el edificio.</p>
+
+<p>En la sala de reuniones, el inspector regresó con una nueva hoja de información.</p>
+
+<p>—Tenemos algo —dijo.</p>
+
+<p>Emilia se levantó tan deprisa que la silla golpeó el suelo.</p>
+
+<p>—¿Luca?</p>
+
+<p>—No es una confirmación de ubicación. Es una comunicación interceptada entre dos personas vinculadas a la logística de Ferrer. Hablan de un traslado que se ha aplazado.</p>
+
+<p>Nicolás se puso en pie.</p>
+
+<p>—¿Aplazado por qué?</p>
+
+<p>—Por una señal que ha aparecido en el lugar. No sabemos cuál. Pero el traslado estaba previsto para esta noche.</p>
+
+<p>Gabriel se acercó.</p>
+
+<p>—¿Eso significa que sigue allí?</p>
+
+<p>—Probablemente. No podemos afirmarlo aún.</p>
+
+<p>Emilia apoyó ambas manos sobre la mesa. El alivio no llegó. La posibilidad de que Luca estuviera todavía en el mismo sitio era, al mismo tiempo, una oportunidad y una amenaza. Si lo movían, podrían perder el rastro. Si no lo movían, quizá estaban preparando algo peor.</p>
+
+<p>—¿Qué van a hacer? —preguntó.</p>
+
+<p>—Estamos acelerando la verificación de las tres instalaciones. Se ha solicitado apoyo para vigilancia y seguimiento. No vamos a entrar hasta tener una base suficiente y un plan que proteja a los ocupantes.</p>
+
+<p>Nicolás miró al inspector con una intensidad que rozaba la hostilidad.</p>
+
+<p>—No quiero que se convierta en una espera interminable.</p>
+
+<p>—Y yo no quiero que una entrada precipitada ponga al niño en peligro. Entiendo lo que está en juego. Pero necesito que entiendan lo mismo.</p>
+
+<p>Emilia fue quien respondió.</p>
+
+<p>—Lo entendemos.</p>
+
+<p>Su voz tembló ligeramente, pero no retrocedió.</p>
+
+<p>El inspector les entregó una copia de la comunicación, con los nombres y detalles operativos omitidos. Una frase estaba subrayada:</p>
+
+<p><em>«El perímetro ya no es seguro. No esperes al jueves».</em></p>
+
+<p>Gabriel leyó la frase dos veces.</p>
+
+<p>—El jueves —murmuró—. La referencia de Irene.</p>
+
+<p>—Puede que hayan cambiado el calendario —dijo el inspector—. O puede que alguien esté intentando que pensemos eso.</p>
+
+<p>Emilia volvió a mirar la hoja. No había una dirección, ni una voz de Luca, ni una prueba de que su hijo estuviera a salvo. Solo una frase que sugería que algo se estaba moviendo antes de lo previsto.</p>
+
+<p>Por primera vez en días, la investigación parecía haber alcanzado a quienes estaban detrás de la puerta.</p>
+
+<p>Y por primera vez, esos mismos hombres parecían tener miedo de que la puerta se abriera.</p>
+</main><p>En las pausas de la espera, Emilia buscó la mano de Nicolás. A veces se quedaban sentados juntos sin hablar; otras, ella apoyaba la cabeza en su hombro y él le besaba el pelo. No intentaban convertir la espera en una escena heroica. Solo se acompañaban.</p><nav class="chapter-navigation"><a href="capitulo-45.html">← Capítulo 45</a><a class="next" href="capitulo-47.html">Capítulo 47 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 46</footer></body></html>

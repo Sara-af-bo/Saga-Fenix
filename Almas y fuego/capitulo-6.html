@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 6 — La primera pregunta | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em}@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 6</div><h1>La primera pregunta</h1></header>
+<h2>La primera pregunta</h2>
+<p>El día amaneció con una claridad fría que se filtraba por las ventanas y dibujaba líneas sobre el suelo del salón. Emilia llevaba un rato despierta, aunque todavía no había decidido levantarse. Desde la cama escuchaba el ruido de Nicolás en la habitación contigua: un cajón que se abría, pasos, una pausa larga y después otro cajón.</p>
+<p>—¿Estás buscando algo o estás reorganizando el armario? —preguntó, alzando la voz.</p>
+<p>—No encuentro una camisa.</p>
+<p>—¿Una camisa o la camisa que quieres ponerte?</p>
+<p>—Hay una diferencia.</p>
+<p>Emilia sonrió contra la almohada. Aquella clase de discusiones insignificantes comenzaba a formar parte de sus mañanas. No eran exactamente las de antes, quizá, pero tenían algo que ella no se había atrevido a esperar durante los meses más difíciles: una naturalidad que no necesitaba fingirse.</p>
+<p>Cuando llegó al salón, Nicolás estaba vestido y tenía una camisa en la mano.</p>
+<p>—Esta —dijo Emilia.</p>
+<p>—Esa estaba en el cajón de abajo.</p>
+<p>—Porque la guardaste ahí.</p>
+<p>Él la miró, desconcertado, y luego soltó una risa breve.</p>
+<p>—No voy a discutir contigo sobre un cajón.</p>
+<p>—Sabia decisión.</p>
+<p>El niño apareció poco después, con el cabello revuelto y la expresión de quien no había terminado de despertar. Se acercó a Nicolás, le preguntó qué iba a hacer ese día y, cuando recibió una respuesta vaga, insistió en que lo acompañara a una pequeña tarea que llevaba días posponiendo: reparar una pieza de su juguete favorito.</p>
+<p>—Mamá dice que no lo tiremos —explicó—. Pero está roto.</p>
+<p>—Entonces intentaremos arreglarlo —respondió Nicolás.</p>
+<p>El pequeño lo condujo hasta la mesa. Emilia observó desde la cocina cómo ambos examinaban la pieza, cómo Nicolás le preguntaba qué había intentado y cómo el niño le explicaba, con seriedad, que no podía simplemente pegarlo porque había una parte que faltaba.</p>
+<p>—Necesitamos encontrarla —concluyó Nicolás.</p>
+<p>—Ya la busqué.</p>
+<p>—Entonces habrá que pensar otra solución.</p>
+<p>Emilia no intervino. Había aprendido que algunas cosas debían dejarles espacio para suceder por sí solas. No podía construir el vínculo por ellos, ni exigir que el niño aceptara a Nicolás de una manera determinada. Lo único que podía hacer era estar presente, sin empujar.</p>
+<p>Más tarde, mientras el pequeño se entretenía en otra habitación, Nicolás se acercó a ella.</p>
+<p>—Quería preguntarte algo.</p>
+<p>Emilia dejó la taza sobre la encimera.</p>
+<p>—Pregúntame.</p>
+<p>—¿Él sabe cómo era yo antes?</p>
+<p>La pregunta no era sencilla. Emilia se tomó unos segundos para contestar.</p>
+<p>—Sabe algunas cosas. Las que hemos hablado. Sabe que estabas, que formabas parte de su vida y que hubo circunstancias que nos separaron. Pero no le he contado todo. Hay cosas que tampoco sé cómo explicarle sin que parezcan más grandes de lo que puede entender.</p>
+<p>Nicolás asintió lentamente.</p>
+<p>—¿Y qué pensaba de mí?</p>
+<p>—Te quería. —Emilia pronunció la frase con cuidado, sin adornarla—. Y creo que todavía está intentando entender qué significa que estés aquí de nuevo. No quiero hablar por él, pero tampoco quiero que confundas sus momentos de distancia con rechazo.</p>
+<p>Nicolás bajó la mirada.</p>
+<p>—A veces me observa como si esperara que hiciera algo.</p>
+<p>—Quizá espera que seas tú. No una versión perfecta, ni alguien que se acuerde de todo. Simplemente tú.</p>
+<p>Él guardó silencio. La idea le pesaba, pero no como una obligación. Más bien como algo que quería cuidar.</p>
+<p>—¿Puedo preguntarle directamente?</p>
+<p>—Claro. Pero no conviertas la conversación en un interrogatorio. Tiene derecho a no saber qué siente, igual que tú.</p>
+<p>—Lo intentaré.</p>
+<p>Durante la tarde, Nicolás se sentó con el niño en el suelo del salón y le ayudó a desmontar el juguete, buscando una manera de reparar la pieza. No lograron dejarlo como nuevo, pero consiguieron que volviera a funcionar. El pequeño lo probó varias veces, cada vez con una sonrisa más amplia.</p>
+<p>—¡Mira! —exclamó—. Funciona.</p>
+<p>—No exactamente como antes —dijo Nicolás.</p>
+<p>—Pero funciona.</p>
+<p>La respuesta hizo que Nicolás se quedara quieto. El niño no parecía haber querido decir nada más, y probablemente no lo había hecho. Sin embargo, aquellas palabras se le quedaron dentro.</p>
+<p>Al guardar las herramientas, Nicolás se sentó a su lado.</p>
+<p>—¿Puedo preguntarte algo?</p>
+<p>El pequeño lo miró con curiosidad.</p>
+<p>—¿Qué?</p>
+<p>—¿Te gusta que esté aquí?</p>
+<p>La sonrisa del niño se apagó un poco, no por disgusto, sino por la seriedad inesperada de la pregunta. Se encogió de hombros.</p>
+<p>—Sí.</p>
+<p>Nicolás esperó. No quiso llenar el silencio.</p>
+<p>—Pero a veces no sé qué decirte —añadió el pequeño—. Antes sabía cosas de ti. Ahora tengo que contártelas otra vez.</p>
+<p>La frase le dolió a Nicolás, aunque no dejó que se notara demasiado. Respiró despacio.</p>
+<p>—Lo entiendo. Y no tienes que contarme todo de golpe. Podemos ir conociéndonos.</p>
+<p>—¿Y si no te acuerdas?</p>
+<p>—Puede que no me acuerde de algunas cosas.</p>
+<p>El niño frunció el ceño.</p>
+<p>—Entonces te las digo.</p>
+<p>Nicolás sonrió, con un sentimiento que no supo nombrar.</p>
+<p>—Entonces me las dices.</p>
+<p>El pequeño se levantó y le entregó el juguete reparado, como si fuera una prueba de que la conversación había terminado. Nicolás lo aceptó. Un instante después, el niño volvió a sentarse a su lado y empezó a hablar de otra cosa: un plan, una idea, algo que quería hacer el fin de semana.</p>
+<p>Desde la puerta, Emilia los vio. No escuchó cada palabra, pero reconoció la tranquilidad en los gestos. No era un milagro. No era la solución a todo. Era una conversación honesta entre dos personas que estaban aprendiendo a encontrarse de nuevo.</p>
+<p>Cuando Nicolás levantó la mirada y la vio, Emilia le sonrió. Él respondió de la misma manera.</p>
+<p>Y aquella tarde, sin que nadie lo anunciara, algo pequeño dejó de ser una distancia y empezó a convertirse en un camino.</p>
+<p>La rutina con Luca estaba enseñándoles una intimidad distinta. Nicolás no buscaba ocupar un lugar a la fuerza; se sentaba en el suelo a construir, aceptaba las reglas cambiantes de los juegos y aprendía cuándo una pregunta necesitaba paciencia. Emilia lo observaba con una ternura que a veces la sorprendía. En una ocasión, mientras Luca se distraía, ella se acercó por detrás y rodeó a Nicolás con los brazos.</p><p>—Gracias —susurró.</p><p>Él apoyó una mano sobre las de ella.</p><p>—Por esto no tienes que darme las gracias.</p><p>—Lo sé. Aun así, quiero hacerlo.</p><p>Nicolás giró la cabeza y le dio un beso. Luca volvió justo a tiempo para protestar que estaban haciendo trampas porque no habían terminado la construcción.</p><nav class="chapter-navigation"><a href="capitulo-5.html">← Capítulo 5</a><a class="next" href="capitulo-7.html">Capítulo 7 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 6</footer></body></html>

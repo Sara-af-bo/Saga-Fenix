@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 20 — Una conversación pendiente</title>
+<style>body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:18px;margin:0}main{max-width:850px;margin:auto;padding:42px 24px}h1,h2{text-align:center;font-weight:normal}h1{font-size:1.15em;letter-spacing:2px;margin-bottom:8px}h2{font-size:1.7em;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}@media(max-width:600px){main{padding:24px 18px}body{font-size:17px}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 20</div><h1>Una conversación pendiente</h1></header><main>
+<h2>Una conversación pendiente</h2>
+<p>La mañana comenzó con una discusión absurda sobre los calcetines. El niño había decidido que los pares no tenían por qué combinar, Nicolás defendía que al menos debían ser del mismo tamaño y Emilia, desde la cocina, había terminado por declarar que podían salir con uno de cada color si aquello les permitía llegar a tiempo.</p>
+<p>—Esto es una injusticia —protestó el pequeño, sujetando dos calcetines diferentes.</p>
+<p>—Esto es moda —respondió Nicolás con absoluta seriedad.</p>
+<p>Emilia se echó a reír. Aquella clase de momentos le recordaban que la vida no tenía por qué estar constantemente pendiente de los asuntos que habían quedado atrás. Sin embargo, el teléfono de Nicolás vibró poco después. Era Marco.</p>
+<p>La conversación fue breve. Marco le pidió que se acercara esa tarde, solo. Había conseguido hablar con una persona que había trabajado cerca de Conti y que, por lo visto, conocía parte de la historia de la negociación que se había roto años atrás.</p>
+<p>Nicolás dejó el móvil sobre la mesa.</p>
+<p>—¿Vas a ir? —preguntó Emilia.</p>
+<p>—Sí. Pero no quiero que esto se convierta en otra reunión donde me cuentan la mitad.</p>
+<p>—Entonces pregunta lo que necesites.</p>
+<p>—Y si no sabe algo, no voy a rellenar los huecos por mi cuenta.</p>
+<p>Emilia le tomó la mano.</p>
+<p>—Eso ya es más de lo que hacías antes, según todos.</p>
+<p>—¿Según todos o según Marco?</p>
+<p>—Según Marco, Vittoria y un señor que ayer estuvo veinte minutos explicándote cómo se elegían los proveedores. Así que, sí. Según todos.</p>
+<p>Él sonrió y le besó los nudillos antes de levantarse.</p>
+<p>Por la tarde, Marco esperaba en su despacho con un hombre de unos cincuenta años, cabello gris en las sienes y una expresión que parecía habituada a medir cada palabra. Se presentó como Esteban Ríos. Había trabajado durante años como asesor externo en varias operaciones y, aunque ya no participaba en ellas, conservaba información sobre aquella negociación.</p>
+<p>—No voy a fingir que lo recuerdo todo —admitió Esteban—. Han pasado años y algunas cosas se mezclaron con otras. Pero sí recuerdo a Conti. Y recuerdo que Nicolás se negó a firmar un acuerdo que habría comprometido a varias personas.</p>
+<p>—¿Qué tipo de compromiso? —preguntó Nicolás.</p>
+<p>—No era una simple cuestión de dinero. Había empresas que servían para ocultar el origen de ciertas operaciones. Se pretendía que vuestra estructura facilitara algunos movimientos. Nicolás se negó porque, si aquello salía a la luz, no solo habría perjudicado a los socios. También habría puesto en peligro a personas que no tenían nada que ver.</p>
+<p>Marco permaneció quieto, escuchando.</p>
+<p>—¿Emilia? —preguntó Nicolás sin apartar la mirada.</p>
+<p>Esteban hizo una pausa.</p>
+<p>—No puedo asegurarlo. Recuerdo que se mencionó una mujer. No sé si era ella, no sé qué se dijo exactamente y no voy a inventarlo para que parezca que tengo una respuesta.</p>
+<p>—¿Conti se enfadó?</p>
+<p>—Mucho. Para él, una negativa era una humillación. Creía que Nicolás había aceptado demasiado poder y que debía demostrar lealtad. Pero lo que más le irritó fue que la decisión no pudiera cambiarse.</p>
+<p>Nicolás bajó la vista a sus manos. La descripción no le devolvía una escena, ni una voz, ni siquiera una sensación precisa. Solo una incomodidad profunda, como si una puerta estuviera cerrada al otro lado de un pasillo que no sabía recorrer.</p>
+<p>—¿Hubo amenazas? —preguntó.</p>
+<p>—No escuché ninguna directa. Pero Conti no era un hombre que aceptara fácilmente perder.</p>
+<p>La entrevista terminó sin una revelación definitiva. Esteban ofreció revisar algunos registros antiguos, siempre que Marco le enviara las fechas y los nombres que podían ayudar a localizar documentos. Nicolás agradeció la colaboración, aunque la ausencia de certezas le pesó más de lo que esperaba.</p>
+<p>—No hemos avanzado demasiado —dijo cuando Esteban se marchó.</p>
+<p>—Hemos descartado algunas cosas —respondió Marco—. Y sabemos que la negativa fue más importante de lo que parecía.</p>
+<p>—No quiero que se convierta en una historia donde todos conocen una parte menos yo.</p>
+<p>Marco se apoyó en el escritorio.</p>
+<p>—No debería haber ocurrido así. Pero esta vez no voy a pedirte que confíes sin darte motivos.</p>
+<p>Nicolás lo observó durante unos segundos y finalmente asintió.</p>
+<p>Al regresar, encontró a Emilia en el salón, con el niño dormido sobre el sofá y un libro abierto a su lado. Se sentó con cuidado, procurando no despertarlo.</p>
+<p>—¿Cómo fue?</p>
+<p>—Un hombre que recuerda algo, pero no lo suficiente. La negativa a Conti tuvo que ver con operaciones que podían perjudicar a gente ajena. Y quizá se mencionó a una mujer. No sabe si eras tú.</p>
+<p>Emilia cerró el libro.</p>
+<p>—¿Qué sientes?</p>
+<p>—Frustración. Y algo más que no sé explicar. No recuerdo haber tomado aquella decisión, pero quiero creer que lo hice por las razones correctas.</p>
+<p>—No necesitas que yo te confirme quién eres.</p>
+<p>—Lo sé. Pero me gustaría que, cuando vuelva a recordar, no descubras que fui alguien a quien no puedas mirar.</p>
+<p>Emilia se acercó, dejando que el niño siguiera dormido entre ambos.</p>
+<p>—Nicolás, no voy a prometerte que todo lo que descubramos será fácil. Pero tampoco voy a juzgarte por fragmentos que ni siquiera entiendes. Lo que hagas ahora, lo que decidas con la información que tienes, también importa.</p>
+<p>Él la abrazó. Durante un rato no hablaron. El pequeño se movió, murmuró algo incomprensible y volvió a acomodarse. Nicolás le apartó con cuidado un mechón de la frente.</p>
+<p>—Tenemos que dejarlo en la cama —susurró Emilia.</p>
+<p>—Yo lo llevo.</p>
+<p>Lo alzó con una delicadeza que ya no le resultaba tan ajena. El niño apoyó la cabeza en su hombro, confiado, sin despertarse. Nicolás caminó despacio por el pasillo. Y, por primera vez en días, la inquietud que llevaba dentro no le pareció incompatible con la ternura.</p>
+</main><p>En una llamada, la madre de Emilia volvió a insistir en que el viaje de negocios estaba cerca de terminar, aunque todavía no podían fijar una fecha exacta. Su padre y sus hermanas también saludaron, prometiendo regresar con regalos ridículos y anécdotas interminables. Emilia les aseguró que estaba bien y que no necesitaban adelantar el regreso. Después de colgar, Nicolás la abrazó por detrás.</p><p>—Los echas de menos.</p><p>—Mucho. Pero estoy bien aquí.</p><p>Él le besó el cuello con suavidad.</p><p>—Entonces aquí estaremos.</p><nav class="chapter-navigation"><a href="capitulo-19.html">← Capítulo 19</a><a class="next" href="capitulo-21.html">Capítulo 21 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 20</footer></body></html>

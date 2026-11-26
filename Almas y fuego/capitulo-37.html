@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capítulo 37 — El silencio de una llamada</title>
+<style>body{background:#f8f5f1;color:#2b2522;font-family:Georgia,'Times New Roman',serif;line-height:1.85;margin:0;padding:40px 20px}main{max-width:850px;margin:auto}h1{text-align:center;font-size:2em;margin:0 0 .3em}h2{text-align:center;font-weight:normal;font-style:italic;margin:0 0 2.5em;color:#75645b}p{text-indent:2em;margin:0 0 1.25em}@media(max-width:600px){body{padding:25px 16px}h1{font-size:1.6em}}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head>
+<body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 37</div><h1>El silencio de una llamada</h1></header><main><h2>El silencio de una llamada</h2>
+<p>El primer aviso llegó a las seis y doce de la tarde.</p>
+<p>Emilia había salido unos minutos para recoger una compra que había dejado encargada. Luca se había quedado con una persona de confianza, en casa, porque Nicolás tenía una reunión breve con Marco y Esteban. No era una decisión extraordinaria. Era una tarde normal, de esas que habían intentado recuperar después de semanas de mensajes, fotografías y nombres que no conseguían encajar.</p>
+<p>Cuando Emilia regresó, la puerta estaba cerrada. Llamó una vez. Después otra.</p>
+<p>No respondió nadie.</p>
+<p>Su primer pensamiento fue que Luca se había quedado dormido. El segundo, que la cuidadora había salido a buscar algo. Pero el teléfono de aquella mujer no contestaba y, al entrar, Emilia encontró el salón en silencio, la mochila del niño junto al sofá y una taza todavía tibia sobre la mesa.</p>
+<p>Había una silla caída.</p>
+<p>Emilia recorrió la casa, llamó a Luca, abrió las habitaciones. Nada. En el pasillo encontró una pieza de su juguete favorito, rota en dos, y sintió cómo el aire se le escapaba del pecho.</p>
+<p>Marcó el número de Nicolás.</p>
+<p>—No está —dijo cuando él contestó. Su voz apenas era audible—. Luca no está.</p>
+<p>Nicolás se levantó tan bruscamente que la silla golpeó el suelo.</p>
+<p>—¿Qué?</p>
+<p>—La casa... No están. La persona que estaba con él tampoco. Hay cosas... no sé qué ha pasado.</p>
+<p>—Emilia, escúchame. No salgas. No toques nada más. Voy para allá.</p>
+<p>La llamada terminó, pero Emilia no podía dejar de mirar el pasillo. Se obligó a respirar. Marcó a Marco y después a emergencias. Dio la información con una precisión que no sentía, describió la ausencia, la hora, la última vez que había visto a Luca. No inventó nada. No intentó adivinar.</p>
+<p>Cuando Nicolás llegó, la encontró junto a la pared, con las manos temblando y la mirada fija en el suelo.</p>
+<p>—Emilia.</p>
+<p>Ella se aferró a él.</p>
+<p>—Se lo han llevado.</p>
+<p>Nicolás no respondió enseguida. La abrazó, pero su rostro se había vaciado de color. Miró la mochila, el juguete roto, la taza. Todo parecía una escena que no pertenecía a su casa.</p>
+<p>—Vamos a encontrarlo —dijo, y la frase salió como una promesa que no sabía cómo cumplir—. Vamos a encontrarlo.</p>
+<p>Marco llegó poco después con Esteban. No preguntaron si estaban seguros. La ausencia, el desorden y las primeras comprobaciones habían confirmado que Luca no estaba con la cuidadora ni con ningún familiar. La policía ya había recibido el aviso.</p>
+<p>Gabriel llamó desde fuera. Había localizado una cámara cercana que podía haber registrado parte de la calle, pero pidió que no se acercaran a manipularla. La información debía entregarse a las autoridades.</p>
+<p>Emilia se sentó. De pronto, no podía mantenerse de pie.</p>
+<p>—Había un mensaje —murmuró—. La tarjeta. La fotografía. Nos estaban avisando.</p>
+<p>Marco se arrodilló delante de ella.</p>
+<p>—No es culpa tuya.</p>
+<p>—Yo estaba aquí. Lo dejé aquí.</p>
+<p>—No. Lo dejaron aquí quienes lo hicieron. No confundas eso.</p>
+<p>Nicolás se apartó unos pasos. No quería romper nada, no quería gritar, no quería hacer lo que una parte de él exigía: salir y buscar a cualquiera que pudiera estar relacionado. Había perdido recuerdos, había recuperado fragmentos, había aprendido a convivir con una vida que no siempre reconocía. Pero sabía quién era Luca. Sabía cómo se reía, cómo le llamaba, cómo extendía los brazos cuando quería que lo levantara.</p>
+<p>Y ahora no podía escuchar esa voz.</p>
+<p>Su teléfono vibró.</p>
+<p>Un número desconocido. Un archivo de audio de pocos segundos.</p>
+<p>Marco le pidió que no lo reprodujera solo. Nicolás lo abrió con el volumen bajo, junto a Emilia y Esteban.</p>
+<p>Se escuchó una respiración infantil. Después, la voz de Luca, asustada pero sin llorar:</p>
+<p>—Papá... ¿cuándo vienes?</p>
+<p>El audio terminó.</p>
+<p>Emilia se tapó la boca. Nicolás cerró los ojos y se llevó el teléfono contra el pecho, como si pudiera proteger al niño a través de aquella pantalla.</p>
+<p>Enseguida llegó un segundo mensaje, solo texto.</p>
+<p><em>No hagáis intervenir a nadie. Queremos el anexo AR-2. Tendréis noticias.</em></p>
+<p>Marco fotografió el mensaje y lo entregó a la policía. No respondieron. No negociaron por impulso. Esteban se encargó de recopilar toda la información relacionada con el archivo, mientras Gabriel revisaba los contactos que habían aparecido en la investigación, sin realizar acciones que pudieran poner en peligro a Luca.</p>
+<p>—Lo quieren por el documento —dijo Marco—. No sabemos si Salvat está detrás directamente, pero el mensaje confirma que esto está relacionado.</p>
+<p>—¿Y si no lo está? —preguntó Emilia, con la voz rota—. ¿Y si esto es solo una excusa?</p>
+<p>Nadie le ofreció una certeza que no tenía.</p>
+<p>Nicolás se sentó junto a ella, tomó su mano y la apretó.</p>
+<p>—No voy a dejar que te quedes sola con esto.</p>
+<p>—Quiero a mi hijo.</p>
+<p>—Lo sé.</p>
+<p>La noche cayó sin que ninguno de ellos reparara en la hora. Las autoridades coordinaron la investigación. La familia entregó fotografías recientes, datos de horarios, el audio y cada mensaje recibido. Marco insistió en mantener la información centralizada para evitar confusiones.</p>
+<p>En un lugar desconocido, Luca estaba sentado en una cama demasiado grande para él. Había preguntado tres veces por su madre y dos por su padre. El hombre que vigilaba la puerta no le había gritado, pero tampoco le había permitido salir.</p>
+<p>—¿Puedo llamar a mamá? —preguntó.</p>
+<p>—Todavía no.</p>
+<p>Luca abrazó el juguete que alguien había dejado junto a él. No sabía por qué estaba allí, ni qué era el anexo, ni por qué los adultos hablaban en voz baja cuando se acercaba. Solo sabía que quería volver a casa.</p>
+<p>En el pasillo, Darío Salvat escuchó el informe.</p>
+<p>—El niño está tranquilo —dijo el hombre—. No ha habido problemas.</p>
+<p>Salvat no parecía satisfecho.</p>
+<p>—No debía ser así.</p>
+<p>—¿Qué hacemos?</p>
+<p>Darío miró el reloj. Había calculado que la familia tardaría más en encontrar la relación entre la caja y el anexo. El secuestro había sido una decisión desesperada, más precipitada de lo que había querido, y ahora tenía un riesgo que no podía controlar.</p>
+<p>—Nadie lo toca —ordenó—. Nadie lo asusta. Y nadie hace nada sin que yo lo sepa.</p>
+<p>Pero la orden no bastaba para devolver a Luca a su casa.</p>
+<p>Emilia, en aquella misma noche, se quedó mirando la puerta de la habitación de su hijo. Nicolás permaneció a su lado. No hablaron de culpables, de contratos ni de memoria. Por primera vez, todo aquello dejó de importar.</p>
+<p>Solo importaba una cosa.</p>
+<p>Encontrar a Luca.</p>
+</main><p>Desde el momento en que Luca desapareció, la casa cambió. Emilia se aferró a la mano de Nicolás mientras los pasos de la investigación seguían su curso. Él le recordó que no tenían que atravesar cada hora solos: podían apoyarse en sus familias, en los investigadores y en quienes estaban preparados para ayudar. Emilia apenas pudo asentir, pero no soltó su mano.</p><nav class="chapter-navigation"><a href="capitulo-36.html">← Capítulo 36</a><a class="next" href="capitulo-38.html">Capítulo 38 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 37</footer></body></html>

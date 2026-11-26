@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 64 — La víspera</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 64</div><h1>La víspera</h1></header><main><div class="subtitle">La víspera</div>
+<p>La casa estaba llena de cajas, flores y voces cuando Emilia comprendió que la boda era mañana.</p>
+<p>No mañana en algún futuro abstracto, ni una fecha escrita en una lista que podían revisar cuando les apeteciera. Mañana. En unas horas, dormiría por última vez antes de convertirse oficialmente en esposa de Nicolás.</p>
+<p>Luca había sido nombrado responsable de la caja de los anillos, pero la caja estaba bajo supervisión adulta, porque nadie había olvidado la vez que el niño decidió esconder un objeto «para que estuviera seguro» y luego no recordó dónde. Sus abuelos habían llegado temprano. La madre de Emilia estaba ayudando con los últimos detalles, mientras su padre revisaba que los pequeños elementos de la ceremonia estuvieran preparados. Gabriel y algunos amigos se ocupaban de las tareas restantes.</p>
+<p>Y, por increíble que pareciera, todo iba bien.</p>
+<p>Emilia se sentó un momento en el sofá, con una lista sobre las rodillas. Su madre se acercó con dos tazas.</p>
+<p>—Deja eso.</p>
+<p>—Solo estoy revisando.</p>
+<p>—Ya está revisado. Tres veces.</p>
+<p>Emilia sonrió y dejó la lista.</p>
+<p>—Estoy nerviosa.</p>
+<p>Su madre se sentó a su lado.</p>
+<p>—Es normal.</p>
+<p>—No por casarme. Por todo lo que significa. Por estar aquí, por llegar hasta esto.</p>
+<p>Su madre le tomó la mano.</p>
+<p>—No tienes que convertir mañana en una prueba. No tienes que demostrar que estás bien, que perdonaste todo, que cada herida está cerrada. Mañana es para celebrar que quieres compartir tu vida con alguien.</p>
+<p>Emilia la miró, con los ojos húmedos.</p>
+<p>—Gracias por entenderlo.</p>
+<p>—Estoy aprendiendo a entenderte mejor. Y quiero seguir haciéndolo.</p>
+<p>Se abrazaron. No fue un abrazo que borrara los años difíciles, sino uno que reconocía que todavía estaban ahí, intentando construir una relación real. Cuando se separaron, el padre de Emilia apareció con Luca, que sostenía un dibujo enorme.</p>
+<p>—La última versión —anunció el niño.</p>
+<p>El dibujo mostraba a cuatro adultos, a Luca y una estructura que parecía un arco, con un sol exageradamente grande. En una esquina había escrito, con ayuda, «FAMILIA».</p>
+<p>Emilia se llevó la mano al pecho.</p>
+<p>—¿Lo has hecho tú?</p>
+<p>—Sí. Es para mañana.</p>
+<p>Su padre lo miró y, por una vez, no hizo ningún comentario ingenioso. Le dio a Luca un abrazo y luego se acercó a su hija.</p>
+<p>—Será un día bonito.</p>
+<p>—Lo será.</p>
+<p>La tarde se convirtió en una sucesión de despedidas pequeñas. Nicolás y Emilia habían acordado no verse durante las últimas horas antes de la ceremonia, una tradición que les parecía divertida y que Luca había tomado demasiado en serio. Nicolás debía pasar la noche en otro lugar con Gabriel y algunos amigos, mientras Emilia se quedaría con su madre, su padre y Luca.</p>
+<p>Cuando Nicolás llegó para recoger unas cosas, Emilia lo encontró en el pasillo. Se detuvieron, mirándose.</p>
+<p>—No se supone que nos veamos —dijo ella.</p>
+<p>—Solo he venido a recoger esto.</p>
+<p>—Eso parece sospechoso.</p>
+<p>Él sonrió y le tendió una pequeña bolsa.</p>
+<p>—Para ti. No tienes que abrirla ahora.</p>
+<p>Emilia la aceptó.</p>
+<p>—¿Y si la abro?</p>
+<p>—Entonces no podré impedirlo.</p>
+<p>Ella dio un paso hacia él. Nicolás le acarició la mejilla, y ambos olvidaron durante unos segundos que tenían una despedida pactada. Se besaron. Un beso largo, íntimo, con una sonrisa al separarse.</p>
+<p>—Mañana —susurró él.</p>
+<p>—Mañana.</p>
+<p>—Te amo.</p>
+<p>—Te amo.</p>
+<p>Nicolás apoyó la frente contra la suya. Después se apartó, aunque no sin volver a besarla una última vez.</p>
+<p>Cuando Emilia abrió la bolsa en su habitación, encontró una carta y una pulsera sencilla. La carta no era larga.</p>
+<p><em>Emilia:</em></p>
+<p><em>No sé si mañana encontraré las palabras cuando te vea. Probablemente me quede mirándote como un idiota, y Luca se encargará de recordármelo durante el resto de la vida.</em></p>
+<p><em>Quiero que sepas que no te elijo porque todo haya sido fácil, ni porque hayamos conseguido olvidar lo que nos dolió. Te elijo porque, incluso cuando no sabía cómo volver a mí mismo, había algo en ti que me hacía querer intentarlo. Y porque ahora, con la memoria, con las cicatrices y con todo lo que somos, sigo eligiéndote.</em></p>
+<p><em>Quiero los días aburridos. Las discusiones absurdas. Las cenas que se enfrían. Los viajes, las risas de Luca, las tardes con tus padres, los domingos en los que no hacemos nada. Quiero estar cuando tengas miedo y cuando no lo tengas. Quiero que podamos crecer sin dejar de encontrarnos.</em></p>
+<p><em>Mañana no te prometo una vida perfecta. Te prometo una vida que quiero construir contigo, con honestidad y con amor.</em></p>
+<p><em>Te amo. Siempre tuyo, Nicolás.</em></p>
+<p>Emilia terminó de leer con las lágrimas cayéndole por las mejillas. Se sentó en la cama, abrazó la pulsera y respiró profundamente. Luego escribió un mensaje, aunque sabía que él no debía responder esa noche.</p>
+<p><em>Me has hecho llorar. Te odio un poquito. Mañana te lo compensaré besándote hasta que Luca nos diga que pare.</em></p>
+<p>Envió el mensaje y dejó el móvil.</p>
+<p>Su madre llamó suavemente a la puerta. Entró y encontró a Emilia con la carta.</p>
+<p>—¿Todo bien?</p>
+<p>Emilia asintió, riéndose entre lágrimas.</p>
+<p>—Todo bien.</p>
+<p>Su madre se sentó a su lado. No preguntó qué decía la carta. Le acarició la espalda y le ofreció quedarse un rato. Emilia aceptó.</p>
+<p>Más tarde, Luca se metió en la cama junto a ella, con permiso, y le preguntó si mañana estaría muy guapa.</p>
+<p>—Espero que sí.</p>
+<p>—Seguro. Papá va a llorar.</p>
+<p>—¿Eso crees?</p>
+<p>—Sí. Pero yo no. Yo soy el encargado.</p>
+<p>Emilia lo abrazó y le besó la frente.</p>
+<p>—Mi encargado favorito.</p>
+<p>El niño se quedó dormido poco después. Emilia lo acomodó, apagó la luz y se quedó un rato observándolo. Luego miró la pulsera, la carta y la ropa preparada para el día siguiente.</p>
+<p>Tenía miedo, sí. No del matrimonio, sino de la intensidad de aquella felicidad. Pero no iba a esconderse de ella.</p>
+<p>Mañana caminaría hacia Nicolás.</p>
+<p>Y esta vez, no habría nada que tuviera que rescatar de aquella decisión.</p>
+</main><p>Antes de dormir, Emilia llamó a sus padres para agradecerles todo lo que habían hecho durante los preparativos. Su madre le dijo que no había nada que agradecer; su padre le pidió que disfrutara cada minuto. Sus hermanas enviaron mensajes llenos de bromas y emoción. Emilia dejó el teléfono y Nicolás la abrazó.</p><p>—Mañana —susurró ella.</p><p>—Mañana —repitió él, besándola.</p><nav class="chapter-navigation"><a href="capitulo-63.html">← Capítulo 63</a><a class="next" href="capitulo-65.html">Capítulo 65 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 64</footer></body></html>

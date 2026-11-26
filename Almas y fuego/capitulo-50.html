@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capítulo 50 — Un nombre en el registro</title><style>body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}main{max-width:850px;margin:auto;padding:55px 24px 80px}h1{text-align:center;font-weight:normal;font-size:2rem;margin:0 0 8px}.subtitle{text-align:center;font-style:italic;color:#76685e;margin:0 0 42px}p{margin:0 0 1.35em;text-align:justify}</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 50</div><h1>Un nombre en el registro</h1></header><main>
+<div class="subtitle">Un nombre en el registro</div>
+<p>El inspector llamó a las ocho y veinte de la mañana. Esta vez pidió hablar con todos.</p>
+<p>Emilia bajó las escaleras con el teléfono en la mano. Nicolás ya estaba en el salón, y sus padres habían llegado temprano, después de una noche en la que ninguno consiguió dormir demasiado. Gabriel se encontraba junto a la mesa, con una libreta abierta.</p>
+<p>—Han localizado una segunda matrícula —explicó el inspector por videollamada—. El vehículo que salió del complejo ayer no llevaba a Luca, al menos según lo que hemos podido verificar. Era una maniobra de traslado de material. Pero la información de Salvat nos ha permitido identificar una unidad arrendada dentro del recinto que no aparecía en los registros iniciales.</p>
+<p>—¿Es ahí? —preguntó Emilia.</p>
+<p>—Es una posibilidad que ahora tiene fundamento. Estamos trabajando para verificar ocupación y movimientos. No puedo darles una ubicación confirmada todavía.</p>
+<p>El padre de Emilia se inclinó hacia la pantalla.</p>
+<p>—¿Podemos ayudar con algo más?</p>
+<p>—Por ahora, no. Y quiero insistir en que no se acerquen al complejo. Necesitamos que cualquier intervención se haga coordinadamente.</p>
+<p>—Lo entendemos —respondió él.</p>
+<p>El inspector compartió una captura de un registro comercial. Una empresa de mantenimiento había contratado un espacio por medio de un intermediario, pero el contrato estaba firmado por un administrador que había cambiado de identidad comercial en varias ocasiones. En una anotación aparecía el nombre de Adrián Ferrer, no como responsable, sino como contacto secundario.</p>
+<p>Gabriel amplió la imagen.</p>
+<p>—Esto lo coloca en el circuito, pero no al mando.</p>
+<p>—Exacto —dijo el inspector—. Y estamos siguiendo otra referencia: un nombre que aparece en la facturación, alguien que no se ha presentado en persona en ninguno de los lugares.</p>
+<p>La llamada terminó con instrucciones de esperar. Emilia permaneció mirando la pantalla apagada.</p>
+<p>—Al menos ya sabemos que no era una pista falsa —dijo su madre, sentándose a su lado.</p>
+<p>—Cada vez que parece que nos acercamos, cambia algo.</p>
+<p>—Pero nos estamos acercando —dijo Nicolás.</p>
+<p>Emilia lo miró. Quería creerlo, aunque la esperanza también le daba miedo. Era más fácil mantenerla pequeña que dejarla crecer y arriesgarse a perderla.</p>
+<p>En el despacho, el padre de Emilia recibió una llamada de su antiguo contacto en logística. No se trataba de un nuevo dato operativo, sino de una advertencia sobre una empresa que llevaba años utilizando nombres de sociedades diferentes para alquilar espacios industriales. El contacto había encontrado una publicación mercantil accesible públicamente y se la envió. El padre de Emilia no interpretó nada por su cuenta: la reenvió al inspector y a Gabriel.</p>
+<p>—No sé si sirve —dijo al volver—. Pero está documentado.</p>
+<p>—Eso es lo que necesitamos —respondió Gabriel—. Datos, no conjeturas.</p>
+<p>Su madre, mientras tanto, había conseguido que Emilia se duchara y se cambiara. No había insistido en que estuviera bien; había insistido en que dejara de llevar la misma ropa desde el día anterior.</p>
+<p>—Te estás olvidando de ti —dijo al verla salir.</p>
+<p>—No puedo pensar en eso.</p>
+<p>—No te estoy pidiendo que pienses. Te estoy pidiendo que te cuides un poco.</p>
+<p>Emilia se sentó frente a ella.</p>
+<p>—¿Cómo haces?</p>
+<p>—¿Qué?</p>
+<p>—Estar aquí, saber lo que está pasando y no salir corriendo.</p>
+<p>Su madre tardó en responder.</p>
+<p>—No sé si lo hago bien. Me dan ganas de agarrarte, llevarte a casa y esconderte de todo. Pero sé que eso no te ayudaría. Así que me quedo cerca. Y cuando necesites que haga algo, lo haré. Cuando necesites que no haga nada, también.</p>
+<p>Emilia le apretó la mano.</p>
+<p>—Gracias.</p>
+<p>—No me des las gracias por ser tu madre.</p>
+<p>Al mediodía, Nicolás recibió un mensaje de un número desconocido. No había texto, solo una imagen. Era una fotografía de una puerta metálica, con una pequeña placa de identificación parcialmente cubierta. No parecía tomada desde lejos. En la esquina inferior se distinguía una marca que se parecía al símbolo que Luca había dibujado.</p>
+<p>Nicolás no respondió. Envió la imagen al inspector y avisó a Emilia.</p>
+<p>—¿Es de Luca? —preguntó ella, acercándose.</p>
+<p>—No lo sabemos.</p>
+<p>La imagen podía ser una pista real o una forma de provocar una reacción. El inspector pidió conservar el teléfono, no abrir enlaces ni contestar. La fotografía fue sometida a análisis y comparación con los símbolos que Irene había descrito.</p>
+<p>El padre de Emilia miró a Nicolás.</p>
+<p>—Has hecho bien en no contestar.</p>
+<p>—No iba a darles lo que quieren.</p>
+<p>—No siempre sabemos qué quieren —dijo Gabriel—. Precisamente por eso no debemos reaccionar.</p>
+<p>En el lugar donde Luca estaba retenido, Irene escuchó una conversación a través de la puerta. Los hombres hablaban de una fotografía enviada y de un teléfono que había quedado sin respuesta. No podía distinguir todos los detalles, pero reconoció una palabra que había escuchado antes: <em>registro</em>.</p>
+<p>Cuando el pasillo quedó en silencio, Luca se acercó a ella.</p>
+<p>—¿Nos van a cambiar?</p>
+<p>Irene se agachó.</p>
+<p>—No lo sé, Luca.</p>
+<p>—¿Está mamá buscándome?</p>
+<p>—Sí. Estoy segura de que sí.</p>
+<p>Él le enseñó el dibujo que había guardado. Había añadido una línea, un rectángulo y dos letras que había visto en una placa. Irene se quedó inmóvil. No le pidió que lo explicara. Lo observó cuidadosamente, memorizó el detalle y, cuando tuvo oportunidad, intentó conservarlo junto a la nota que había escondido anteriormente.</p>
+<p>La posibilidad de que aquel dibujo sirviera para algo era pequeña. Pero no era nada.</p>
+<p>Por la tarde, la policía confirmó que la fotografía enviada a Nicolás correspondía a una zona del complejo que estaba siendo investigada. No era suficiente para actuar de inmediato, pero sí para restringir el foco. La unidad había solicitado los permisos necesarios y estaba coordinando vigilancia con otras fuerzas.</p>
+<p>El inspector volvió a llamar.</p>
+<p>—No puedo prometerles cuándo, pero tenemos un avance concreto. Por favor, mantengan la calma y no contacten con los remitentes.</p>
+<p>Emilia cerró los ojos. Su padre se levantó y la abrazó. Nicolás se acercó, y su madre rodeó a los tres con los brazos, sin preocuparse de si el gesto resultaba incómodo o demasiado grande.</p>
+<p>Gabriel se apartó discretamente.</p>
+<p>En el abrazo no hubo promesas de que todo acabaría bien. Hubo miedo, cansancio y una decisión compartida de no dejar que ese miedo los separara.</p>
+<p>Y, en algún lugar del complejo, Luca seguía guardando un dibujo que quizá pudiera ayudar a que alguien encontrara la puerta correcta.</p>
+</main><p>Al acabar la jornada, Emilia y Nicolás se sentaron juntos con sus padres. No hablaron de estrategias ni de pistas durante unos minutos. Hablaron de Luca: de sus dibujos, de sus frases y de cómo habría elegido la cena. Su madre guardó la conversación como si fuera un pequeño ritual para mantener al niño presente, no como una ausencia, sino como parte de la familia que seguía esperando.</p><nav class="chapter-navigation"><a href="capitulo-49.html">← Capítulo 49</a><a class="next" href="capitulo-51.html">Capítulo 51 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 50</footer></body></html>

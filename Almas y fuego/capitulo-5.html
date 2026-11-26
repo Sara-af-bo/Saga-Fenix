@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capítulo 5 — Un recuerdo a medias | Almas y fuego</title>
+<style>
+body{background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;max-width:850px;margin:0 auto;padding:42px 24px;line-height:1.85;font-size:18px}
+h1,h2{text-align:center;font-weight:normal}h1{font-size:2em;margin-bottom:8px}h2{font-size:1.15em;color:#77645a;font-style:italic;margin-bottom:48px}
+p{text-indent:2em;margin:0 0 1.1em}@media(max-width:600px){body{padding:24px 18px;font-size:17px}}
+</style>
+<style>
+body{margin:0;background:#f8f5f1;color:#292421;font-family:Georgia,'Times New Roman',serif;line-height:1.85}
+.reading-menu-btn{position:fixed;right:16px;top:16px;z-index:100;background:#292021;color:#f5ece5;border:1px solid #b87983;padding:10px 16px;border-radius:25px;cursor:pointer;font:14px system-ui}
+.reading-drawer{position:fixed;right:0;top:0;bottom:0;width:min(360px,90vw);overflow:auto;background:#241c1e;color:#f5ece5;z-index:110;padding:24px;box-sizing:border-box;transform:translateX(105%);transition:transform .25s;border-left:1px solid #b87983;box-shadow:-20px 0 50px #0008}
+.reading-drawer.open{transform:translateX(0)}
+.reading-drawer h2{font-size:1.25rem;margin:42px 0 20px}
+.reading-drawer a{display:block;color:inherit;text-decoration:none;padding:8px 12px;margin:5px 0;border:1px solid #ffffff22;border-radius:7px}
+.reading-drawer a:hover{border-color:#b87983;background:#ffffff0a}
+.reading-drawer .rclose{float:right;background:transparent;color:inherit;border:1px solid #ffffff44;border-radius:18px;padding:7px 12px;cursor:pointer}
+.rchapgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reading-overlay{position:fixed;inset:0;background:#0008;z-index:105;display:none}
+.reading-overlay.show{display:block}
+.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin-bottom:24px}
+.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}
+.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}
+.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}
+.chapter-navigation{display:flex;justify-content:space-between;gap:12px;margin:28px auto;padding:0 18px;max-width:850px;flex-wrap:wrap}
+.chapter-navigation a{display:inline-block;border:1px solid #d9c6c3;background:#fffaf6;color:#754e57;border-radius:25px;padding:11px 18px;text-decoration:none;font:14px sans-serif}
+.chapter-navigation a.next{background:#8e5f68;color:white;border-color:#8e5f68}
+.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}
+main{max-width:850px;margin:auto;padding:40px 24px 80px}
+@media print{.reading-menu-btn,.reading-drawer,.reading-overlay{display:none!important}}
+</style>
+</head><body><button class="reading-menu-btn" onclick="rOpen()">☰ Índice</button><div class="reading-overlay" id="rOverlay" onclick="rClose()"></div><nav class="reading-drawer" id="rDrawer"><button class="rclose" onclick="rClose()">Cerrar ✕</button><h2>Almas y fuego · Índice</h2><a href="prologo.html">Prólogo</a><div class="rchapgrid"><a href="capitulo-1.html">Capítulo 1</a><a href="capitulo-2.html">Capítulo 2</a><a href="capitulo-3.html">Capítulo 3</a><a href="capitulo-4.html">Capítulo 4</a><a href="capitulo-5.html">Capítulo 5</a><a href="capitulo-6.html">Capítulo 6</a><a href="capitulo-7.html">Capítulo 7</a><a href="capitulo-8.html">Capítulo 8</a><a href="capitulo-9.html">Capítulo 9</a><a href="capitulo-10.html">Capítulo 10</a><a href="capitulo-11.html">Capítulo 11</a><a href="capitulo-12.html">Capítulo 12</a><a href="capitulo-13.html">Capítulo 13</a><a href="capitulo-14.html">Capítulo 14</a><a href="capitulo-15.html">Capítulo 15</a><a href="capitulo-16.html">Capítulo 16</a><a href="capitulo-17.html">Capítulo 17</a><a href="capitulo-18.html">Capítulo 18</a><a href="capitulo-19.html">Capítulo 19</a><a href="capitulo-20.html">Capítulo 20</a><a href="capitulo-21.html">Capítulo 21</a><a href="capitulo-22.html">Capítulo 22</a><a href="capitulo-23.html">Capítulo 23</a><a href="capitulo-24.html">Capítulo 24</a><a href="capitulo-25.html">Capítulo 25</a><a href="capitulo-26.html">Capítulo 26</a><a href="capitulo-27.html">Capítulo 27</a><a href="capitulo-28.html">Capítulo 28</a><a href="capitulo-29.html">Capítulo 29</a><a href="capitulo-30.html">Capítulo 30</a><a href="capitulo-31.html">Capítulo 31</a><a href="capitulo-32.html">Capítulo 32</a><a href="capitulo-33.html">Capítulo 33</a><a href="capitulo-34.html">Capítulo 34</a><a href="capitulo-35.html">Capítulo 35</a><a href="capitulo-36.html">Capítulo 36</a><a href="capitulo-37.html">Capítulo 37</a><a href="capitulo-38.html">Capítulo 38</a><a href="capitulo-39.html">Capítulo 39</a><a href="capitulo-40.html">Capítulo 40</a><a href="capitulo-41.html">Capítulo 41</a><a href="capitulo-42.html">Capítulo 42</a><a href="capitulo-43.html">Capítulo 43</a><a href="capitulo-44.html">Capítulo 44</a><a href="capitulo-45.html">Capítulo 45</a><a href="capitulo-46.html">Capítulo 46</a><a href="capitulo-47.html">Capítulo 47</a><a href="capitulo-48.html">Capítulo 48</a><a href="capitulo-49.html">Capítulo 49</a><a href="capitulo-50.html">Capítulo 50</a><a href="capitulo-51.html">Capítulo 51</a><a href="capitulo-52.html">Capítulo 52</a><a href="capitulo-53.html">Capítulo 53</a><a href="capitulo-54.html">Capítulo 54</a><a href="capitulo-55.html">Capítulo 55</a><a href="capitulo-56.html">Capítulo 56</a><a href="capitulo-57.html">Capítulo 57</a><a href="capitulo-58.html">Capítulo 58</a><a href="capitulo-59.html">Capítulo 59</a><a href="capitulo-60.html">Capítulo 60</a><a href="capitulo-61.html">Capítulo 61</a><a href="capitulo-62.html">Capítulo 62</a><a href="capitulo-63.html">Capítulo 63</a><a href="capitulo-64.html">Capítulo 64</a><a href="capitulo-65.html">Capítulo 65</a></div><a href="epilogo.html">Epílogo</a></nav><script>function rOpen(){document.getElementById("rDrawer").classList.add("open");document.getElementById("rOverlay").classList.add("show")}function rClose(){document.getElementById("rDrawer").classList.remove("open");document.getElementById("rOverlay").classList.remove("show")}</script><style>.saga-header{text-align:center;padding:38px 18px 24px;background:linear-gradient(135deg,#f4e5e2,#f4eee5 55%,#e7eee5);margin:0 -0px 24px}.saga-header .series{font:13px/1.4 sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8e5f68}.saga-header .chapter-label{font:15px/1.4 sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8e5f68;margin-top:22px}.saga-header h1{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:500;color:#6e4c52;margin:12px 0}.saga-footer{text-align:center;color:#81766e;font:13px sans-serif;padding:20px}</style><header class="saga-header"><div class="series">Almas y fuego · Libro 3</div><div class="chapter-label">Capítulo 5</div><h1>Un recuerdo a medias</h1></header>
+<h2>Un recuerdo a medias</h2>
+
+<p>La música se escuchaba desde la cocina, demasiado alta para alguien que pretendía preparar una cena sin distraerse. Emilia había dejado el teléfono apoyado junto a una jarra de agua y, cada vez que una canción cambiaba, parecía empeñada en cantar el estribillo aunque no conociera más que unas pocas palabras. Nicolás, desde la entrada, la observó durante un rato antes de anunciar su presencia.</p>
+
+<p>—¿Siempre cocinas así?</p>
+
+<p>Emilia se giró, sobresaltada, y se llevó una mano al pecho.</p>
+
+<p>—¡Por Dios! ¿No sabes avisar cuando entras?</p>
+
+<p>—He dicho hola.</p>
+
+<p>—No te he oído.</p>
+
+<p>—Eso explica muchas cosas.</p>
+
+<p>Ella le lanzó una mirada que habría sido más intimidante si no estuviera sonriendo. Nicolás se acercó, dejó las llaves sobre la encimera y miró lo que había preparado.</p>
+
+<p>—¿Qué estamos haciendo?</p>
+
+<p>—Cenando.</p>
+
+<p>—Ya veo. ¿Y esto?</p>
+
+<p>—Si vuelves a hacer preguntas obvias, te pongo a cortar verduras.</p>
+
+<p>—Eso es una amenaza.</p>
+
+<p>—Una promesa.</p>
+
+<p>Nicolás levantó las manos en señal de rendición, pero terminó acercándose para ayudar. Emilia le indicó dónde estaban los utensilios y le explicó lo que faltaba, con la paciencia que reservaba para las cosas que no quería que se estropearan. Durante unos minutos, la cocina se llenó de movimientos coordinados, comentarios absurdos y pequeñas discusiones sobre si la cantidad de sal era razonable.</p>
+
+<p>Era una escena sencilla. Tal vez por eso Nicolás se quedó mirando un instante más de lo necesario la manera en que Emilia se movía de un lado a otro, apartándose el cabello de la cara con el dorso de la mano. Había algo familiar en aquel gesto. Algo que no consiguió identificar, pero que le hizo sentir una presión inesperada en el pecho.</p>
+
+<p>La canción terminó. Comenzó otra, con una melodía más lenta.</p>
+
+<p>Nicolás dejó el cuchillo sobre la tabla.</p>
+
+<p>El sonido de la música pareció alejarse. Por un instante, la cocina no fue aquella cocina. Vio luces cálidas, una habitación que no logró ubicar, la sombra de alguien que se movía frente a él. Sintió una mano sobre su hombro. Escuchó una risa, cercana, y una voz que pronunciaba su nombre de una manera que le resultó dolorosamente conocida.</p>
+
+<p>Después, nada.</p>
+
+<p>Volvió a la realidad con la respiración contenida y la mirada fija en un punto de la encimera.</p>
+
+<p>—Nicolás.</p>
+
+<p>Emilia había bajado la música. Estaba frente a él, sin tocarlo todavía.</p>
+
+<p>—¿Qué ha pasado?</p>
+
+<p>Él negó con la cabeza, aunque no estaba seguro de poder explicar lo que acababa de ocurrir.</p>
+
+<p>—He... creo que he recordado algo.</p>
+
+<p>Emilia se quedó quieta.</p>
+
+<p>—¿Qué?</p>
+
+<p>—No lo sé exactamente. Una habitación. Música. Tú, quizá. —Se frotó la frente—. No estoy seguro de que fueras tú, pero la voz...</p>
+
+<p>Ella no se acercó más hasta que Nicolás la miró. Entonces le tomó la mano.</p>
+
+<p>—¿Te ha dolido?</p>
+
+<p>—No. Ha sido extraño. Como si estuviera a punto de reconocer algo y se me escapara.</p>
+
+<p>Emilia sintió que una parte de ella quería hacer preguntas, todas a la vez. ¿Qué habitación? ¿Qué canción? ¿Qué había visto? ¿La recordaba? ¿Había sido un momento de su vida juntos? Pero se obligó a no convertir aquel instante en una búsqueda urgente de respuestas.</p>
+
+<p>—No tienes que perseguirlo —dijo.</p>
+
+<p>—Lo sé.</p>
+
+<p>—Si vuelve, volverá. Y si no, tampoco quiero que te quedes aquí intentando arrancártelo de la cabeza.</p>
+
+<p>Nicolás miró sus dedos entrelazados.</p>
+
+<p>—Me da miedo olvidar algo que quizá sea importante.</p>
+
+<p>—Y a mí me da miedo que te hagas daño intentando recordarlo todo.</p>
+
+<p>Él levantó la mirada. Emilia no estaba llorando, ni parecía querer esconder lo que acababa de decir. Había preocupación, pero también una firmeza que Nicolás había empezado a reconocer en ella.</p>
+
+<p>—¿Qué hacemos? —preguntó.</p>
+
+<p>—Ahora mismo, terminamos la cena. —Emilia apretó suavemente su mano—. Después, si quieres, le contamos a tu médico lo que ha pasado. Sin convertirlo en una obligación. ¿Te parece?</p>
+
+<p>—Sí.</p>
+
+<p>Se quedaron así unos segundos. Nicolás respiró más despacio, hasta que el nudo que se le había formado en el pecho dejó de apretar tanto. Emilia volvió a poner la música, esta vez a un volumen más bajo, y retomó lo que estaba haciendo. Él la ayudó, aunque tardó un poco en recuperar la concentración.</p>
+
+<p>Cuando el niño apareció, atraído por el olor de la comida, encontró a ambos junto a la encimera.</p>
+
+<p>—¿Ya está?</p>
+
+<p>—Casi —respondió Emilia.</p>
+
+<p>—¿Puedo probar?</p>
+
+<p>—Si esperas dos minutos.</p>
+
+<p>—Un minuto.</p>
+
+<p>—Dos.</p>
+
+<p>El niño suspiró como si acabara de recibir una injusticia histórica, y Nicolás soltó una risa. La tensión de los minutos anteriores se deshizo poco a poco.</p>
+
+<p>La cena transcurrió sin que Emilia volviera a mencionar el recuerdo. El pequeño habló de su día, de algo que había visto y de una idea que quería llevar a cabo al día siguiente. Nicolás le hizo preguntas, y cuando no entendió una parte de la historia, el niño la repitió con una paciencia que no siempre demostraba con su madre.</p>
+
+<p>Después, mientras Emilia recogía la mesa, Nicolás se quedó un momento en el salón. No intentó reproducir la imagen. No se concentró en la voz ni buscó la canción en el teléfono. Se limitó a aceptar que había ocurrido, aunque no supiera qué significaba.</p>
+
+<p>Había recordado una sensación. Tal vez un fragmento. Tal vez algo que su mente había construido a partir de lo que conocía ahora. No tenía certezas, y por primera vez aquella noche no quiso obligarse a tenerlas.</p>
+
+<p>Emilia apareció junto a él.</p>
+
+<p>—¿Estás bien?</p>
+
+<p>—Creo que sí.</p>
+
+<p>—¿Quieres que lo hablemos?</p>
+
+<p>Nicolás miró hacia la cocina, donde aún se escuchaba el ruido del agua y de los platos.</p>
+
+<p>—No quiero que cada vez que me pase algo tengamos que parar el mundo.</p>
+
+<p>—No lo paramos.</p>
+
+<p>—Pero lo parece.</p>
+
+<p>Emilia se sentó a su lado.</p>
+
+<p>—Nicolás, no es una molestia. No eres una molestia. Pero tampoco tenemos que convertir cada recuerdo en una prueba. Puedes tener un día normal. Puedes enfadarte, aburrirte, cocinar mal, discutir conmigo y hacer cualquier otra cosa que no tenga que ver con recuperar tu memoria.</p>
+
+<p>Él sonrió.</p>
+
+<p>—¿Cocinar mal?</p>
+
+<p>—Hoy has cortado una cebolla como si te hubiera insultado.</p>
+
+<p>—Era una cebolla complicada.</p>
+
+<p>Emilia se rio y apoyó la cabeza en su hombro. Nicolás rodeó su espalda con un brazo, con cuidado, y se quedó mirando el salón. No recordaba aquella postura con exactitud. No podía afirmar que la hubiera vivido antes. Pero el cuerpo no parecía incómodo, y la cercanía de Emilia no le resultaba ajena.</p>
+
+<p>—Cuando vuelva a recordar algo —murmuró—, quiero que sea así.</p>
+
+<p>—¿Así cómo?</p>
+
+<p>—Sin miedo a que desaparezca si no lo digo inmediatamente.</p>
+
+<p>Emilia levantó la cabeza para mirarlo.</p>
+
+<p>—Entonces no lo diremos inmediatamente.</p>
+
+<p>Él le acarició la mejilla y la besó. Fue un beso tranquilo, sin urgencia, que terminó con ambos sonriendo casi de la misma manera. Emilia volvió a apoyar la cabeza en su hombro, y Nicolás cerró los ojos unos segundos.</p>
+
+<p>La memoria seguía siendo un lugar lleno de puertas cerradas. Algunas quizá se abrirían; otras, tal vez, permanecerían así. Pero aquella noche no necesitaba entrar en ninguna.</p>
+
+<p>Tenía la música que seguía sonando en la cocina.</p>
+
+<p>Tenía la risa de Emilia.</p>
+
+<p>Tenía una cena que terminar de recoger y un niño que, antes de acostarse, probablemente volvería a pedir algo que nadie había previsto.</p>
+
+<p>Y, por ahora, eso era suficiente.</p>
+<p>Después de la cena, Emilia y Nicolás se quedaron solos en la cocina. Él le ayudó a recoger, aunque insistió en que no era necesario. Cuando ella se puso de puntillas para alcanzar una taza, Nicolás la tomó de la cintura y la levantó apenas, lo suficiente para que llegara. Emilia soltó una carcajada.</p><p>—Podías haberme acercado una silla.</p><p>—También.</p><p>—Pero has elegido presumir de fuerza.</p><p>—No estaba presumiendo.</p><p>—Claro que no.</p><p>Al bajarla, no soltó inmediatamente sus manos. Emilia se inclinó y le dio un beso breve, casi tímido. Nicolás la miró como si quisiera memorizar el instante, y ella le dio otro antes de volver a las tazas.</p><nav class="chapter-navigation"><a href="capitulo-4.html">← Capítulo 4</a><a class="next" href="capitulo-6.html">Capítulo 6 →</a></nav><footer class="saga-footer">Almas y fuego · Libro 3 · Capítulo 5</footer></body></html>
