@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capítulo 36 — Dos puertas abiertas</title><style>
+body{font-family:Georgia,'Times New Roman',serif;line-height:1.85;max-width:850px;margin:40px auto;padding:0 22px;background:#faf8f5;color:#282522}
+h1,h2{text-align:center;line-height:1.4}h1{margin-top:2.2em;font-size:2em}h2{font-weight:normal;font-style:italic;color:#74685f;margin-bottom:2.5em}
+p{margin:0 0 1.15em;text-align:justify}a{color:#76584a}.back{margin-top:3em;border-top:1px solid #ddd;padding-top:1em}
+</style><style>
+.story-index-toggle{position:fixed;top:14px;right:14px;left:auto;z-index:120;background:#2a2023;color:#f7eee9;border:1px solid #b77b87;border-radius:8px;padding:10px 14px;font:14px system-ui;cursor:pointer;box-shadow:0 4px 16px #0002}
+.story-index-panel{position:fixed;top:0;right:0;left:auto;bottom:0;width:min(330px,88vw);overflow:auto;background:#251b1e;color:#f7eee9;z-index:130;padding:22px;transform:translateX(110%);transition:transform .22s;border-left:1px solid #b77b87;font:15px/1.5 system-ui}
+.story-index-panel.open{transform:translateX(0)}.story-index-panel a{display:block;color:inherit;text-decoration:none;padding:7px 10px;border:1px solid #ffffff20;border-radius:6px;margin:5px 0}
+.story-index-panel a:hover{border-color:#b77b87;background:#b77b8720}.story-index-panel button{background:transparent;color:inherit;border:1px solid #ffffff55;padding:7px 10px;float:right;cursor:pointer}
+.story-index-overlay{display:none;position:fixed;inset:0;background:#0008;z-index:125}.story-index-overlay.show{display:block}.story-index-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.reader-nav{display:flex;justify-content:space-between;gap:14px;margin:40px 0 12px;padding-top:22px;border-top:1px solid #d8c9c1}
+.reader-nav a{display:inline-block;padding:12px 20px;border:1px solid #c48691;border-radius:12px;background:#fffaf6;color:#a86775;text-decoration:none;font:600 15px/1.4 system-ui}
+.reader-nav a:hover{transform:translateY(-2px);background:#f5ece5}
+@media(max-width:480px){.reader-nav a{padding:10px 13px}}
+</style></head><body><button class="story-index-toggle" onclick="storyOpen()">☰ Índice</button><div id="storyOverlay" class="story-index-overlay" onclick="storyClose()"></div><aside id="storyPanel" class="story-index-panel"><button onclick="storyClose()">Cerrar ✕</button><h2>Cicatrices y sangre</h2><a href="prologo.html">Prólogo</a><h3>Capítulos</h3><div class="story-index-grid"><a href="capitulo-1.html">1</a><a href="capitulo-2.html">2</a><a href="capitulo-3.html">3</a><a href="capitulo-4.html">4</a><a href="capitulo-5.html">5</a><a href="capitulo-6.html">6</a><a href="capitulo-7.html">7</a><a href="capitulo-8.html">8</a><a href="capitulo-9.html">9</a><a href="capitulo-10.html">10</a><a href="capitulo-11.html">11</a><a href="capitulo-12.html">12</a><a href="capitulo-13.html">13</a><a href="capitulo-14.html">14</a><a href="capitulo-15.html">15</a><a href="capitulo-16.html">16</a><a href="capitulo-17.html">17</a><a href="capitulo-18.html">18</a><a href="capitulo-19.html">19</a><a href="capitulo-20.html">20</a><a href="capitulo-21.html">21</a><a href="capitulo-22.html">22</a><a href="capitulo-23.html">23</a><a href="capitulo-24.html">24</a><a href="capitulo-25.html">25</a><a href="capitulo-26.html">26</a><a href="capitulo-27.html">27</a><a href="capitulo-28.html">28</a><a href="capitulo-29.html">29</a><a href="capitulo-30.html">30</a><a href="capitulo-31.html">31</a><a href="capitulo-32.html">32</a><a href="capitulo-33.html">33</a><a href="capitulo-34.html">34</a><a href="capitulo-35.html">35</a><a href="capitulo-36.html">36</a><a href="capitulo-37.html">37</a><a href="capitulo-38.html">38</a><a href="capitulo-39.html">39</a><a href="capitulo-40.html">40</a><a href="capitulo-41.html">41</a><a href="capitulo-42.html">42</a><a href="capitulo-43.html">43</a><a href="capitulo-44.html">44</a><a href="capitulo-45.html">45</a><a href="capitulo-46.html">46</a><a href="capitulo-47.html">47</a><a href="capitulo-48.html">48</a><a href="capitulo-49.html">49</a><a href="capitulo-50.html">50</a><a href="capitulo-51.html">51</a><a href="capitulo-52.html">52</a><a href="capitulo-53.html">53</a><a href="capitulo-54.html">54</a><a href="capitulo-55.html">55</a><a href="capitulo-56.html">56</a><a href="capitulo-57.html">57</a><a href="capitulo-58.html">58</a></div><h3>Final</h3><a href="epilogo.html">Epílogo</a><a href="indice.html">Índice completo</a></aside><script>function storyOpen(){document.getElementById("storyPanel").classList.add("open");document.getElementById("storyOverlay").classList.add("show")}function storyClose(){document.getElementById("storyPanel").classList.remove("open");document.getElementById("storyOverlay").classList.remove("show")}</script><h1>Capítulo 36</h1><h2>Dos puertas abiertas</h2>
+<p>Emilia tardó dos días en responder.</p>
+<p>No porque no supiera qué decir, sino porque sabía demasiado bien lo que podía provocar cada palabra. Había leído el mensaje de Nicolás una vez, después lo había dejado en el teléfono y había vuelto a él por la noche, cuando su hijo dormía y la casa estaba en silencio.</p>
+<p>No era una declaración. No era una disculpa que exigiera perdón. Era un hombre que no recordaba su propia vida intentando no convertirse en una carga para la de los demás.</p>
+<p>Eso, precisamente, le había dolido.</p>
+<p>La mañana del segundo día, Emilia pidió una reunión breve con la coordinadora hospitalaria. No quería una videollamada con Nicolás aún. Quería confirmar el estado de su recuperación, entender qué podía esperar de la amnesia y saber qué información podía compartir sin comprometer a su hijo.</p>
+<p>La reunión fue discreta. Le explicaron que Nicolás seguía en rehabilitación, que su memoria autobiográfica presentaba lagunas importantes y que no podían prometer un retorno de recuerdos. Podía recuperar fragmentos, podía no hacerlo, y la evolución no sería necesariamente lineal.</p>
+<p>—¿Él sabe que he recibido su mensaje? —preguntó Emilia.</p>
+<p>—Sabe que la comunicación está en curso. No le hemos dicho que usted lo haya leído hasta que nos autorice a transmitir una respuesta.</p>
+<p>Emilia asintió.</p>
+<p>—Quiero enviarle algo. Pero no quiero que sea una promesa.</p>
+<p>—Eso es completamente válido.</p>
+<p>Al salir, Emilia se detuvo en un banco de la calle. Sacó el móvil y escribió. No lo hizo de un tirón. Cada frase parecía necesitar un espacio para respirar.</p>
+<p><em>He recibido tu mensaje. No sé qué decirte todavía. Que estés vivo es algo que necesito asimilar, y hay muchas cosas que no puedo resolver en unos días. Nuestro hijo está bien. Está creciendo y tiene una vida que hemos construido para que se sienta seguro. No voy a organizar un encuentro de inmediato, pero tampoco cierro la posibilidad. Por ahora, quiero que te centres en recuperarte. Si avanzamos, será poco a poco y pensando también en él.</em></p>
+<p>Lo leyó varias veces. Después lo envió a través del canal acordado.</p>
+<p>Cuando llegó a casa, su hijo estaba construyendo una torre con piezas de colores. Emilia se sentó a su lado en el suelo.</p>
+<p>—¿Me ayudas? —preguntó él.</p>
+<p>—Claro.</p>
+<p>—Pero no la hagas tú. Solo sujeta.</p>
+<p>—Entendido. Supervisora de construcción.</p>
+<p>Él le dio instrucciones, orgulloso de su proyecto. Emilia sostuvo dos piezas y, cuando la torre se tambaleó, ambos contuvieron el aliento antes de que quedara en pie.</p>
+<p>—¡Lo conseguimos!</p>
+<p>—Lo conseguiste tú.</p>
+<p>—Tú sujetaste.</p>
+<p>Emilia sonrió. A veces, la diferencia entre construir y sostener era todo.</p>
+<p>En el hospital, Nicolás recibió la respuesta esa misma tarde. La trabajadora social le preguntó si quería leerla solo o acompañado.</p>
+<p>—Solo, por favor.</p>
+<p>Le entregaron la copia. La leyó lentamente. Cuando llegó a <em>nuestro hijo está bien</em>, tuvo que detenerse. Volvió al principio. La leyó otra vez, con una mano apoyada sobre la página.</p>
+<p>El niño estaba bien.</p>
+<p>No era una fotografía. No era un nombre. No era una oportunidad de abrazarlo.</p>
+<p>Pero era una certeza que había esperado desde el primer día.</p>
+<p>Respiró, dobló la hoja con cuidado y la guardó en el cuaderno.</p>
+<p>—¿Quiere responder? —le preguntó el trabajador social al cabo de un rato.</p>
+<p>—Sí. Pero no hoy. Hoy quiero… —Se le quebró un poco la voz—. Hoy quiero estar contento por una cosa sin intentar hacer diez más.</p>
+<p>El hombre asintió y lo dejó tranquilo.</p>
+<p>Al día siguiente, Emilia tenía otra cita. Esta vez no era con el hospital, sino con la oficina encargada de la revisión documental. El expediente físico original había sido localizado y se había solicitado cotejar varias anotaciones con los registros de traslado y cierre.</p>
+<p>La funcionaria que la recibió no parecía tener interés en dramatizar. Le mostró una cronología provisional, explicando qué datos estaban corroborados y cuáles seguían pendientes.</p>
+<p>Una fecha no coincidía con la digitalización. La copia de un formulario tenía una firma incompleta. Había una referencia a una modificación de ruta que no constaba en el resumen final.</p>
+<p>—No podemos atribuirlo a una intención concreta —dijo la funcionaria—. Puede ser un error de transcripción, una actuación administrativa mal documentada o algo que requiera una revisión más amplia. Lo que sí podemos hacer es conservar los originales y pedir explicaciones a las unidades que intervinieron.</p>
+<p>Emilia miró las páginas sin tocar nada.</p>
+<p>—Quiero que quede registrado que no estoy buscando una conclusión predeterminada.</p>
+<p>—Así consta en su solicitud.</p>
+<p>—Quiero saber qué pasó. No quiero que me den una historia que suene convincente.</p>
+<p>La funcionaria la observó un momento y luego asintió.</p>
+<p>—Eso es precisamente lo que debe perseguir una revisión.</p>
+<p>Cuando salió, Emilia llamó a Vittoria. No necesitaba hacerlo, pero quería compartir una parte de aquel avance con alguien que había aprendido a escucharla sin apropiarse de su historia.</p>
+<p>—Han encontrado el expediente físico —le dijo.</p>
+<p>Vittoria se quedó en silencio, y Emilia supo que estaba conteniendo la emoción.</p>
+<p>—¿Eso significa que…?</p>
+<p>—Significa que van a cotejarlo. Nada más por ahora.</p>
+<p>—Pero es un paso.</p>
+<p>—Sí. Es un paso.</p>
+<p>—Estoy orgullosa de ti —dijo Vittoria—. No por lo que encuentres, sino por cómo estás llevando todo esto.</p>
+<p>Emilia bajó la mirada.</p>
+<p>—A veces no sé cómo lo estoy llevando.</p>
+<p>—No tienes que saberlo todo. Puedes ir aprendiendo.</p>
+<p>Hablaron unos minutos más. Vittoria le contó que Marco había intentado preparar una receta familiar y había conseguido que la cocina pareciera un campo de batalla. Emilia se rio, y aquella risa se sintió extrañamente natural. La investigación no ocupaba cada espacio. La familia tampoco se limitaba a hablar de lo perdido.</p>
+<p>Más tarde, Alessandro le envió una fotografía de Marco, con harina en la camisa y una expresión de derrota absoluta.</p>
+<p><em>Mi padre ha declarado que la pasta se ha rebelado contra él. No está preparado para la cocina moderna.</em></p>
+<p>Emilia respondió con una carcajada y un mensaje:</p>
+<p><em>Necesito conocer la receta del desastre.</em></p>
+<p>Alessandro contestó:</p>
+<p><em>La receta es sencilla: confianza excesiva y cero supervisión.</em></p>
+<p>Y por primera vez aquel día, Emilia sintió que podía mirar hacia su origen sin que el pasado le arrebatara el presente.</p>
+<p>En el hospital, Nicolás empezó a escribir una lista de cosas que quería aprender a hacer de nuevo. No eran grandes metas. Subir escaleras sin apoyo. Recordar instrucciones médicas. Mantener una conversación sin perder el hilo. Dormir una noche completa.</p>
+<p>En otra página escribió: <em>Conocer a mi hijo, si él y su madre lo quieren.</em></p>
+<p>No lo tachó. No lo convirtió en una urgencia.</p>
+<p>La vida que había perdido, la que Emilia había construido y la familia que ella estaba descubriendo no tenían que enfrentarse entre sí. Nicolás todavía no entendía eso, pero empezaba a comprender una cosa: si alguna vez le daban la oportunidad de entrar en sus vidas, no podía llegar reclamando el lugar que sus recuerdos le decían que tenía. Tendría que ganarse la confianza desde el principio, con paciencia y sin exigir que nadie le devolviera una historia que él mismo había olvidado.</p>
+<p>Dos puertas permanecían abiertas.</p>
+<p>Una conducía a un hombre que intentaba recuperar su cuerpo y aprender su nombre.</p>
+<p>La otra, a una familia que Emilia no había conocido, pero que ya no era únicamente una carpeta de fotografías, cartas y recuerdos ajenos.</p>
+<p>Y entre ambas, Emilia seguía sosteniendo la llave de su propia vida.</p>
+<p class="back"><a href="capitulo-35.html">← Volver al capítulo 35</a></p><nav class="reader-nav"><a href="capitulo-35.html">← Capítulo 35</a><a href="capitulo-37.html">Capítulo 37 →</a></nav></body></html>
